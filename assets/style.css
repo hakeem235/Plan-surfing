@@ -1,0 +1,25 @@
+*{
+    font-family: 'Poppins', sans-serif;
+}
+
+.sectionImg{
+    border: 1px solid #043C84 ;
+    border-radius: 5px ;
+}
+
+.logo {
+    display: flex;
+    width: 13%;
+   float: right;
+   margin-top: 8px;
+}
+
+.headerName{
+    color:#043C84;
+    display: flex;
+    float: left;
+}
+.header {
+    flex-direction: row-reverse;
+    background: rgb(165, 165, 165);
+}
