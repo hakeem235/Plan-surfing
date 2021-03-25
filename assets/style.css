@@ -2,6 +2,11 @@
     font-family: 'Poppins', sans-serif;
 }
 
+html{
+    min-width: fit-content;
+  min-height: fit-content;
+}
+
 .sectionImg{
     border: 1px solid #043C84 ;
     border-radius: 5px ;
@@ -28,13 +33,12 @@
     background: rgb(165, 165, 165);
 }
 .barColor, h3  {
-color: #043C84 ;
+    color: #043C84 ;
 }
 
 .footer{
-    text-align: center;
- position: fixed;
-  bottom: 0;
-  width:100%;
-
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
 }
