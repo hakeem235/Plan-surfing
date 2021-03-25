@@ -19,10 +19,6 @@
 </head>
 
 <body>
-    <div class="w3-container w3-card  header">
-        <img class="logo" src="./assets/img /logo.png" alt="logo">
-        <h1 class="headerName">Plan Surfing</h1>
-    </div>
     <nav class="w3-sidebar w3-bar-block w3-card" id="mySidebar">
         <div class="w3-container w3-theme-d2">
             <span onclick="closeSidebar()" class="w3-button w3-display-topright w3-large">X</span>
@@ -37,40 +33,53 @@
     </nav>
 
     <header class="w3-bar w3-card w3-theme">
-        <button class="w3-bar-item w3-button w3-xxxlarge w3-hover-theme" onclick="openSidebar()">&#9776;</button>
-        <div class="w3-container">
-            <hr>
-            <div class="w3-cell-row">
-                <div class="w3-cell" style="width:30%">
-                    <img class="sectionImg" src="./assets/img /news1.jpg" style="width:100%">
-                </div>
-                <div class="w3-cell w3-container">
+        <button class="w3-bar-item w3-button w3-xxxlarge w3-hover-theme barColor"
+            onclick="openSidebar()">&#9776;</button>
+        <img class="logo" src="./assets/img /logo.png" alt="logo">
+        <h1 class="w3-bar-item headerName">Plan Surfing</h1>
+    </header>
+    <div class="w3-container">
+        <hr>
+        <div class="w3-cell-row">
+            <div class="w3-cell" style="width:30%">
+                <img class="sectionImg" src="./assets/img /news1.jpg" style="width:100%">
+            </div>
+            <div class="w3-cell w3-container">
+
+                <a>
                     <h3>News</h3>
-                    <p>The response to the animations was ridiculous.</p>
-                </div>
+                </a>
+                <p>Get Local and Nationwide Daily News</p>
             </div>
-            <hr>
-            <div class="w3-cell-row">
-                <div class="w3-cell" style="width:30%">
-                    <img class="sectionImg" src="./assets/img /dailyTask.png" style="width:100%">
-                </div>
-                <div class="w3-cell w3-container">
-                    <h3>Daily Tasks</h3>
-                    <p>Touching, gripping and genuinely well made.</p>
-                </div>
-            </div>
-            <hr>
-            <div class="w3-cell-row">
-                <div class="w3-cell" style="width:30%">
-                    <img class="sectionImg" src="./assets/img /weather.jpg" style="width:100%">
-                </div>
-                <div class="w3-cell w3-container">
-                    <h3>Weather</h3>
-                    <p>A huge success for Marvel and Disney.</p>
-                </div>
-            </div>
-            <hr>
         </div>
+        <hr>
+        <div class="w3-cell-row">
+            <div class="w3-cell" style="width:30%">
+                <img class="sectionImg" src="./assets/img /dailyTask.png" style="width:100%">
+            </div>
+            <div class="w3-cell w3-container">
+                <a>
+                    <h3>Daily Tasks</h3>
+                </a>
+                <p>Stay on Top of Daily Tasks</p>
+            </div>
+        </div>
+        <hr>
+        <div class="w3-cell-row">
+            <div class="w3-cell" style="width:30%">
+                <img class="sectionImg" src="./assets/img /weather.jpg" style="width:100%">
+            </div>
+            <div class="w3-cell w3-container">
+                <a>
+                    <h3>Weather</h3>
+                </a>
+                <p>Check Local and Nationwide Forecast </p>
+            </div>
+        </div>
+        <hr>
+    </div>
+    <footer class="w3-container w3-card footer"><h3>© 2021 The Power Trio Squad Production</h3></footer>
+
     <script src="./assets/script.js"></script>
 </body>
 
