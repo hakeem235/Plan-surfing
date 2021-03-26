@@ -10,12 +10,15 @@ html{
 .sectionImg{
     border: 1px solid #043C84 ;
     border-radius: 5px ;
+    margin: 6px 0px 6px 4px;
 }
 
 #mySidebar {
     display: none;
 }
-
+a {
+    text-decoration: none;
+}
 .logo {
     display: flex;
     width: 13%;
@@ -32,7 +35,7 @@ html{
     flex-direction: row-reverse;
     background: rgb(165, 165, 165);
 }
-.barColor, h3  {
+.barColor, h3, nav  {
     color: #043C84 ;
 }
 
