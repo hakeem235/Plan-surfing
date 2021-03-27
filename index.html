@@ -13,6 +13,9 @@
     <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3pro.css">
     <!-- Google Font  -->
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400&display=swap" rel="stylesheet">
+    <!--Anastasia's part start-->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <!--Anastasia's part start-->
     <!-- CSS flie -->
     <link rel="stylesheet" href="./assets/style.css">
 </head>
@@ -44,9 +47,10 @@
             <div class="w3-cell" style="width:30%">
 
             </div>
-            <div class="w3-cell w3-container">
+            <div class="w3-cell w3-container" id="quotes">
                 <h3>News</h3>
                 <p>Get Local and Nationwide Daily News</p>
+
             </div>
         </div>
         <div class="w3-container">
@@ -55,12 +59,48 @@
                 <div class="w3-cell" style="width:30%">
                     <img class="sectionImg" src="./assets/images/news1.jpg" style="width:100%">
                 </div>
-                <div class="w3-cell w3-container">
 
+                <!--Anastasia's part start-->
+                <div class="w3-cell w3-container" id="news">
                     <a href="#">
                         <h3>News</h3>
                     </a>
                     <p>Get Local and Nationwide Daily News</p>
+                    <div class="news-section" id="newsSections">
+                        <form>
+                            <div class="row">
+                                <form class="col s12">
+                                    <div class="row">
+                                        <div class="input-field">
+                                            <i class="material-icons prefix ">public</i>
+                                            <input type="text" id="currentSearch">
+                                            <label class="inside-text" for="icon_prefix2">Find what is happening around
+                                                you...</label>
+                                        </div>
+                                    </div>
+                                </form>
+                            </div>
+                            <div class="row">
+                                <input type="submit" id="searchBtn" class="btn col m2 s12 blue darken-4" value="Search">
+                                <input type="submit" id="clearBtn" class="btn col m2 s12 grey" value="Clear">
+                            </div>
+                        </form>
+                        <div id="loader" class="loader">
+                            <div class="progress grey">
+                                <div class="indeterminate blue darken-4"> </div>
+                            </div>
+                        </div>
+                        <div id="results">
+                            <h2></h2>
+                            <p></p>
+                            <p></p>
+                            <h4></h4>
+                            <a href=""></a>
+
+                        </div>
+                    </div>
+
+                    <!--Anastasia's part end-->
                 </div>
             </div>
             <hr>
@@ -68,9 +108,9 @@
                 <div class="w3-cell" style="width:30%">
                     <img class="sectionImg" src="./assets/images/dailyTask.png" style="width:100%">
                 </div>
-                <div class="w3-cell w3-container">
-                    <a href="#">
-                        <h3>Daily Tasks</h3>
+                <div class="w3-cell w3-container" id="dailyTasks"">
+                    <a href=" #">
+                    <h3>Daily Tasks</h3>
                     </a>
                     <p>Stay on Top of Daily Tasks</p>
                 </div>
@@ -80,8 +120,8 @@
                 <div class="w3-cell" style="width:30%">
                     <img class="sectionImg" src="./assets/images/weather.jpg" style="width:100%">
                 </div>
-                <div class="w3-cell w3-container">
-                    <a href="#">
+                <div class="w3-cell w3-container" id="weather">
+                    <a href=" #">
                         <h3>Weather</h3>
                     </a>
                     <p>Check Local and Nationwide Forecast </p>
@@ -94,7 +134,13 @@
         <h3>© 2021 The Power Quad Squad Production</h3>
     </footer>
 
+    <!--Anastasia's part start-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.29.1/moment.min.js"></script>
+    <!--Anastasia's part end-->
     <script src="./assets/script.js"></script>
+    <script src="./assets/news.js"></script>
 </body>
 
 </html>

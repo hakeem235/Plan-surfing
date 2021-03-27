@@ -36,8 +36,22 @@ a {
     background: rgb(165, 165, 165);
 }
 .barColor, h3, nav  {
-    color: #043C84 ;
+    color: #043C84;
 }
+/*Anastasia's part start*/
+
+.news-section {
+    display: none;
+}
+.loader {
+    display: none;
+}
+
+.btn {
+    margin-right: 10%;
+}
+
+/*Anastasia's part end*/
 
 .footer{
     position: static;
