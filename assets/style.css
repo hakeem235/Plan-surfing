@@ -59,3 +59,58 @@ a {
     bottom: 0;
     width: 100%;
 }
+<<<<<<< HEAD
+.btn {
+    border: none;
+    background: none;
+    cursor: pointer;
+=======
+
+.quote-wrapper{
+ justify-content: center;
+ align-items: center;
+ text-align: center;
+ font-size: 0.9rem;
+ background-color:rgb(255, 255, 255);
+ border-radius: 5px;
+ box-shadow: cornsilk;
+}
+
+.quote-wrapper h2{
+  font-size: 1.5rem;
+  margin-bottom: 0.5 rem;
+}
+
+.quote-wrapper small{
+  font-size: 700;
+  padding: 0.9rem 1rem;
+  margin-bottom: 2.0rem;
+}
+
+.quote-wrapper blockquote{
+  padding: 1.5rem 0,
+  font-weight: 300,
+  margin-top: 1.0rem;
+  margin-bottom: 1.0rem;
+} 
+
+.quote-wrapper cite{
+  display: block;
+  font-style: italic;
+  margin-bottom: 1rem;
+}
+
+#gen-quote-btn{
+  font-size: 0.8rem;
+  border:black
+  padding: 0.3rem 1.0rem;
+  cursor: pointer;
+  border-radius: 1.2rem;
+  background-color: rgb(255, 255, 255);
+  
+}
+
+#gen-quote-btn:hover{
+  box-shadow: 1px 1px 1px 1px lightblue;
+>>>>>>> f14130f9668b3c9511072ac66f97abe6bc6291cc
+}
