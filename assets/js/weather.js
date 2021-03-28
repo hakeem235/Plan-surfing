@@ -6,8 +6,8 @@ $('#weatherBtn').on('click', function () {
     $('#news').hide();
     $('#w3Cell').hide();
     $('#humidity').show();
-    $('#wind-speed').show()
-
+    $('#wind-speed').show();
+    $('#temperature').show();
   })
 
 
@@ -26,9 +26,10 @@ function mobileWesther(rquestUrl) {
             var weatherIcon = data.weather[0].icon;
             var iconUrl = 'https://openweathermap.org/img/wn/' + weatherIcon + '.png';
             //parse the response for name of city and concanatig the date and icon.
-            $('#cityName').text(data.name);
+            $('#cityName').text(data.name + " - " + data.sys.country);
+            $('#description').text(data.weather[0].description)
             $("<img>").attr("src", iconUrl).appendTo("#cityName")
-            $('#temperature').text("Temperature: " + data.main.temp.toFixed(0) + ' °C');
+            $('#temperature').text("Temperature: " + data.main.temp.toFixed(0) + ' °C').hide();
             $('#humidity').text("Humidity: " + data.main.humidity + "%").hide();
             $('#wind-speed').text("Wind Speed: " + data.wind.speed + ' MPH').hide();
         })
