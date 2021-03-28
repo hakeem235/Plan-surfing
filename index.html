@@ -42,21 +42,21 @@
         <h1 class="w3-bar-item headerName">Plan Surfing</h1>
     </header>
     <div class="w3-container">
-        <hr>
-       <div class = "quote-wrapper">
+        <hr class=topLine>
+        <div class="quote-wrapper">
             <h2>Quote Of The Day</h2>
-            <small id = "quote-tags"></small>
-            <blockquote id = "quote-text"></blockquote>
-            <cite id = "quote-author"></cite>
-            <button type = "button" id = "gen-quote-btn">Get New Quote</button>
-       </div>
+            <small id="quote-tags"></small>
+            <blockquote id="quote-text"></blockquote>
+            <cite id="quote-author"></cite>
+            <button type="button" id="gen-quote-btn">Get New Quote</button>
+        </div>
+    </div>
         <div class="w3-container">
-            <hr>
+            <hr class="between">
             <div class="w3-cell-row w3-card w3-round">
                 <div class="w3-cell" style="width:30%">
                     <img class="sectionImg" src="./assets/images/news1.jpg" style="width:100%">
                 </div>
-
                 <!--Anastasia's part start-->
                 <div class="w3-cell w3-container" id="news">
                     <a href="#">
@@ -96,11 +96,10 @@
 
                         </div>
                     </div>
-
                     <!--Anastasia's part end-->
                 </div>
             </div>
-            <hr>
+            <hr class="between">
             <div class="w3-cell-row w3-card w3-round">
                 <div class="w3-cell" style="width:30%">
                     <img class="sectionImg" src="./assets/images/dailyTask.png" style="width:100%">
@@ -112,21 +111,23 @@
                     Stay on Top of Daily Tasks</p>
                 </div>
             </div>
-            <hr>
+            <hr class="between">
             <div class="w3-cell-row w3-card w3-round">
-                <div class="w3-cell" style="width:30%">
+                <div class="w3-cell" id="w3Cell" style="width:30%">
                     <img class="sectionImg" src="./assets/images/weather.jpg" style="width:100%">
                 </div>
                 <div class="w3-cell w3-container" id="#current-weather">
-                    <button class="btnWeather"><h3 id="cityName"></h3></button>
+                    <a class="weather" id="weatherBtn" href="#">
+                        <h3 id="cityName"></h3>
+                    </a>
                     <p class="weather" id="temperature"></p>
-                    <!-- <p class="weatehr" id="humidity"></p> -->
-                    <!-- <p class="weatehr" id="wind-speed"></p> -->
+                    <p class="weather" id="humidity"></p>
+                    <p class="weather" id="wind-speed"></p>
                 </div>
             </div>
-            <hr>
         </div>
     </div>
+    <hr class="bottomLine">
     <footer class="w3-container w3-card footer">
         <h4>© 2021 The Power Quad Squad Production</h4>
     </footer>
