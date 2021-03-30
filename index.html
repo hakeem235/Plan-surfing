@@ -8,7 +8,7 @@
     <title>Plan Surfing | Home page</title>
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <!-- Rest Css -->
-    <link rel="stylesheet" href="./assets/rest.css">
+    <link rel="stylesheet" href="./assets/css/rest.css">
     <!-- W3.CSS framwork -->
     <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3pro.css">
     <!--Bulma-->
@@ -16,7 +16,7 @@
     <!-- Google Font  -->
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400&display=swap" rel="stylesheet">
     <!-- CSS flie -->
-    <link rel="stylesheet" href="./assets/style.css">
+    <link rel="stylesheet" href="./assets/css/style.css">
 </head>
 
 <body>
@@ -41,75 +41,83 @@
         <h1 class="w3-bar-item headerName">Plan Surfing</h1>
     </header>
     <div class="w3-container">
-        <hr>
-        <div class="quote-wrapper">
-            <h2>Quote Of The Day</h2>
-            <small id="quote-tags"></small>
-            <blockquote id="quote-text"></blockquote>
-            <cite id="quote-author"></cite>
-            <button type="button" id="gen-quote-btn">Get New Quote</button>
-        </div>
-        <div class="w3-container">
-            <hr>
-            <div class="w3-cell-row w3-card w3-round">
-                <div class="w3-cell" style="width:30%">
-                    <img class="sectionImg" src="./assets/images/news1.jpg" style="width:100%">
-                </div>
+        <<<<<<< HEAD <hr>
+            =======
+            <hr class=topLine>
+            >>>>>>> 73517b0d16ef345190b0221e6ff2ae3a6c475b7e
+            <div class="quote-wrapper">
+                <h2>Quote Of The Day</h2>
+                <small id="quote-tags"></small>
+                <blockquote id="quote-text"></blockquote>
+                <cite id="quote-author"></cite>
+                <button type="button" id="gen-quote-btn">Get New Quote</button>
+            </div>
+    </div>
+    <div class="w3-container">
+        <hr class="between">
+        <div class="w3-cell-row w3-card w3-round">
+            <div class="w3-cell" style="width:30%">
+                <img class="sectionImg" src="./assets/images/news1.jpg" style="width:100%">
+            </div>
+            <!--Anastasia's part start-->
+            <div class="w3-cell w3-container" id="news">
+                <a href="#">
+                    <h3 id="newsName">News</h3>
+                </a>
+                <p>Get Local and Nationwide Daily News</p>
+                <div class="news-section" id="newsSections">
+                    <input class="input is-info" id="currentSearch" type="text"
+                        placeholder="Find what is happening around you...">
+                    <button class="button is-link" id="searchBtn">Search</button>
+                    <button class="button is-loading">Loading</button>
+                    <button class="button" id="clearBtn">Clear</button>
+                    <div id="results">
+                        <h2></h2>
+                        <p></p>
+                        <p></p>
+                        <h4></h4>
+                        <a href=""></a>
 
-                <!--Anastasia's part start-->
-                <div class="w3-cell w3-container" id="news">
-                    <a href="#">
-                        <h3 id="newsName">News</h3>
-                    </a>
-                    <p>Get Local and Nationwide Daily News</p>
-                    <div class="news-section" id="newsSections">
-                        <input class="input is-info" id="currentSearch" type="text"
-                            placeholder="Find what is happening around you...">
-                        <button class="button is-link" id="searchBtn">Search</button>
-                        <button class="button is-loading">Loading</button>
-                        <button class="button" id="clearBtn">Clear</button>
-                        <div id="results">
-                            <h2></h2>
-                            <p></p>
-                            <p></p>
-                            <h4></h4>
-                            <a href=""></a>
-
-                        </div>
                     </div>
-
-                    <!--Anastasia's part end-->
                 </div>
+                <!--Anastasia's part end-->
             </div>
-            <hr>
-            <div class="w3-cell-row w3-card w3-round">
-                <div class="w3-cell" style="width:30%">
-                    <img class="sectionImg" src="./assets/images/dailyTask.png" style="width:100%">
-                </div>
-                <div class="w3-cell w3-container" id="dailyTasks"">
-                    <a href=" #">
+        </div>
+        <hr class="between">
+        <div class="w3-cell-row w3-card w3-round">
+            <div class="w3-cell" style="width:30%">
+                <img class="sectionImg" src="./assets/images/dailyTask.png" style="width:100%">
+            </div>
+            <div class="w3-cell w3-container" id="dailyTasks">
+                <a href=" #">
                     <h3>Daily Tasks</h3>
-                    </a>
-                    Stay on Top of Daily Tasks</p>
-                </div>
+                </a>
+                Stay on Top of Daily Tasks</p>
             </div>
-            <hr>
-            <div class="w3-cell-row w3-card w3-round">
-                <div class="w3-cell" style="width:30%">
-                    <img class="sectionImg" src="./assets/images/weather.jpg" style="width:100%">
-                </div>
-                <div class="w3-cell w3-container" id="#current-weather">
-                    <button class="btnWeather">
-                        <h3 id="cityName"></h3>
+        </div>
+        <hr class="between">
+        <div class="w3-cell-row w3-card  w3-round">
+            <div class="w3-cell" id="w3Cell" style="width:30%">
+                <img class="sectionImg" src="./assets/images/weather.jpg" style="width:100%">
+            </div>
+            <div class="w3-cell w3-container" id="#current-weather">
+                <<<<<<< HEAD <button class="btnWeather">
+                    <h3 id="cityName"></h3>
                     </button>
+                    =======
+                    <a class="weather" id="weatherBtn" href="#">
+                        <h3 id="cityName"></h3>
+                    </a>
+                    <p class="weather" id="description"></p>
+                    >>>>>>> 73517b0d16ef345190b0221e6ff2ae3a6c475b7e
                     <p class="weather" id="temperature"></p>
-                    <!-- <p class="weatehr" id="humidity"></p> -->
-                    <!-- <p class="weatehr" id="wind-speed"></p> -->
-                </div>
+                    <p class="weather" id="humidity"></p>
+                    <p class="weather" id="wind-speed"></p>
             </div>
-            <hr>
         </div>
     </div>
+    </div>
+    <hr class="bottomLine">
     <footer class="w3-container w3-card footer">
         <h4>© 2021 The Power Quad Squad Production</h4>
     </footer>
@@ -117,8 +125,8 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.29.1/moment.min.js"></script>
     <script src="./assets/js/script.js"></script>
-    <script src="./assets/news.js"></script>
-    <script src="./assets/quotes.js"></script>
+    <script src="./assets/js/news.js"></script>
+    <script src="./assets/js/quotes.js"></script>
     <script src="./assets/js/weather.js"></script>
 </body>
 

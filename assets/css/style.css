@@ -35,7 +35,7 @@ a {
     flex-direction: row-reverse;
     background: rgb(165, 165, 165);
 }
-.barColor, h3, nav  {
+.barColor, h3, nav, footer  {
     color: #043C84;
 }
 /*Anastasia's part start*/
@@ -113,9 +113,4 @@ input {
 
 #gen-quote-btn:hover{
   box-shadow: 1px 1px 1px 1px lightblue;
-}
-
-.btnWeather{
-  border: none;
-  background: none;
 }
