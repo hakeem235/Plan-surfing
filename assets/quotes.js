@@ -2,29 +2,41 @@
 //const quoteTags = document.getElementById("quote-tags");
 //const quoteAuthor = document.getElementById("quote-author");
 //const genQuoteBtn = document.getElementById("gen-quote-btn");
-  
-const quoteText = document.querySelector("#quote-text");
-const quoteTags = document.querySelector("#quote-tags");
-const quoteAuthor = document.querySelector("#quote-author");
-const genQuoteBtn = document.querySelector("#gen-quote-btn");
-
-genQuoteBtn.addEventlistener('click', randomQuote);
 
 
-  
-  function randomQuote(){
-  fetch('https://api.quotable.io/random')
-   .then(response => console.log(response.json()))
-   .then(data => {
-     quoteText.innerHTML = data.content;
-  })
-}
-   
+
+
+
+///I commented it
+
+// const quoteText = document.querySelector("#quote-text");
+// const quoteTags = document.querySelector("#quote-tags");
+// const quoteAuthor = document.querySelector("#quote-author");
+// const genQuoteBtn = document.querySelector("#gen-quote-btn");
+
+// genQuoteBtn.addEventlistener('click', randomQuote);
+
+
+
+//   function randomQuote(){
+//   fetch('https://api.quotable.io/random')
+//    .then(response => console.log(response.json()))
+//    .then(data => {
+//      quoteText.innerHTML = data.content;
+//   })
+// }
+
+///// the end
+
+
+
+
+
    // $.getJSON('https://api.quotable.io/random', function (data) {
  // console.log(`${data.content} —${data.author}`)
    // })
  // }
-  
+
   //  fetch('https://api.quotable.io/random')
  // .then(response => response.json())
  // .then(data => {
@@ -32,8 +44,8 @@ genQuoteBtn.addEventlistener('click', randomQuote);
  // })
     //fetch('https://api.quotable.io/random')
     //.then(res => console.log(res))
-   
-   
+
+
     //.then(function(response){
     //    return response.json()
     //  })
@@ -43,7 +55,7 @@ genQuoteBtn.addEventlistener('click', randomQuote);
      // var textContent = data.tags;
      // var textContent = `-- ${data.author}`;
      // })
-      
+
        // quoteText.textContent = data.content;
       //  quoteTags.textContent = data.tags;
        // quoteAuthor.textContent = `-- ${data.author}`;

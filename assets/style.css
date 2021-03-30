@@ -42,14 +42,21 @@ a {
 
 .news-section {
     display: none;
+    width: fit-content;
 }
-.loader {
+
+input {
+  margin-top: 5%;
+}
+
+.button {
+    margin: 5% 1% 5% 0;
+}
+
+.is-loading{
     display: none;
 }
 
-.btn {
-    margin-right: 10%;
-}
 
 /*Anastasia's part end*/
 

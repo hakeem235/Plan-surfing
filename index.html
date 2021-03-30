@@ -11,11 +11,10 @@
     <link rel="stylesheet" href="./assets/rest.css">
     <!-- W3.CSS framwork -->
     <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3pro.css">
+    <!--Bulma-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.2/css/bulma.min.css">
     <!-- Google Font  -->
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400&display=swap" rel="stylesheet">
-    <!--Anastasia's part start-->
-    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-    <!--Anastasia's part start-->
     <!-- CSS flie -->
     <link rel="stylesheet" href="./assets/style.css">
 </head>
@@ -43,13 +42,13 @@
     </header>
     <div class="w3-container">
         <hr>
-       <div class = "quote-wrapper">
+        <div class="quote-wrapper">
             <h2>Quote Of The Day</h2>
-            <small id = "quote-tags"></small>
-            <blockquote id = "quote-text"></blockquote>
-            <cite id = "quote-author"></cite>
-            <button type = "button" id = "gen-quote-btn">Get New Quote</button>
-       </div>
+            <small id="quote-tags"></small>
+            <blockquote id="quote-text"></blockquote>
+            <cite id="quote-author"></cite>
+            <button type="button" id="gen-quote-btn">Get New Quote</button>
+        </div>
         <div class="w3-container">
             <hr>
             <div class="w3-cell-row w3-card w3-round">
@@ -60,33 +59,15 @@
                 <!--Anastasia's part start-->
                 <div class="w3-cell w3-container" id="news">
                     <a href="#">
-                        <h3>News</h3>
+                        <h3 id="newsName">News</h3>
                     </a>
                     <p>Get Local and Nationwide Daily News</p>
                     <div class="news-section" id="newsSections">
-                        <form>
-                            <div class="row">
-                                <form class="col s12">
-                                    <div class="row">
-                                        <div class="input-field">
-                                            <i class="material-icons prefix ">public</i>
-                                            <input type="text" id="currentSearch">
-                                            <label class="inside-text" for="icon_prefix2">Find what is happening around
-                                                you...</label>
-                                        </div>
-                                    </div>
-                                </form>
-                            </div>
-                            <div class="row">
-                                <input type="submit" id="searchBtn" class="btn col m2 s12 blue darken-4" value="Search">
-                                <input type="submit" id="clearBtn" class="btn col m2 s12 grey" value="Clear">
-                            </div>
-                        </form>
-                        <div id="loader" class="loader">
-                            <div class="progress grey">
-                                <div class="indeterminate blue darken-4"> </div>
-                            </div>
-                        </div>
+                        <input class="input is-info" id="currentSearch" type="text"
+                            placeholder="Find what is happening around you...">
+                        <button class="button is-link" id="searchBtn">Search</button>
+                        <button class="button is-loading">Loading</button>
+                        <button class="button" id="clearBtn">Clear</button>
                         <div id="results">
                             <h2></h2>
                             <p></p>
@@ -118,7 +99,9 @@
                     <img class="sectionImg" src="./assets/images/weather.jpg" style="width:100%">
                 </div>
                 <div class="w3-cell w3-container" id="#current-weather">
-                    <button class="btnWeather"><h3 id="cityName"></h3></button>
+                    <button class="btnWeather">
+                        <h3 id="cityName"></h3>
+                    </button>
                     <p class="weather" id="temperature"></p>
                     <!-- <p class="weatehr" id="humidity"></p> -->
                     <!-- <p class="weatehr" id="wind-speed"></p> -->
