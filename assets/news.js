@@ -10,14 +10,11 @@ $('#news').on('click', function () {
   $('.quote-wrapper').hide();
   $('#newsSections').show();
   $('#newsName').hide();
-  //$('.bottomLine').hide();
-  // $('.between').hide();
-  // $('.topLine').hide();
-  // $('#w3Cell').hide();
-  // $('#humidity').hide();
-  // $('#wind-speed').hide();
-  // $('#temperature').hide();
+  $('#w3Cell').hide();
+  $('.between').hide();
+  $('#weatherSection').hide();
 
+  
 })
 
 
