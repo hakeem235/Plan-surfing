@@ -5,11 +5,18 @@
 
 $('#news').on('click', function () {
   $('#dailyTasks').hide();
-  $('#current-weather').hide();
   $('.sectionImg').hide();
+  $('#current-weather').hide();
   $('.quote-wrapper').hide();
   $('#newsSections').show();
   $('#newsName').hide();
+  //$('.bottomLine').hide();
+  // $('.between').hide();
+  // $('.topLine').hide();
+  // $('#w3Cell').hide();
+  // $('#humidity').hide();
+  // $('#wind-speed').hide();
+  // $('#temperature').hide();
 
 })
 
