@@ -52,7 +52,7 @@ $('#searchBtn').on('click', function () {
           $('#results').append('<img src=' + latestArticle[i].image + '>')
           $('#results').append('<p>' + latestArticle[i].content + '</p>')
           $('#results').append('<h4>' + latestArticle[i].source.name + '</h4>')
-          $('#results').append('<a href="' + latestArticle[i].url + '">' + latestArticle[i].url + '</a>')
+          $('#results').append('<a href="' + latestArticle[i].url + '">' + latestArticle[i].url + '</a>').target = "_blank";
 
           // $('<a>').on('click', function () {
           //   $(this).attr('target', '_blank');
@@ -61,6 +61,8 @@ $('#searchBtn').on('click', function () {
           // $(function () {
           //   $('<a>').prop('target', '_blank');
           // })
+
+
 
 
         }
