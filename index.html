@@ -41,7 +41,6 @@
         <h1 class="w3-bar-item headerName">Plan Surfing</h1>
     </header>
     <div class="w3-container">
-        <hr>
         <hr class=topLine>
         <div class="quote-wrapper">
             <h2>Quote Of The Day</h2>
@@ -54,7 +53,7 @@
     <div class="w3-container">
         <hr class="between">
         <div class="w3-cell-row w3-card w3-round">
-            <div class="w3-cell" style="width:30%">
+            <div class="w3-cell " id="w3Cell" style="width:30%">
                 <img class="sectionImg" src="./assets/images/news1.jpg" style="width:100%">
             </div>
             <!--Anastasia's part start-->
@@ -94,16 +93,12 @@
             </div>
         </div>
         <hr class="between">
-        <div class="w3-cell-row w3-card  w3-round">
+        <div class="w3-cell-row w3-card  w3-round" id="weatherSection">
             <div class="w3-cell" id="w3Cell" style="width:30%">
                 <img class="sectionImg" src="./assets/images/weather.jpg" style="width:100%">
             </div>
             <div class="w3-cell w3-container" id="#current-weather">
-                <button class="btnWeather">
-                    <h3 id="cityName"></h3>
-                </button>
-
-                <a class="weather" id="weatherBtn" href="#">
+                <a id="btnWeather">
                     <h3 id="cityName"></h3>
                 </a>
                 <p class="weather" id="description"></p>
@@ -122,7 +117,7 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.29.1/moment.min.js"></script>
     <script src="./assets/js/script.js"></script>
-    <script src="./assets/js/news.js"></script>
+    <script src="./assets/news.js"></script>
     <script src="./assets/js/quotes.js"></script>
     <script src="./assets/js/weather.js"></script>
 </body>
