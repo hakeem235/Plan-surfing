@@ -42,7 +42,10 @@ a {
 
 .news-section {
     display: none;
-    width: fit-content;
+}
+
+.newsText {
+  margin-top: 5%;
 }
 
 input {

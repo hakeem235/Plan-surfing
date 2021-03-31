@@ -10,13 +10,7 @@ $('#news').on('click', function () {
   $('.quote-wrapper').hide();
   $('#newsSections').show();
   $('#newsName').hide();
-  //$('.bottomLine').hide();
-  // $('.between').hide();
-  // $('.topLine').hide();
-  // $('#w3Cell').hide();
-  // $('#humidity').hide();
-  // $('#wind-speed').hide();
-  // $('#temperature').hide();
+  $('.newsText').css('text-align', 'center')
 
 })
 
@@ -52,7 +46,7 @@ $('#searchBtn').on('click', function () {
           $('#results').append('<img src=' + latestArticle[i].image + '>')
           $('#results').append('<p>' + latestArticle[i].content + '</p>')
           $('#results').append('<h4>' + latestArticle[i].source.name + '</h4>')
-          $('#results').append('<a href="' + latestArticle[i].url + '">' + latestArticle[i].url + '</a>').target = "_blank";
+          $('#results').append('<a target="_blank" href="' + latestArticle[i].url + '">' + latestArticle[i].url + '</a>');
 
           // $('<a>').on('click', function () {
           //   $(this).attr('target', '_blank');
@@ -61,6 +55,14 @@ $('#searchBtn').on('click', function () {
           // $(function () {
           //   $('<a>').prop('target', '_blank');
           // })
+
+          // $(document).ready(function ($) {
+
+          //   $('a:contains(https)').click(function () {
+          //     this.target = '_blank'
+          //   });
+
+          // });
 
 
 
