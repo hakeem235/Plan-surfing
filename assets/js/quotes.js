@@ -47,10 +47,11 @@ function randomQuote() {
     console.log("data", data);
     quoteText.textContent = data.content;
     quoteTags.textContent = data.tags;
-    quoteAuthor.textContent = `-- ${data.author}`;
+    quoteAuthor.textContent = `- ${data.author}`;
     });
   }
   
 randomQuote();
-genQuoteBtn.addEventListener('click', randomQuote());
+genQuoteBtn.addEventListener('click', function(){
+randomQuote()});
 setInterval(randomQuote() ,10000);
