@@ -61,10 +61,11 @@ input {
 /*Anastasia's part end*/
 
 .footer{
-    position: static;
+    position: fixed;
     left: 0;
     bottom: 0;
     width: 100%;
+    
 }
 
 .quote-wrapper{
@@ -79,7 +80,7 @@ input {
 
 .quote-wrapper h2{
   font-size: 1.5rem;
-  margin-bottom: 0.5 rem;
+  margin-bottom: 0.5rem;
 }
 
 .quote-wrapper small{

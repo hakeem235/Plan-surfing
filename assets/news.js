@@ -6,7 +6,6 @@
 $('#news').on('click', function () {
   $('#dailyTasks').hide();
   $('.sectionImg').hide();
-  $('#current-weather').hide();
   $('.quote-wrapper').hide();
   $('#newsSections').show();
   $('#newsName').hide();
