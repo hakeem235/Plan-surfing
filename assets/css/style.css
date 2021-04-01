@@ -40,7 +40,7 @@ a {
 }
 /*Anastasia's part start*/
 
-#newsName {
+#newsName, #cityName, .daily-tasks {
   margin-top: 2%;
   font-size: 30px;
 }
