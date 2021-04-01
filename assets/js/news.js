@@ -17,14 +17,12 @@ fetch(urlLogin, {
 
     $('.newsText').hide();
     $('.loginText').text(firstArticle.title)
+    $('.description').text(firstArticle.content)
     $('#results').append('<h2>' + firstArticle.title + '</h2>')
     $('#results').append('<img src=' + firstArticle.image + '>')
     $('#results').append('<p>' + firstArticle.content + '</p>')
     $('#results').append('<h4>' + firstArticle.source.name + '</h4>')
     $('#results').append('<a target="_blank" href="' + firstArticle.url + '">' + firstArticle.url + '</a>');
-
-
-
 
 
   })
@@ -42,9 +40,9 @@ $('#news').on('click', function () {
   $('.between').hide();
   $('#weatherSection').hide();
   $('.newsText').css('text-align', 'center')
-  $('.loginText').hide()
-  $('.newsText').show()
-
+  $('.loginText').hide();
+  $('.newsText').show();
+  $('.description').hide();
 
 
 })
