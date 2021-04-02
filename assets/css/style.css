@@ -79,7 +79,7 @@ input {
 /*Anastasia's part end*/
 
 .footer{
-    position: fixed;
+    position: static;
     left: 0;
     bottom: 0;
     width: 100%;
@@ -133,3 +133,101 @@ input {
 #gen-quote-btn:hover{
   box-shadow: 1px 1px 1px 1px lightblue;
 }
+
+.box{
+  width: 300px;
+  padding: 30ox;
+  position:absolute;
+  top: 50%;
+  left: 50%;
+  border-radius: 10px;
+  transform: translate(-50%,-50% );
+  background: rgba(0, 0, 0, 0.4);
+  box-shadow: 5px 10px 8px #0f0f0f;
+  text-align: center; 
+}
+
+.box h1{
+  color: whitesmoke;
+  text-transform: uppercase;
+  font-weight: 700;
+}
+
+.box input[type="text"], .box input[type="password"], .box input[type="file"]
+{
+  border: 0;
+  background: none;
+  display: block;
+  margin: 20px auto;
+  text-align: center;
+  border: 3px solid #87cefa;
+  padding: 14px 10px;
+  width: 220px;
+  outline: none;
+  color: whitesmoke;
+  border-radius: 24px ;
+ transition: 0.25px;
+
+}
+
+.box input[type="text"]:focus, .box input[type="password"]:focus{
+  width: 270px  ;
+  border-color: #2e739e ;
+}
+
+.box input[type="submit"]{
+
+ border: 0;
+  background: none;
+  display: block;
+  margin: 20px auto;
+  text-align: center;
+  border: 3px solid #2e739e;
+  padding: 14px 35px; 
+  outline: none;
+  color: whitesmoke;
+  border-radius: 24px ;
+ transition: 0.25px;
+ cursor: pointer;
+}
+
+.box input[type="submit"]:hover{
+  background: #87cefa;
+}
+
+.intro {
+ background: #87cefa;
+ position: fixed;
+ top: 0;
+ left: 0;
+ width: 100%;
+ height: 100%;
+ display: flex;
+ justify-content: center;
+ align-items: center;
+}
+.slider {
+ background: #2e739e;
+ position: fixed;
+ top: 0;
+ left: 0;
+ width: 100%;
+ height: 100%;
+ transform: translateY(100%);
+}
+
+.intro-text {
+ color: rgb(233, 233, 233);
+ font-size: 2rem;
+ margin-left: 15px;
+}
+
+.hide {
+ background: #87cefa;
+ overflow: hidden;
+}
+
+.hide span {
+ transform: translateY(100%);
+ display: inline-block;
+} 
