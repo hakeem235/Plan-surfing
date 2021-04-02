@@ -1,7 +1,6 @@
 //news based on location picked when registred
-
-
-
+//var currentLocation = $('#location').val();
+//var urlLogin = 'https://gnews.io/api/v4/search?q=' + currentLocation + '&token=de3770744bd87a3086cf2a0c1b84b3a4';
 var urlLogin = 'https://gnews.io/api/v4/search?q=ottawa&token=de3770744bd87a3086cf2a0c1b84b3a4';
 console.log(urlLogin)
 fetch(urlLogin, {
