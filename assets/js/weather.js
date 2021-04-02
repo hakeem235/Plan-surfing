@@ -1,4 +1,4 @@
-$('#btnWeather').on('click', function () {
+$('.weatherBtn').on('click', function () {
     // Hide Section
     $('#dailyTasks').hide();
     $('.sectionImg').hide();
