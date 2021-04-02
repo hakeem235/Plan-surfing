@@ -133,8 +133,6 @@ input {
 
 #gen-quote-btn{
   font-size: 0.8rem;
-  border: solid;
-  border-color: #043C84;
   padding: 0.3rem 1.0rem;
   cursor: pointer;
   border-radius: 1.2rem;
