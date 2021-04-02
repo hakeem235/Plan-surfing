@@ -5,20 +5,20 @@ $('#btnWeather').on('click', function () {
     $('.quote-wrapper').hide();
     $('.between').hide();
     $('#news').hide();
-    $('#w3Cell').hide();
+    $('#cell3W').hide();
     // Show Section
     $('#humidity').show();
     $('#wind-speed').show();
     $('#temperature').show();
     // styling section
-    // $('#cityName').css('text-align', 'center')
-    // $('#description').css('text-align', 'center')
-    // $('#temperature').css('text-align', 'center')
-    // $('#wind-speed').css('text-align', 'center')
-    // $('#humidity').css('text-align', 'center')
+    $('#cityName').css('text-align', 'center')
+    $('#description').css('text-align', 'center')
+    $('#temperature').css('text-align', 'center')
+    $('#wind-speed').css('text-align', 'center')
+    $('#humidity').css('text-align', 'center')
 })
 
-var apiKey = "cd7b46258d74ce0db68ce9bc4d5cbf2e";
+var apiKey = "d91f911bcf2c0f925fb6535547a5ddc9";
 var rquestUrl = 'https://api.openweathermap.org/data/2.5/weather?q=Ottawa&units=metric&appid=' + apiKey;
 
 function mobileWesther(rquestUrl) {
