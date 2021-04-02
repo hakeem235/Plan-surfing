@@ -13,7 +13,7 @@ $('#news').on('click', function () {
   $('.between').hide();
   $('#weatherSection').hide();
 
-  
+
 })
 
 
@@ -50,14 +50,6 @@ $('#searchBtn').on('click', function () {
           $('#results').append('<h4>' + latestArticle[i].source.name + '</h4>')
           $('#results').append('<a href="' + latestArticle[i].url + '">' + latestArticle[i].url + '</a>')
 
-          // $('<a>').on('click', function () {
-          //   $(this).attr('target', '_blank');
-          // })
-
-          // $(function () {
-          //   $('<a>').prop('target', '_blank');
-          // })
-
 
         }
 
@@ -66,6 +58,8 @@ $('#searchBtn').on('click', function () {
 
   } else {
     $('#results').append('<h2>' + 'No results found. Please try a different search' + '</h2>')
+    $('.is-loading').hide();
+    $('.is-link').show();
 
   }
 

@@ -10,7 +10,7 @@ html{
 .sectionImg{
     border: 1px solid #043C84 ;
     border-radius: 5px ;
-    margin: 6px 0px 6px 4px;
+    margin: 8% 0 8% 3%;
 }
 
 #mySidebar {
@@ -40,9 +40,17 @@ a {
 }
 /*Anastasia's part start*/
 
+#newsName {
+  margin-top: 2%;
+  font-size: 30px;
+}
+
 .news-section {
     display: none;
-    width: fit-content;
+}
+
+.newsText {
+  margin-top: 3%;
 }
 
 input {
@@ -55,6 +63,16 @@ input {
 
 .is-loading{
     display: none;
+}
+
+.loginText {
+  margin-top: 3%;
+  color: #043C84;
+  font-weight: bold;
+}
+
+.description {
+  margin-bottom: 3%;
 }
 
 
