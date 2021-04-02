@@ -7,6 +7,10 @@ html{
   min-height: fit-content;
 }
 
+h1 {
+  font-size: 53px;
+}
+
 .sectionImg{
     border: 1px solid #043C84 ;
     border-radius: 5px ;
