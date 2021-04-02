@@ -116,6 +116,7 @@ input {
   margin-bottom: 2.0rem;
   margin-top: 1.5rem;
   font-variant: small-caps;
+  visibility: hidden;
 }
 
 .quote-wrapper blockquote{
@@ -131,14 +132,18 @@ input {
   margin-bottom: 1rem;
 }
 
+.w3-border {
+  border: 1px solid #043C84!important;
+  outline: none;
+}
+
 #gen-quote-btn{
   font-size: 0.8rem;
-  border: solid;
-  border-color: #043C84;
   padding: 0.3rem 1.0rem;
   cursor: pointer;
   border-radius: 1.2rem;
-  background-color: rgb(255, 255, 255);
+  background-color: #ffffff;
+  border-color: #043C84;
   
 }
 
