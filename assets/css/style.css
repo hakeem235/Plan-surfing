@@ -7,6 +7,10 @@ html{
   min-height: fit-content;
 }
 
+h1 {
+  font-size: 53px;
+}
+
 .sectionImg{
     border: 1px solid #043C84 ;
     border-radius: 5px ;
@@ -108,10 +112,7 @@ input {
   color: #043C84;
   font-size: 1.5rem;
   margin-bottom: 0.5rem;
-<<<<<<< HEAD
-=======
   text-decoration: underline;
->>>>>>> 5da74928dd776ab9d9e700252f38180f525be6c5
 }
 
 .quote-wrapper small{
