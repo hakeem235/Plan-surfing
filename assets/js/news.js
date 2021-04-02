@@ -73,7 +73,7 @@ $('#searchBtn').on('click', function () {
         console.log(latestArticle)
 
         if (latestArticle.length == 0) {
-          $('#textEmpty').html('No results found. Please try a different search')
+          $('.firstArticleText').html('No results found. Please try a different search')
           $('.is-loading').hide();
           $('.is-link').show();
         }
@@ -96,7 +96,7 @@ $('#searchBtn').on('click', function () {
 
 
   } else {
-    $('#textEmpty').html('No results found. Please try a different search')
+    $('.firstArticleText').html('No results found. Please try a different search')
     console.log('hello')
     $('.is-loading').hide();
     $('.is-link').show();
