@@ -73,7 +73,7 @@ $('#searchBtn').on('click', function () {
         console.log(latestArticle)
 
         if (latestArticle.length == 0) {
-          $('#textEmpty').html('No results found. Please try a different search')
+          $('.firstArticleText').html('No results found. Please try a different search')
           $('.is-loading').hide();
           $('.is-link').show();
         }
@@ -89,9 +89,6 @@ $('#searchBtn').on('click', function () {
           $('#results').append('<h4>' + latestArticle[i].source.name + '</h4>')
           $('#results').append('<a target="_blank" href="' + latestArticle[i].url + '">' + latestArticle[i].url + '</a>');
 
-
-
-
         }
 
       })
@@ -99,7 +96,8 @@ $('#searchBtn').on('click', function () {
 
 
   } else {
-    $('#textEmpty').html('No results found. Please try a different search')
+    $('.firstArticleText').html('No results found. Please try a different search')
+    console.log('hello')
     $('.is-loading').hide();
     $('.is-link').show();
 
@@ -116,5 +114,24 @@ $('#clearBtn').on('click', function () {
 
 
 });
+
+
+$('#newsBtn').on('click', function () {
+  $('#newsSections').show()
+  $('#mySidebar').hide()
+  $('#dailyTasks').hide();
+  $('.sectionImg').hide();
+  $('#current-weather').hide();
+  $('.quote-wrapper').hide();
+  $('#newsName').hide();
+  $('#w3Cell').hide();
+  $('.between').hide();
+  $('#weatherSection').hide();
+  $('.newsText').css('text-align', 'center')
+  $('.loginText').hide();
+  $('.newsText').show();
+  $('.description').hide();
+
+})
 
 

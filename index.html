@@ -28,8 +28,13 @@
                 <img class="w3-circle" src="./assets/images/pngwing.com.png" alt="avatar" style="width:75%">
             </div>
         </div>
+<<<<<<< HEAD
         <a class="w3-bar-item w3-button" href="index.html">Home</a>
         <a class="w3-bar-item w3-button" href="#">News</a>
+=======
+        <a class="w3-bar-item w3-button" href="#">Home</a>
+        <a class="w3-bar-item w3-button" id="newsBtn" href="#">News</a>
+>>>>>>> 5da74928dd776ab9d9e700252f38180f525be6c5
         <a class="w3-bar-item w3-button" href="#">Daily Tasks</a>
         <a class="w3-bar-item w3-button" id="btnWeather" href="#">Weather</a>
     </nav>
@@ -40,14 +45,15 @@
         <img class="logo" src="./assets/images/logo.png" alt="logo">
         <h1 class="w3-bar-item headerName">Plan Surfing</h1>
     </header>
-    <div class="w3-container">
+    <div class="container">
         <hr class=topLine>
         <div class="quote-wrapper">
             <h2>Quote Of The Day</h2>
             <small id="quote-tags"></small>
             <blockquote id="quote-text"></blockquote>
             <cite id="quote-author"></cite>
-            <button type="button" id="gen-quote-btn">Get New Quote</button>
+            <button type="button" id="gen-quote-btn" class="w3-panel w3-border w3-hover-border-blue">Get New
+                Quote</button>
         </div>
     </div>
     <div class="w3-container">
@@ -70,6 +76,7 @@
                     <button class="button is-link" id="searchBtn">Search</button>
                     <button class="button is-loading">Loading</button>
                     <button class="button" id="clearBtn">Clear</button>
+                    <h2 class="firstArticleText"></h2>
                     <div id="results">
                         <h2 id="textEmpty"></h2>
                         <p></p>
@@ -89,7 +96,7 @@
             </div>
             <div class="w3-cell w3-container" id="dailyTasks">
                 <a href=" #">
-                    <h3>Daily Tasks</h3>
+                    <h3 class="daily-tasks">Daily Tasks</h3>
                 </a>
                 Stay on Top of Daily Tasks</p>
             </div>
