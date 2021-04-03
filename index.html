@@ -29,10 +29,10 @@
                     <img class="w3-circle" src="./assets/images/pngwing.com.png" alt="avatar" style="width:75%">
                 </div>
             </div>
-            <a class="w3-bar-item w3-button" href="./index.html">Home</a>
-            <a class="w3-bar-item w3-button" id="newsBtn" href="#">News</a>
-            <a class="w3-bar-item w3-button" href="#">Daily Tasks</a>
-            <a class="w3-bar-item w3-button weatherBtn"  href="#" onclick="closeSidebar()">Weather</a>
+            <a class="w3-bar-item w3-button" href="./index.html" onclick="closeSidebar()">Home</a>
+            <a class="w3-bar-item w3-button" id="newsBtn" href="#" onclick="closeSidebar()">News</a>
+            <a class="w3-bar-item w3-button" href="#" onclick="closeSidebar()">Daily Tasks</a>
+            <a class="w3-bar-item w3-button weatherBtn" href="#" onclick="closeSidebar()">Weather</a>
         </nav>
 
         <header class="w3-bar w3-card w3-theme">
@@ -115,24 +115,84 @@
                 </div>
             </div>
         </div>
+
+        <hr class="bottomLine">
+        <footer class="w3-container w3-card ">
+            <h4>© 2021 The Power Quad Squad Production</h4>
+        </footer>
     </div>
-    <hr class="bottomLine">
+    <!-- desktop screen start here  -->
+    <div class="container-desktop-screen">
+        <header class="w3-container w3-card">
+            <img class="logo" src="./assets/images/logo.png" alt="logo">
+            <h1 class="w3-bar-item headerName">Plan Surfing</h1>
+            <nav class="w3-center w3-xlarge">
+                <a href="#" class="w3-bar-item w3-button ">Home</a>
+                <a href="./weather.html" class="w3-bar-item w3-button ">Weather</a>
+                <a href="#" class="w3-bar-item w3-button ">News</a>
+                <a href="#" class="w3-bar-item w3-button ">Daily Tasks</a>
+            </nav>
+        </header>
+        <div class="w3-row">
+            <div class="w3-col l2 m3 s4 w3-green w3-center">
+                <div class="m-3">
+                    <figure class="image is-128x128">
+                        <img class="is-rounded" src="https://bulma.io/images/placeholders/128x128.png">
+                    </figure>
+                </div>
 
+                <h1>Left section</h1>
+            </div>
 
+            <div class="w3-col l8 m6 s4 w3-dark-grey w3-center">
+                <h1>Center section</h1>
+            </div>
+            <div class="w3-col l2 m3  s4  w3-center rSide">
 
-
-
-
-    <footer class="w3-container w3-card footer">
-        <h4>© 2021 The Power Quad Squad Production</h4>
-    </footer>
-    <script src="https://code.jquery.com/jquery.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.29.1/moment.min.js"></script>
-    <script src="./assets/js/script.js"></script>
-    <script src="./assets/js/news.js"></script>
-    <script src="./assets/js/quotes.js"></script>
-    <script src="./assets/js/weather.js"></script>
+                <!-- <div class="control m-3">
+                    <input type="text" class="input is-focused" id="search-city" id="search-city"
+                        aria-label="City Search" aria-describedby="search-button">
+                    <div class="input-group-append">
+                        <button class=" button is-normal is-info is-rounded" id="search-button">Search City</button>
+                    </div>
+                </div> -->
+                <h3 class="city-name mb-1 title" id="current-city"></h3>
+                <!--Row for future data to be dumped here-->
+                <div class="col-sm-12" id="future-weather">
+                    <div class="row text-light">
+                        <div class="card has-background-info-dark m-3">
+                            <h5 class="has-text-primary-light" id="fDate0"></h5>
+                            <p id="fImg0"></p>
+                            <p class="has-text-primary-light">Temp:<span id="fTemp0"></span></p>
+                            <p class="has-text-primary-light">Humidity:<span id="fHumidity0"></span></p>
+                        </div>
+                        <div class="card has-background-info-dark m-3">
+                            <h5 class="has-text-primary-light" id="fDate1"></h5>
+                            <p id="fImg1"></p>
+                            <p class="has-text-primary-light">Temp:<span id="fTemp1"></span></p>
+                            <p class="has-text-primary-light">Humidity:<span id="fHumidity1"></span></p>
+                        </div>
+                        <div class="card has-background-info-dark m-3">
+                            <h5 class="has-text-primary-light" id="fDate2"></h5>
+                            <p id="fImg2"></p>
+                            <p class="has-text-primary-light">Temp:<span id="fTemp2"></span></p>
+                            <p class="has-text-primary-light">Humidity:<span id="fHumidity2"></span></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <footer class="w3-container w3-card">
+                <h5>Footer</h5>
+                <p>Footer information goes here</p>
+            </footer>
+        </div>
+        <script src="https://code.jquery.com/jquery.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.29.1/moment.min.js"></script>
+        <script src="./assets/js/script.js"></script>
+        <script src="./assets/js/news.js"></script>
+        <script src="./assets/js/quotes.js"></script>
+        <script src="./assets/js/weather.js"></script>
 </body>
 
 </html>

@@ -9,6 +9,7 @@
   background-size: cover;
 }
 
+
 html{
   min-width: fit-content;
   min-height: fit-content;
@@ -35,6 +36,14 @@ a {
     width: 13%;
    float: right;
    margin-top: 8px;
+}
+
+.weahterLogo{
+  display: flex;
+  width: 5%;
+ float: right;
+ margin-top: 8px;
+
 }
 
 .headerName{
@@ -96,12 +105,11 @@ input {
 
 /*Anastasia's part end*/
 
-.footer{
+footer{
     position: static;
     left: 0;
     bottom: 0;
     width: 100%;
-    
 }
 
 .quote-wrapper{
@@ -112,7 +120,7 @@ input {
  font-size: 0.9rem;
  background-color:rgb(255, 255, 255);
  border-radius: 5px;
- box-shadow: cornsilk;
+ loginbox-shadow: cornsilk;
 }
 
 .quote-wrapper h2{
@@ -160,10 +168,10 @@ input {
 }
 
 #gen-quote-btn:hover{
-  box-shadow: 1px 1px 1px 1px lightblue;
+  loginbox-shadow: 1px 1px 1px 1px lightblue;
 }
 
-.box{
+.loginbox{
   width: 300px;
   padding: 30ox;
   position:absolute;
@@ -172,17 +180,17 @@ input {
   border-radius: 10px;
   transform: translate(-50%,-50% );
   background: rgba(0, 0, 0, 0.4);
-  box-shadow: 5px 10px 8px #0f0f0f;
+  loginbox-shadow: 5px 10px 8px #0f0f0f;
   text-align: center; 
 }
 
-.box h1{
+.loginbox h1{
   color: whitesmoke;
   text-transform: uppercase;
   font-weight: 700;
 }
 
-.box input[type="text"], .box input[type="password"], .box input[type="file"], .box input[type="text"]
+.loginbox input[type="text"], .loginbox input[type="password"], .loginbox input[type="file"], .loginbox input[type="text"]
 {
   border: 0;
   background: none;
@@ -199,12 +207,12 @@ input {
 
 }
 
-.box input[type="text"]:focus, .box input[type="password"]:focus{
+.loginbox input[type="text"]:focus, .loginbox input[type="password"]:focus{
   width: 270px  ;
   border-color: #2e739e ;
 }
 
-.box input[type="submit"]{
+.loginbox input[type="submit"]{
 
  border: 0;
   background: none;
@@ -220,7 +228,7 @@ input {
  cursor: pointer;
 }
 
-.box input[type="submit"]:hover{
+.loginbox input[type="submit"]:hover{
   background: #87cefa;
 }
 
@@ -259,4 +267,73 @@ input {
 .hide span {
  transform: translateY(100%);
  display: inline-block;
+}
+.forecast{
+  display: flex;
+  flex-direction: column;
+}
+
+#search-city {
+  margin-top: 0;
+  width: 200px;
+}
+#search-button{
+  margin-top: 0;
+}
+
+/* Always set the map height explicitly to define the size of the div
+       * element that contains the map. */
+       #map {
+        height: 100%;
+      }
+      
+      /* Optional: Makes the sample page fill the window. */
+      html,
+      body {
+        height: 100%;
+        margin: 0;
+        padding: 0;
+      }
+      
+
+/* Media section */
+
+/********** Large devices only **********/
+@media (min-width: 1200px) {
+  .container-mobile-screen{
+    display: none;
+  }
+  .logo {
+     width: 10%;
+  }
+ 
+}
+
+/********** Medium devices only **********/
+@media (min-width: 992px) and (max-width: 1199px) {
+  .container-mobile-screen{
+    display: none;
+  }
+}
+
+/********** Small devices only **********/
+@media (min-width: 768px) and (max-width: 991px) {
+  .container-desktop-screen{
+    display: none;
+  }
+ 
+}
+
+/********** Extra small devices only **********/
+@media (max-width: 767px) {
+  .container-desktop-screen{
+    display: none;
+  }
+
+}
+/********** Super extra small devices Only :-) (e.g., iPhone 4) **********/
+@media (max-width: 479px) {
+  .container-desktop-screen{
+    display: none;
+  }
 }

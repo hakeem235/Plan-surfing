@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  <title>Weather Dashboard</title>
+  <!--Bootstrap CSS CDN-->
+  <!-- Rest Css -->
+  <link rel="stylesheet" href="./assets/css/rest.css">
+  <!-- W3.CSS framwork -->
+  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3pro.css">
+  <!--Bulma-->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.2/css/bulma.min.css">
+  <!-- Google Font  -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400&display=swap" rel="stylesheet">
+  <!-- CSS flie -->
+  <script src="https://polyfill.io/v3/polyfill.min.js?features=default"></script>
+  <link rel="stylesheet" href="./assets/css/style.css">
+</head>
+
+<body>
+  <header class="w3-container w3-card">
+    <img class="weahterLogo" src="./assets/images/logo.png" alt="logo">
+    <h1 class="w3-bar-item headerName">Plan Surfing</h1>
+    <nav class="w3-center w3-xlarge">
+      <a href="index.html" class="w3-bar-item w3-button w3-hover-none ">Home</a>
+      <a href="./weather.html" class="w3-bar-item w3-button w3-hover-none ">Weather</a>
+      <a href="#" class="w3-bar-item w3-button w3-hover-none ">News</a>
+      <a href="#" class="w3-bar-item w3-button w3-hover-none ">Daily Tasks</a>
+    </nav>
+  </header>
+  <hr class="topLine">
+  <div class="bolck">
+    <section class="hero is-info">
+      <div class="hero-body" id="mainCity">
+        <h3 class="city-name mb-1 title" id="current-city"></h3>
+        <hr>
+        <p class="subtitle">Temperature:<span class="current temperature"></span></p>
+        <p class="subtitle">Humidity:<span class="current humidity"></span></p>
+        <p class="subtitle">Wind Speed:<span class="current wind-speed"></span></p>
+        <p class="subtitle">UV index:<span class="current uvColor w3-round-small  text-black" id="uv-index"></span>
+        </p>
+        <div class="btnSearchSection">
+          <h4><strong>Search for a City:</strong></h4>
+          <input type="text" class="input mt-5" id="search-city">
+          <button class="button mt-5" id="search-button">Search</button>
+        </div>
+      </div>
+    </section>
+  </div>
+  <!--Row for future data to be dumped here-->
+  <hr class="topLine">
+  <div class="bolck is-flex-direction-row">
+    <section class="hero is-info">
+      <div class="hero-body">
+        <div id="future-weather">
+          <h3 class="title">5-Day Forecast:</h3>
+          <div class="forecast text-light">
+            <div class="card">
+              <div class="card-content">
+                <div class="content">
+                  <h5 id="fDate0"></h5>
+                  <p id="fImg0"></p>
+                  <p>Temp:<span id="fTemp0"></span></p>
+                  <p>Humidity:<span id="fHumidity0"></span></p>
+                </div>
+              </div>
+            </div>
+            <div class="card">
+              <div class="card-content">
+                <div class="content">
+                  <h5 id="fDate1"></h5>
+                  <p id="fImg1"></p>
+                  <p>Temp:<span id="fTemp1"></span></p>
+                  <p>Humidity:<span id="fHumidity1"></span></p>
+                </div>
+              </div>
+            </div>
+            <div class="card">
+              <div class="card-content">
+                <div class="content">
+                  <h5 id="fDate2"></h5>
+                  <p id="fImg2"></p>
+                  <p>Temp:<span id="fTemp2"></span></p>
+                  <p>Humidity:<span id="fHumidity2"></span></p>
+                </div>
+              </div>
+            </div>
+            <div class="card">
+              <div class="card-content">
+                <div class="content">
+                  <h5 id="fDate3"></h5>
+                  <p id="fImg3"></p>
+                  <p>Temp:<span id="fTemp3"></span></p>
+                  <p>Humidity:<span id="fHumidity3"></span></p>
+                </div>
+              </div>
+            </div>
+            <div class="card">
+              <div class="card-content">
+                <div class="content">
+                  <h5 id="fDate4"></h5>
+                  <p id="fImg4"></p>
+                  <p>Temp:<span id="fTemp4"></span></p>
+                  <p>Humidity:<span id="fHumidity4"></span></p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!--jQuery JS-->
+      <script src="https://code.jquery.com/jquery.js"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.29.1/moment.min.js"></script>
+      <!-- <script
+          src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0/js/bootstrap.bundle.min.js"></script>
+
+        <script src="https://maps.googleapis.com/maps/api/js?key=YOUR_API_KEY&callback=initMap&libraries=&v=weekly"
+          async></script> -->
+      <!--Code to Jvascript File-->
+      <script src="./assets/js/weather.js"></script>
+      <script src="./assets/js/script.js"></script>
+</body>
+
+</html>
