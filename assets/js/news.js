@@ -19,7 +19,6 @@ fetch(urlLogin, {
     $('.description').text(firstArticle.content)
     $('#results').append('<h2>' + firstArticle.title + '</h2>')
     $('#results').append('<img src=' + firstArticle.image + '>')
-    $('#imgsection').text('<img src=' + firstArticle.image + '>')
     $('#results').append('<p>' + firstArticle.content + '</p>')
     $('#results').append('<h4>' + firstArticle.source.name + '</h4>')
     $('#results').append('<a target="_blank" href="' + firstArticle.url + '">' + firstArticle.url + '</a>');
@@ -132,6 +131,28 @@ $('#newsBtn').on('click', function () {
   $('.newsText').show();
   $('.description').hide();
 
+})
+
+// weather button
+$('.weatherBtn').on('click', function () {
+  // Hide Section
+  $('#dailyTasks').hide();
+  $('.sectionImg').hide();
+  $('.quote-wrapper').hide();
+  $('.between').hide();
+  $('#news').hide();
+  $('#cell3W').hide();
+  // Show Section
+  $('#weatherSection').show();
+  $('#humidity').show();
+  $('#wind-speed').show();
+  $('#temperature').show();
+  // styling section
+  $('#cityName').css('text-align', 'center')
+  $('#description').css('text-align', 'center')
+  $('#temperature').css('text-align', 'center')
+  $('#wind-speed').css('text-align', 'center')
+  $('#humidity').css('text-align', 'center')
 })
 
 
