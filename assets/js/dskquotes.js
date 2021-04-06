@@ -1,7 +1,4 @@
-dsk.quotes.js
 
-let quotesArr = [];
-let quoteObj;
 var dskquoteText = document.getElementById("dsk-quote-text");
 var dskquoteTags = document.getElementById("dsk-quote-tags");
 var dskquoteAuthor = document.getElementById("dsk-quote-author");
