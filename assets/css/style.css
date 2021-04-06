@@ -119,13 +119,7 @@ input {
   margin-top: 5%;
   color:#043C84;
   font-size: 40px;
-}
-
-.results {
-  width: fit-content;
-}
-
-
+} 
 
 /*Anastasia's part end*/
 
@@ -338,6 +332,11 @@ footer{
      width: 10%;
   }
 
+  .description {
+    margin-left: 15%;
+    margin-right: 15%;
+  }
+
  
 }
 
@@ -353,6 +352,7 @@ footer{
   .container-desktop-screen{
     display: none;
   }
+  
  
 }
 
