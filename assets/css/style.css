@@ -101,6 +101,7 @@ input {
   margin-top: 3%;
   color: #043C84;
   font-weight: bold;
+  cursor: pointer;
 }
 
 .description {
@@ -395,6 +396,7 @@ footer{
   .logo {
      width: 10%;
   }
+
  
 }
 
