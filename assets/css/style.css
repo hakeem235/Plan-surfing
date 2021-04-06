@@ -19,6 +19,7 @@ h1 {
   font-size: 53px;
 }
 
+
 .sectionImg{
     border: 1px solid #043C84 ;
     border-radius: 5px ;
@@ -38,12 +39,20 @@ a {
    margin-top: 8px;
 }
 
+.map{
+  width: 100%;
+}
+
 .weahterLogo{
   display: flex;
   width: 5%;
  float: right;
  margin-top: 8px;
 
+}
+
+.forecast{
+  display: flex;
 }
 
 .headerName{
@@ -280,6 +289,13 @@ footer{
 #search-button{
   margin-top: 0;
 }
+
+.card{
+  margin-left: 10px;
+  background: #043C84;
+  color: white;
+}
+
 
 /* Always set the map height explicitly to define the size of the div
        * element that contains the map. */
