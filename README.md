@@ -32,7 +32,8 @@
 
 
  ## Quotes Section
-Upon viewing the main page, you are able to view daily inspirational quotes to motivate you throughout your day and work period. Refreshing the page or clicking "generate new quote", will provide a new quote by another author. The quotes are linked with the weather and your tasks to assist you further persevere through the day.  
+ 
+   Upon viewing the main page, you are able to view daily inspirational quotes to motivate you throughout your day and work period. Refreshing the page or clicking "generate new quote", will provide a new quote by another author. The quotes are linked with the weather and your tasks to assist you further persevere through the day.  
 
 
 
