@@ -13,7 +13,14 @@
 * Screenhots
 * Deployment of application
 
+
+
 # General info
+
+   Plan Surfing is an application that allows user to create daily tasks, view the current weather, read the daily news, and stay motivated with everyday quotes. Application allows to save tasks, view old ones and even create assignments for the upcoming days in a simple way. Also, user can search for the weather and news based on the point of interest, and motivational quotes will inspire to accomplish tasks and stay on top of the day. 
+
+
+
 
 # Specifics
 
@@ -25,6 +32,8 @@
 
 
  ## Quotes Section
+
+
 
 
  ## News Section
