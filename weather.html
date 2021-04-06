@@ -52,16 +52,16 @@
   </div>
   <!--Row for future data to be dumped here-->
   <hr class="topLine">
-  <div class="bolck is-flex-direction-row">
-    <section class="hero is-info">
+  <div class="bolck ">
+    <section class="hero">
       <div class="hero-body">
         <div id="future-weather">
           <h3 class="title">5-Day Forecast:</h3>
-          <div class="forecast text-light">
-            <div class="card">
+          <div class="forecast text-light is-flex-direction-row">
+            <div class="card ">
               <div class="card-content">
                 <div class="content">
-                  <h5 id="fDate0"></h5>
+                  <h5 class="has-text-white" id="fDate0"></h5>
                   <p id="fImg0"></p>
                   <p>Temp:<span id="fTemp0"></span></p>
                   <p>Humidity:<span id="fHumidity0"></span></p>
@@ -71,7 +71,7 @@
             <div class="card">
               <div class="card-content">
                 <div class="content">
-                  <h5 id="fDate1"></h5>
+                  <h5 class="has-text-white" id="fDate1"></h5>
                   <p id="fImg1"></p>
                   <p>Temp:<span id="fTemp1"></span></p>
                   <p>Humidity:<span id="fHumidity1"></span></p>
@@ -81,7 +81,7 @@
             <div class="card">
               <div class="card-content">
                 <div class="content">
-                  <h5 id="fDate2"></h5>
+                  <h5 class="has-text-white" id="fDate2"></h5>
                   <p id="fImg2"></p>
                   <p>Temp:<span id="fTemp2"></span></p>
                   <p>Humidity:<span id="fHumidity2"></span></p>
@@ -91,7 +91,7 @@
             <div class="card">
               <div class="card-content">
                 <div class="content">
-                  <h5 id="fDate3"></h5>
+                  <h5 class="has-text-white" id="fDate3"></h5>
                   <p id="fImg3"></p>
                   <p>Temp:<span id="fTemp3"></span></p>
                   <p>Humidity:<span id="fHumidity3"></span></p>
@@ -101,7 +101,7 @@
             <div class="card">
               <div class="card-content">
                 <div class="content">
-                  <h5 id="fDate4"></h5>
+                  <h5 class="has-text-white" id="fDate4"></h5>
                   <p id="fImg4"></p>
                   <p>Temp:<span id="fTemp4"></span></p>
                   <p>Humidity:<span id="fHumidity4"></span></p>
@@ -111,16 +111,15 @@
           </div>
         </div>
       </div>
+      
+
+      <div id="googleMap" style="width:100%;height:400px;"></div>
       <!--jQuery JS-->
       <script src="https://code.jquery.com/jquery.js"></script>
       <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
       <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.29.1/moment.min.js"></script>
-      <!-- <script
-          src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0/js/bootstrap.bundle.min.js"></script>
-
-        <script src="https://maps.googleapis.com/maps/api/js?key=YOUR_API_KEY&callback=initMap&libraries=&v=weekly"
-          async></script> -->
       <!--Code to Jvascript File-->
+      <script src="https://maps.googleapis.com/maps/api/js?clinent=d91f911bcf2c0f925fb6535547a5ddc9"></script>
       <script src="./assets/js/weather.js"></script>
       <script src="./assets/js/script.js"></script>
 </body>

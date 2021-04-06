@@ -42,6 +42,7 @@ searchButton.click(function () {
   //refactor url
   var weatherUrl = generateURL(cities);
   currentWeather(weatherUrl);
+  myMap(weatherUrl)
   fiveDayForecast(cities);
 
   //if empty
@@ -139,7 +140,7 @@ function fiveDayForecast(city) {
         $("#fDate" + i).text(date);
         $("#fImg" + i).html("<img src=" + iconurl + ">");
         $("#fTemp" + i).text(" " + temp + " °C");
-        $("#fHumidity" + i).text(" " + humidity + "%");
+        $("fHumidity" + i).text(" " + humidity + "%");
 
       }
 
@@ -186,7 +187,6 @@ function mobileWesther(rquestUrl) {
       return respones.json();
     })
     .then(function (data) {
-      console.log(data)
       var weatherIcon = data.weather[0].icon;
       var iconUrl = 'https://openweathermap.org/img/wn/' + weatherIcon + '.png';
       //parse the response for name of city and concanatig the date and icon.
@@ -196,17 +196,30 @@ function mobileWesther(rquestUrl) {
       $('#temperature').text("Temperature: " + data.main.temp.toFixed(0) + ' °C').hide();
       $('#humidity').text("Humidity: " + data.main.humidity + "%").hide();
       $('#wind-speed').text("Wind Speed: " + data.wind.speed + ' MPH').hide();
+
     })
 }
 // call the funtions section 
 mobileWesther(rquestUrl)
 
-let map;
 
-function initMap() {
-  map = new google.maps.Map(document.getElementById("map"), {
-    center: { lat: -34.397, lng: 150.644 },
-    zoom: 8,
-  });
+
+
+function myMap(mapUrl) {
+  fetch(mapUrl)
+  .then(function(respones){
+    return respones.json();
+  })
+  .then(function(data){
+    var mapProp = {
+      center: new google.maps.LatLng(data.coord.lat, data.coord.lon),
+      zoom: 5,
+    };
+    var map = new google.maps.Map(document.getElementById("googleMap"), mapProp);
+
+  })
 }
+
+
+
 
