@@ -133,6 +133,28 @@ $('#newsBtn').on('click', function () {
 
 })
 
+// weather button
+$('.weatherBtn').on('click', function () {
+  // Hide Section
+  $('#dailyTasks').hide();
+  $('.sectionImg').hide();
+  $('.quote-wrapper').hide();
+  $('.between').hide();
+  $('#news').hide();
+  $('#cell3W').hide();
+  // Show Section
+  $('#weatherSection').show();
+  $('#humidity').show();
+  $('#wind-speed').show();
+  $('#temperature').show();
+  // styling section
+  $('#cityName').css('text-align', 'center')
+  $('#description').css('text-align', 'center')
+  $('#temperature').css('text-align', 'center')
+  $('#wind-speed').css('text-align', 'center')
+  $('#humidity').css('text-align', 'center')
+})
+
 
 
 

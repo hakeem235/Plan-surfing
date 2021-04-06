@@ -129,7 +129,7 @@ footer{
     bottom: 0;
     width: 100%;
 }
-
+/*mobile version*/
 .quote-wrapper{
   font-family: 'Poppins', sans-serif;
  justify-content: center;
@@ -186,6 +186,65 @@ footer{
 }
 
 #gen-quote-btn:hover{
+  box-shadow: 1px 1px 1px 1px lightblue;
+}
+/*dsk version*/
+.dsk-quote-wrapper{
+  font-family: 'Poppins', sans-serif;
+ justify-content: center;
+ align-items: center;
+ text-align: center;
+ font-size: 0.9rem;
+ background-color:rgb(255, 255, 255);
+ border-radius: 5px;
+ box-shadow: cornsilk;
+}
+
+.dsk-quote-wrapper h2{
+  color: #043C84;
+  font-size: 1.5rem;
+  margin-bottom: 0.5rem;
+  text-decoration: underline;
+}
+
+.dsk-quote-wrapper small{
+  font-size: 700;
+  padding: 1.9rem 1rem;
+  margin-bottom: 2.0rem;
+  margin-top: 1.5rem;
+  font-variant: small-caps;
+  visibility: hidden;
+}
+
+.dsk-quote-wrapper blockquote{
+  padding: 1.5rem 0;
+  font-weight: 300;
+  margin-top: 0.5rem;
+  margin-bottom: 0.5rem;
+} 
+
+.dsk-quote-wrapper cite{
+  display: block;
+  font-style: italic;
+  margin-bottom: 1rem;
+}
+
+.w3-border {
+  border: 1px solid #043C84!important;
+  outline: none;
+}
+
+#dsk-gen-quote-btn{
+  font-size: 0.8rem;
+  padding: 0.3rem 1.0rem;
+  cursor: pointer;
+  border-radius: 1.2rem;
+  background-color: #ffffff;
+  border-color: #043C84;
+  
+}
+
+#dsk-gen-quote-btn:hover{
   box-shadow: 1px 1px 1px 1px lightblue;
 }
 
@@ -292,11 +351,11 @@ footer{
 }
 
 #search-city {
-  margin-top: 5%;
+  margin-top: 0;
   width: 200px;
 }
 #search-button{
-  margin-top: 10%;
+  margin-top: 0;
 }
 
 .card{

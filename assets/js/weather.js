@@ -178,6 +178,24 @@ $('.weatherBtn').on('click', function () {
   $('#humidity').css('text-align', 'center')
 })
 
+
+$('#news').on('click', function () {
+  $('#dailyTasks').hide();
+  $('.sectionImg').hide();
+  $('#current-weather').hide();
+  $('.quote-wrapper').hide();
+  $('#newsSections').show();
+  $('#newsName').hide();
+  $('#w3Cell').hide();
+  $('.between').hide();
+  $('#weatherSection').hide();
+  $('.newsText').css('text-align', 'center')
+  $('.loginText').hide();
+  $('.newsText').show();
+  $('.description').hide();
+  $('#news').show();
+})
+
 // var apiKey = "d91f911bcf2c0f925fb6535547a5ddc9";
 var rquestUrl = 'https://api.openweathermap.org/data/2.5/weather?q=Ottawa&units=metric&appid=' + apiKey;
 
@@ -219,6 +237,8 @@ function myMap(mapUrl) {
 
     })
 }
+
+myMap()
 
 
 
