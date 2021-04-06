@@ -19,6 +19,7 @@ fetch(urlLogin, {
     $('.description').text(firstArticle.content)
     $('#results').append('<h2>' + firstArticle.title + '</h2>')
     $('#results').append('<img src=' + firstArticle.image + '>')
+    $('#imgsection').text('<img src=' + firstArticle.image + '>')
     $('#results').append('<p>' + firstArticle.content + '</p>')
     $('#results').append('<h4>' + firstArticle.source.name + '</h4>')
     $('#results').append('<a target="_blank" href="' + firstArticle.url + '">' + firstArticle.url + '</a>');
