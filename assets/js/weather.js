@@ -222,18 +222,22 @@ mobileWesther(rquestUrl)
 
 
 
-
+var zoomLevel = 10
+var mapUrl = `https://maps.openweathermap.org/maps/2.0/weather/TA2/${zoomLevel}/${lat}/${lon}?appid=${apiKey}`
 function myMap(mapUrl) {
+  var lat = data.coord.lat;
+  var lon = data.coord.lon;
   fetch(mapUrl)
     .then(function (respones) {
       return respones.json();
     })
     .then(function (data) {
-      var mapProp = {
-        center: new google.maps.LatLng(data.coord.lat, data.coord.lon),
-        zoom: 5,
-      };
-      var map = new google.maps.Map(document.getElementById("googleMap"), mapProp);
+      console.log(data)
+      // var mapProp = {
+      //   center: new google.maps.LatLng(data.coord.lat, data.coord.lon),
+      //   zoom: 5,
+      // };
+      // var map = new google.maps.Map(document.getElementById("googleMap"), mapProp);
 
     })
 }
