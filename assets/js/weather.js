@@ -207,18 +207,20 @@ mobileWesther(rquestUrl)
 
 function myMap(mapUrl) {
   fetch(mapUrl)
-  .then(function(respones){
-    return respones.json();
-  })
-  .then(function(data){
-    var mapProp = {
-      center: new google.maps.LatLng(data.coord.lat, data.coord.lon),
-      zoom: 5,
-    };
-    var map = new google.maps.Map(document.getElementById("googleMap"), mapProp);
+    .then(function (respones) {
+      return respones.json();
+    })
+    .then(function (data) {
+      var mapProp = {
+        center: new google.maps.LatLng(data.coord.lat, data.coord.lon),
+        zoom: 5,
+      };
+      var map = new google.maps.Map(document.getElementById("googleMap"), mapProp);
 
-  })
+    })
 }
+
+
 
 
 
