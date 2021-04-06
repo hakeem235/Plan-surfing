@@ -72,6 +72,8 @@ a {
 
 .newsText {
   margin-top: 3%;
+  color: #043C84;
+  font-size: 30px;
 }
 
 input {
@@ -101,6 +103,18 @@ input {
   color: #043C84;
   font-size: 40px;
 }
+
+.newsText1 {
+  text-align: center;
+  margin-top: 5%;
+  color:#043C84;
+  font-size: 40px;
+}
+
+.results {
+  width: fit-content;
+}
+
 
 
 /*Anastasia's part end*/
