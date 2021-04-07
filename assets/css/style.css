@@ -390,10 +390,10 @@ footer {
 /* Media section */
 
 /********** Large devices only **********/
-@media (min-width: 1200px) {
-  .container-mobile-screen{
+/* @media (min-width: 1200px) {
+  .container-mobile-screen{ */
     /* display: none; */
-  }
+  /* }
   .logo {
      width: 10%;
   }
@@ -404,7 +404,7 @@ footer {
   }
 
  
-}
+} */
 
 /********** Medium devices only **********/
 /* @media (min-width: 992px) and (max-width: 1199px) {
