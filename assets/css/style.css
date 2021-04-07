@@ -2,14 +2,6 @@
     font-family: 'Poppins', sans-serif;
 }
 
-#logIngBody{
-  background-image: url(../images/pic1.jpg);
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-}
-
-
 html{
   min-width: fit-content;
   min-height: fit-content;
@@ -490,6 +482,11 @@ form button {
 } 
 
 
+.desktop{
+  display: none;
+}
+
+
 /* Always set the map height explicitly to define the size of the div
        * element that contains the map. */
        #map {
@@ -508,12 +505,12 @@ form button {
 /* Media section */
 
 /********** Large devices only **********/
-@media (min-width: 1200px) {
-  .container-mobile-screen{ 
+  
+  /* .container-mobile-screen{ 
 
 
  
-} 
+}  */
 
 /********** Medium devices only **********/
 /* @media (min-width: 992px) and (max-width: 1199px) {
@@ -537,10 +534,4 @@ form button {
     display: none;
   }
 
-} */
-/********** Super extra small devices Only :-) (e.g., iPhone 4) **********/
-/* @media (max-width: 479px) {
-  .container-desktop-screen{
-    display: none;
-  }
 } */

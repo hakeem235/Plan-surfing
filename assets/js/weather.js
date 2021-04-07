@@ -5,6 +5,47 @@ var searchButton = $("#search-button");
 var myCities = [];
 var apiKey = "d91f911bcf2c0f925fb6535547a5ddc9";
 
+
+$('.weatherBtn').on('click', function () {
+  // Hide Section
+  $('#dailyTasks').hide();
+  $('.sectionImg').hide();
+  $('.quote-wrapper').hide();
+  $('.between').hide();
+  $('#news').hide();
+  $('#cell3W').hide();
+  $('.weather').hide();
+  $('.container').hide()
+  // Show Section
+  $('.desktop').show()
+  // styling section
+  $('#cityName').css('text-align', 'center')
+  $('#description').css('text-align', 'center')
+  $('#temperature').css('text-align', 'center')
+  $('#wind-speed').css('text-align', 'center')
+  $('#humidity').css('text-align', 'center')
+  $('.btnSearchSection').addClass('w3-center')
+})
+
+
+$('#news').on('click', function () {
+  $('#dailyTasks').hide();
+  $('.sectionImg').hide();
+  $('#current-weather').hide();
+  $('.quote-wrapper').hide();
+  $('#newsSections').show();
+  $('#newsName').hide();
+  $('#w3Cell').hide();
+  $('.between').hide();
+  $('#weatherSection').hide();
+  $('.newsText').css('text-align', 'center')
+  $('.loginText').hide();
+  $('.newsText').show();
+  $('.description').hide();
+})
+
+
+
 function getCities() {
   var storage = localStorage.getItem('places')
   if (storage) {
@@ -92,12 +133,14 @@ function currentWeather(weatherUrl) {
       var weatherIcon = data.weather[0].icon;
       var iconUrl = 'https://openweathermap.org/img/wn/' + weatherIcon + '.png';
       //parse the response for name of city and concanatig the date and icon.
-      $('#current-city').text((data.name.toUpperCase()) + " " + currentDate);
-      $("<img>").attr("src", iconUrl).appendTo("#current-city")
+      $('.current-city').text((data.name.toUpperCase()) + " " + currentDate);
+      $("<img>").attr("src", iconUrl).appendTo(".current-city")
       var temp = (data.main.temp);
-      $('.temperature').text(" " + temp.toFixed(0) + ' °C');
-      $('.humidity').text(" " + data.main.humidity + "%");
-      $('.wind-speed').text(" " + data.wind.speed.toFixed(1) + ' MPH');
+      $('#cityName').text(data.name + " - " + data.sys.country);       
+      $('#description').text((data.weather[0].description).toUpperCase())
+      $('.temperature').text(" " + temp.toFixed(0) + ' °C').hide();
+      $('.humidity').text(" " + data.main.humidity + "%").hide();
+      $('.wind-speed').text(" " + data.wind.speed.toFixed(1) + ' MPH').hide();
 
       //get UV Index
       var lat = data.coord.lat;
@@ -147,77 +190,30 @@ function fiveDayForecast(city) {
     });
 }
 
-//Clear the search history from the page
-function clearHistory(event) {
-  event.preventDefault();
-  myCities = [];
-  localStorage.removeItem('places');
-  document.location.reload();
-
-}
-//Click Handlers
-$("#clear-history").on("click", clearHistory);
-
-$('.weatherBtn').on('click', function () {
-  // Hide Section
-  $('#dailyTasks').hide();
-  $('.sectionImg').hide();
-  $('.quote-wrapper').hide();
-  $('.between').hide();
-  $('#news').hide();
-  $('#cell3W').hide();
-  // Show Section
-  $('#humidity').show();
-  $('#wind-speed').show();
-  $('#temperature').show();
-  // styling section
-  $('#cityName').css('text-align', 'center')
-  $('#description').css('text-align', 'center')
-  $('#temperature').css('text-align', 'center')
-  $('#wind-speed').css('text-align', 'center')
-  $('#humidity').css('text-align', 'center')
-})
-
-
-$('#news').on('click', function () {
-  $('#dailyTasks').hide();
-  $('.sectionImg').hide();
-  $('#current-weather').hide();
-  $('.quote-wrapper').hide();
-  $('#newsSections').show();
-  $('#newsName').hide();
-  $('#w3Cell').hide();
-  $('.between').hide();
-  $('#weatherSection').hide();
-  $('.newsText').css('text-align', 'center')
-  $('.loginText').hide();
-  $('.newsText').show();
-  $('.description').hide();
-})
 
 // var apiKey = "d91f911bcf2c0f925fb6535547a5ddc9";
-var rquestUrl = 'https://api.openweathermap.org/data/2.5/weather?q=Ottawa&units=metric&appid=' + apiKey;
+// var rquestUrl = 'https://api.openweathermap.org/data/2.5/weather?q=Ottawa&units=metric&appid=' + apiKey;
 
-function mobileWesther(rquestUrl) {
-  fetch(rquestUrl)
-    .then(function (respones) {
-      return respones.json();
-    })
-    .then(function (data) {
-      var weatherIcon = data.weather[0].icon;
-      var iconUrl = 'https://openweathermap.org/img/wn/' + weatherIcon + '.png';
-      //parse the response for name of city and concanatig the date and icon.
-      $('#cityName').text(data.name + " - " + data.sys.country);
-      $('#description').text((data.weather[0].description).toUpperCase())
-      $("<img>").attr("src", iconUrl).appendTo("#cityName")
-      $('#temperature').text("Temperature: " + data.main.temp.toFixed(0) + ' °C').hide();
-      $('#humidity').text("Humidity: " + data.main.humidity + "%").hide();
-      $('#wind-speed').text("Wind Speed: " + data.wind.speed + ' MPH').hide();
+// function mobileWesther(rquestUrl) {
+//   fetch(rquestUrl)
+//     .then(function (respones) {
+//       return respones.json();
+//     })
+//     .then(function (data) {
+//       var weatherIcon = data.weather[0].icon;
+//       var iconUrl = 'https://openweathermap.org/img/wn/' + weatherIcon + '.png';
+//       //parse the response for name of city and concanatig the date and icon.
+//       $('#cityName').text(data.name + " - " + data.sys.country);
+//       $('#description').text((data.weather[0].description).toUpperCase())
+//       $("<img>").attr("src", iconUrl).appendTo("#cityName")
+//       $('#temperature').text("Temperature: " + data.main.temp.toFixed(0) + ' °C').hide();
+//       $('#humidity').text("Humidity: " + data.main.humidity + "%").hide();
+//       $('#wind-speed').text("Wind Speed: " + data.wind.speed + ' MPH').hide();
 
-    })
-}
+//     })
+// }
 // call the funtions section 
-mobileWesther(rquestUrl)
+//mobileWesther(rquestUrl)
 
 
 var mapUrl = `http://maps.openweathermap.org/maps/2.0/weather/TA2/{z}/{x}/{y}&appid=${apiKey}`
@@ -237,7 +233,3 @@ function myMap(mapUrl) {
 
   })
 }
-
-
-
-
