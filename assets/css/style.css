@@ -143,6 +143,7 @@ footer {
  background-color:rgb(255, 255, 255);
  border-radius: 5px;
  box-shadow: cornsilk;
+ margin: 0;
 }
 
 .quote-wrapper h2{
@@ -192,7 +193,7 @@ footer {
 #gen-quote-btn:hover{
   box-shadow: 1px 1px 1px 1px lightblue;
 }
-/*dsk version*/
+/*
 .dsk-quote-wrapper{
   font-family: 'Poppins', sans-serif;
  justify-content: center;
@@ -251,7 +252,7 @@ footer {
 #dsk-gen-quote-btn:hover{
   box-shadow: 1px 1px 1px 1px lightblue;
 }
-
+*/
 .loginbox{
   width: 300px;
   padding: 30ox;
