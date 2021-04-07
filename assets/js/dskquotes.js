@@ -1,4 +1,4 @@
-
+/*
 var dskquoteText = document.getElementById("dsk-quote-text");
 var dskquoteTags = document.getElementById("dsk-quote-tags");
 var dskquoteAuthor = document.getElementById("dsk-quote-author");
@@ -26,3 +26,4 @@ randomQuote();
 dskgenQuoteBtn.addEventListener('click', function(){
 randomQuote()});
 setInterval(randomQuote() ,10000);
+*/
