@@ -179,13 +179,12 @@ $('.weatherBtn').on('click', function () {
 })
 
 
-$('#newsBtn').on('click', function () {
-  $('#newsSections').show()
-  $('#mySidebar').hide()
+$('#news').on('click', function () {
   $('#dailyTasks').hide();
   $('.sectionImg').hide();
   $('#current-weather').hide();
   $('.quote-wrapper').hide();
+  $('#newsSections').show();
   $('#newsName').hide();
   $('#w3Cell').hide();
   $('.between').hide();
@@ -194,10 +193,7 @@ $('#newsBtn').on('click', function () {
   $('.loginText').hide();
   $('.newsText').show();
   $('.description').hide();
-  $('#news').show();
-
 })
-
 
 // var apiKey = "d91f911bcf2c0f925fb6535547a5ddc9";
 var rquestUrl = 'https://api.openweathermap.org/data/2.5/weather?q=Ottawa&units=metric&appid=' + apiKey;
@@ -224,30 +220,23 @@ function mobileWesther(rquestUrl) {
 mobileWesther(rquestUrl)
 
 
+var mapUrl = `http://maps.openweathermap.org/maps/2.0/weather/TA2/{z}/{x}/{y}&appid=${apiKey}`
 
-var zoomLevel = 10
-var mapUrl = `https://maps.openweathermap.org/maps/2.0/weather/TA2/${zoomLevel}/${lat}/${lon}?appid=${apiKey}`
 function myMap(mapUrl) {
-  var lat = data.coord.lat;
-  var lon = data.coord.lon;
   fetch(mapUrl)
-    .then(function (respones) {
-      return respones.json();
-    })
-    .then(function (data) {
-      console.log(data)
-      // var mapProp = {
-      //   center: new google.maps.LatLng(data.coord.lat, data.coord.lon),
-      //   zoom: 5,
-      // };
-      // var map = new google.maps.Map(document.getElementById("googleMap"), mapProp);
+  .then(function(respones){
+    return respones.json();
+  })
+  .then(function(data){
+    console.log(data)
+    var mapProp = {
+      center: new google.maps.LatLng(data.coord.lat, data.coord.lon),
+      zoom: 5,
+    };
+    var map = new google.maps.Map(document.getElementById("googleMap"), mapProp);
 
-    })
+  })
 }
-
-myMap()
-
-
 
 
 

@@ -19,16 +19,46 @@
 
 </head>
 
-<body id="logIngBody">
+<body class="loginBody">
   <main>
-    <header></header>
-    <form class="loginbox" action="index.html" method="POST">
-      <h1>Login</h1>
-      <input type="text" name="" placeholder="Enter UserName" id="username">
-      <input type="password" name="" placeholder="Enter Passwored" id="password">
-      <input id="login-submit" type="submit" name="" value="Login">
-      <p>If you do not have account <a href="./signup.html" id="signUp" href="#">Sign up here</a></p>
-    </form>
+    <div class="container">
+      <form id="form1">
+          <h3>CREATE ACCOUNT</h3>
+          <input type="text" placeholder="Email" required>
+          <input type="password" placeholder="Password" required>
+          <input type="password" placeholder="Confirm Password" required>
+
+          <div class="btn-box">
+              <button type="button" id="next1">NEXT</button>
+          </div>
+      </form>
+
+      <form id="form2">
+          <h3>SOCTAL LINKS</h3>
+          <input type="text" placeholder="Full Name" required>
+          <input type="text" placeholder="Where are from" required>
+
+          <div class="btn-box">
+              <button type="button" id="back1">BACK</button>
+              <button type="button" id="next2">Next</button>
+          </div>
+      </form>
+      <form id="form3">
+          <h3>UPLODE YOUR IMG</h3>
+          <input type="file" placeholder="Full Name" required>
+          
+          <div class="btn-box">
+              <button type="button" id="back2">BACK</button>
+              <button type="submit">SUBMIT</button>
+          </div>
+      </form>
+      <div class="step-row">
+          <div id="progress"></div>
+          <div class="step-col"><small></small>Step 1</div>
+          <div class="step-col"><small></small>Step 2</div>
+          <div class="step-col"><small></small>Step 3</div>
+      </div>
+  </div>
   </main>
   <div class="intro">
     <div class="intro-text">
@@ -45,6 +75,7 @@
   </div>
   <div class="slider"></div>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.6.1/gsap.min.js"></script>
+  <script src="./assets/js/login.js"></script>
   <script src="./assets/js/script.js"></script>
 </body>
 
