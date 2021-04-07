@@ -50,6 +50,9 @@ a {
  margin-top: 8px;
 
 }
+#description {
+  margin-left: 2%;
+}
 
 .forecast{
   display: flex;
@@ -71,6 +74,7 @@ a {
 
 #newsName, #cityName, .daily-tasks {
   margin-top: 2%;
+  margin-left: 2%;
   font-size: 30px;
 }
 
@@ -104,8 +108,9 @@ input {
   cursor: pointer;
 }
 
-.description {
-  margin-bottom: 3%;
+.loginText, .description {
+  margin: 3% 2% 3% 2%;
+  
 }
 
 .firstArticleText {
@@ -114,12 +119,12 @@ input {
   font-size: 40px;
 }
 
-.newsText1 {
+/* .newsText1 {
   text-align: center;
   margin-top: 5%;
   color:#043C84;
   font-size: 40px;
-} 
+}  */
 
 /*Anastasia's part end*/
 .container-mobile-screen{
