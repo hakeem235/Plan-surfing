@@ -122,12 +122,19 @@ input {
 } 
 
 /*Anastasia's part end*/
+.container-mobile-screen{
+  min-height: 100%;
+  /* This is the same as the height of your footer */
+  margin-bottom: -25px;
+}
 
-footer{
-    position: static;
+footer {
+    position: fixed;
     left: 0;
     bottom: 0;
     width: 100%;
+    /* make this the same (in negative value) on the container above the footer */
+    height: 25px;
 }
 /*mobile version*/
 .quote-wrapper{
@@ -385,7 +392,7 @@ footer{
 /********** Large devices only **********/
 @media (min-width: 1200px) {
   .container-mobile-screen{
-    display: none;
+    /* display: none; */
   }
   .logo {
      width: 10%;
@@ -400,31 +407,31 @@ footer{
 }
 
 /********** Medium devices only **********/
-@media (min-width: 992px) and (max-width: 1199px) {
+/* @media (min-width: 992px) and (max-width: 1199px) {
   .container-mobile-screen{
     display: none;
   }
-}
+} */
 
 /********** Small devices only **********/
-@media (min-width: 768px) and (max-width: 991px) {
+/* @media (min-width: 768px) and (max-width: 991px) {
   .container-desktop-screen{
     display: none;
   }
   
  
-}
+} */
 
 /********** Extra small devices only **********/
-@media (max-width: 767px) {
-  .container-desktop-screen{
+/* @media (max-width: 767px) { */
+  /* .container-desktop-screen{
     display: none;
   }
 
-}
+} */
 /********** Super extra small devices Only :-) (e.g., iPhone 4) **********/
-@media (max-width: 479px) {
+/* @media (max-width: 479px) {
   .container-desktop-screen{
     display: none;
   }
-}
+} */
