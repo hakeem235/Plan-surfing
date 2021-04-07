@@ -20,40 +20,37 @@
 </head>
 
 <body>
-    <div class="container-mobile-screen">
-        <nav class="w3-sidebar w3-bar-block w3-card" id="mySidebar">
-            <div class="w3-container w3-theme-d2">
-                <span onclick="closeSidebar()" class="w3-button w3-display-topright w3-large">X</span>
-                <br>
-                <div class="w3-padding w3-center">
-                    <img class="w3-circle" src="./assets/images/pngwing.com.png" alt="avatar" style="width:75%">
-                </div>
+    <!-- <div class="container-mobile-screen"> -->
+    <nav class="w3-sidebar w3-bar-block w3-card" id="mySidebar">
+        <div class="w3-container w3-theme-d2">
+            <span onclick="closeSidebar()" class="w3-button w3-display-topright w3-large">X</span>
+            <br>
+            <div class="w3-padding w3-center">
+                <img class="w3-circle" src="./assets/images/pngwing.com.png" alt="avatar" style="width:75%">
             </div>
-            <a class="w3-bar-item w3-button" href="./index.html" onclick="closeSidebar()">Home</a>
-            <a class="w3-bar-item w3-button" id="newsBtn" href="#" onclick="closeSidebar()">News</a>
-            <a class="w3-bar-item w3-button" href="#" onclick="closeSidebar()">Daily Tasks</a>
-            <a class="w3-bar-item w3-button weatherBtn" href="#" onclick="closeSidebar()">Weather</a>
-        </nav>
-
-        <header class="w3-bar w3-card w3-theme">
-            <button class="w3-bar-item w3-button w3-xxxlarge w3-hover-theme barColor"
-                onclick="openSidebar()">&#9776;</button>
-            <img class="logo" src="./assets/images/logo.png" alt="logo">
-            <h1 class="w3-bar-item headerName">Plan Surfing</h1>
-        </header>
-<<<<<<< HEAD
-        <hr class=topLine>
-        <div class="container">
-=======
+        </div>
+        <a class="w3-bar-item w3-button" href="./index.html" onclick="closeSidebar()">Home</a>
+        <a class="w3-bar-item w3-button" id="newsBtn" href="#" onclick="closeSidebar()">News</a>
+        <a class="w3-bar-item w3-button" href="#" onclick="closeSidebar()">Daily Tasks</a>
+        <a class="w3-bar-item w3-button weatherBtn" href="#" onclick="closeSidebar()">Weather</a>
+    </nav>
+    <header class="w3-bar w3-card w3-theme">
+        <button class="w3-bar-item w3-button w3-xxxlarge w3-hover-theme barColor"
+            onclick="openSidebar()">&#9776;</button>
+        <img class="logo" src="./assets/images/logo.png" alt="logo">
+        <h1 class="w3-bar-item headerName">Plan Surfing</h1>
+    </header>
+    <hr class=topLine>
+    <div class="container">
         <div class="w3-container">
             <hr class=topLine>
->>>>>>> c7beadd1c1e131ac47ab53976daf2a9f1d6b35a9
             <div class="quote-wrapper">
                 <h2>Quote Of The Day</h2>
                 <small id="quote-tags"></small>
                 <blockquote id="quote-text"></blockquote>
                 <cite id="quote-author"></cite>
-                <button type="button" id="gen-quote-btn" class="w3-panel w3-border w3-hover-border-blue">Get New Quote</button>
+                <button type="button" id="gen-quote-btn" class="w3-panel w3-border w3-hover-border-blue">Get New
+                    Quote</button>
             </div>
         </div>
         <div class="row">
@@ -86,7 +83,7 @@
                                 <a href=""></a>
 
                             </div>
-                        </div>
+                        </div> -->
                         <!--Anastasia's part end-->
                     </div>
                 </div>
@@ -103,8 +100,6 @@
                     </div>
                 </div>
                 <hr class="between">
-
-
                 <div class="w3-cell-row w3-card  w3-round" id="weatherSection">
                     <div class="w3-cell" id="cell3W" style="width:30%">
                         <img class="sectionImg" src="./assets/images/weather.jpg" style="width:100%">
@@ -115,107 +110,93 @@
                             <button class="button mt-5" id="search-button">Search</button>
                         </div>
                         <a class="weatherBtn" href="#">
-                            <h3 class="current-city"  id="cityName"></h3>
+                            <h3 class="current-city" id="cityName"></h3>
                         </a>
                         <p class="weather Wdescription" id="description"></p>
                         <p class="weather temperature" id="temperature"></p>
                         <p class="weather humidity" id="humidity"></p>
                         <p class="weather wind-speed" id="wind-speed"></p>
-
-                        <div>
-                            <div class="desktop">
-                                <hr>
-                                <p>Temperature:<span class="current temperature"></span>
-                                </p>
-                                <p>Humidity:<span class="current humidity"></span></p>
-                                <p>Wind Speed:<span class="current wind-speed"></span></p>
-                                <p>UV index:<span class="current uvColor w3-round-small  text-black"
-                                        id="uv-index"></span></p>
-
-                                <!--Row for future data to be dumped here-->
-                                <hr class="topLine">
-                                <div class="bolck">
-                                    <section class="hero">
-                                        <div class="hero-body">
-                                            <div id="future-weather">
-                                                <div class="forecast text-light is-flex-direction-row">
-                                                    <div class="card ">
-                                                        <div class="card-content">
-                                                            <div class="content">
-                                                                <h5 class="has-text-white" id="fDate0"></h5>
-                                                                <p id="fImg0"></p>
-                                                                <p>Temp:<span id="fTemp0"></span></p>
-                                                                <p>Humidity:<span id="fHumidity0"></span></p>
-                                                            </div>
+                        <div class="desktop">
+                            <!--Row for future data to be dumped here-->
+                            <hr class="topLine">
+                            <div class="bolck">
+                                <section class="hero">
+                                    <div class="hero-body">
+                                        <div id="future-weather">
+                                            <div class="forecast text-light">
+                                                <div class="card ">
+                                                    <div class="card-content">
+                                                        <div class="content">
+                                                            <h5 class="has-text-white" id="fDate0"></h5>
+                                                            <p id="fImg0"></p>
+                                                            <p>Temp:<span id="fTemp0"></span></p>
+                                                            <p>Humidity:<span id="fHumidity0"></span></p>
                                                         </div>
                                                     </div>
-                                                    <div class="card">
-                                                        <div class="card-content">
-                                                            <div class="content">
-                                                                <h5 class="has-text-white" id="fDate1"></h5>
-                                                                <p id="fImg1"></p>
-                                                                <p>Temp:<span id="fTemp1"></span></p>
-                                                                <p>Humidity:<span id="fHumidity1"></span></p>
-                                                            </div>
+                                                </div>
+                                                <div class="card">
+                                                    <div class="card-content">
+                                                        <div class="content">
+                                                            <h5 class="has-text-white" id="fDate1"></h5>
+                                                            <p id="fImg1"></p>
+                                                            <p>Temp:<span id="fTemp1"></span></p>
+                                                            <p>Humidity:<span id="fHumidity1"></span></p>
                                                         </div>
                                                     </div>
-                                                    <div class="card">
-                                                        <div class="card-content">
-                                                            <div class="content">
-                                                                <h5 class="has-text-white" id="fDate2"></h5>
-                                                                <p id="fImg2"></p>
-                                                                <p>Temp:<span id="fTemp2"></span></p>
-                                                                <p>Humidity:<span id="fHumidity2"></span></p>
-                                                            </div>
+                                                </div>
+                                                <div class="card">
+                                                    <div class="card-content">
+                                                        <div class="content">
+                                                            <h5 class="has-text-white" id="fDate2"></h5>
+                                                            <p id="fImg2"></p>
+                                                            <p>Temp:<span id="fTemp2"></span></p>
+                                                            <p>Humidity:<span id="fHumidity2"></span></p>
                                                         </div>
                                                     </div>
-                                                    <div class="card">
-                                                        <div class="card-content">
-                                                            <div class="content">
-                                                                <h5 class="has-text-white" id="fDate3"></h5>
-                                                                <p id="fImg3"></p>
-                                                                <p>Temp:<span id="fTemp3"></span></p>
-                                                                <p>Humidity:<span id="fHumidity3"></span></p>
-                                                            </div>
+                                                </div>
+                                                <div class="card">
+                                                    <div class="card-content">
+                                                        <div class="content">
+                                                            <h5 class="has-text-white" id="fDate3"></h5>
+                                                            <p id="fImg3"></p>
+                                                            <p>Temp:<span id="fTemp3"></span></p>
+                                                            <p>Humidity:<span id="fHumidity3"></span></p>
                                                         </div>
                                                     </div>
-                                                    <div class="card">
-                                                        <div class="card-content">
-                                                            <div class="content">
-                                                                <h5 class="has-text-white" id="fDate4"></h5>
-                                                                <p id="fImg4"></p>
-                                                                <p>Temp:<span id="fTemp4"></span></p>
-                                                                <p>Humidity:<span id="fHumidity4"></span></p>
-                                                            </div>
+                                                </div>
+                                                <div class="card">
+                                                    <div class="card-content">
+                                                        <div class="content">
+                                                            <h5 class="has-text-white" id="fDate4"></h5>
+                                                            <p id="fImg4"></p>
+                                                            <p>Temp:<span id="fTemp4"></span></p>
+                                                            <p>Humidity:<span id="fHumidity4"></span></p>
                                                         </div>
                                                     </div>
                                                 </div>
                                             </div>
                                         </div>
-                                    </section>
-                                </div>
-                                <div id="googleMap" style="width:100%;height:400px;"></div>
+                                    </div>
+                                </section>
                             </div>
+                            <div id="googleMap" style="width:100%;height:400px;"></div>
                         </div>
                     </div>
                 </div>
+                <hr class="bottomLine">
             </div>
-        </div>
-        <hr class="bottomLine">
-    </div>
-
-    <footer class="w3-container w3-card ">
-        <h4>© 2021 The Power Quad Squad Production</h4>
-    </footer>
-    <script src="https://code.jquery.com/jquery.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.29.1/moment.min.js"></script>
-    <script src="./assets/js/script.js"></script>
-    <script src="./assets/js/news.js"></script>
-    <script src="./assets/js/quotes.js"></script>
-    <script src="https://maps.googleapis.com/maps/api/js?clinent=d91f911bcf2c0f925fb6535547a5ddc9"></script>
-    <script src="./assets/js/weather.js"></script>
-    <script src="./assets/js/dskquotes.js"></script>
+            <footer class="w3-container w3-card ">
+                <h4>© 2021 The Power Quad Squad Production</h4>
+            </footer>
+            <script src="https://code.jquery.com/jquery.js"></script>
+            <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+            <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.29.1/moment.min.js"></script>
+            <script src="./assets/js/script.js"></script>
+            <script src="./assets/js/news.js"></script>
+            <script src="./assets/js/quotes.js"></script>
+            <script src="https://maps.googleapis.com/maps/api/js?clinent=d91f911bcf2c0f925fb6535547a5ddc9"></script>
+            <script src="./assets/js/weather.js"></script>
+            <script src="./assets/js/dskquotes.js"></script>
 
 </body>
 

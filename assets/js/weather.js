@@ -14,16 +14,16 @@ $('.weatherBtn').on('click', function () {
   $('.between').hide();
   $('#news').hide();
   $('#cell3W').hide();
-  $('.weather').hide();
+  $('.weather').show();
   $('.container').hide()
   // Show Section
   $('.desktop').show()
   // styling section
   $('#cityName').css('text-align', 'center')
   $('#description').css('text-align', 'center')
-  $('#temperature').css('text-align', 'center')
-  $('#wind-speed').css('text-align', 'center')
-  $('#humidity').css('text-align', 'center')
+  $('.temperature').css('text-align', 'center')
+  $('.wind-speed').css('text-align', 'center')
+  $('.humidity').css('text-align', 'center')
   $('.btnSearchSection').addClass('w3-center')
 })
 
@@ -138,9 +138,9 @@ function currentWeather(weatherUrl) {
       var temp = (data.main.temp);
       $('#cityName').text(data.name + " - " + data.sys.country);       
       $('#description').text((data.weather[0].description).toUpperCase())
-      $('.temperature').text(" " + temp.toFixed(0) + ' °C').hide();
-      $('.humidity').text(" " + data.main.humidity + "%").hide();
-      $('.wind-speed').text(" " + data.wind.speed.toFixed(1) + ' MPH').hide();
+      $('.temperature').text(" Temperature: " + temp.toFixed(0) + ' °C').hide();
+      $('.humidity').text(" Humidity: " + data.main.humidity + "%").hide();
+      $('.wind-speed').text("wind Speed: " + data.wind.speed.toFixed(1) + ' MPH').hide();
 
       //get UV Index
       var lat = data.coord.lat;
