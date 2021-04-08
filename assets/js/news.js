@@ -156,6 +156,7 @@ $('.weatherBtn').on('click', function () {
   $('#wind-speed').css('text-align', 'center');
   $('#humidity').css('text-align', 'center');
   $('.mainScreenW').css('display', 'table');
+
 })
 
 $('.taskBtn').on('click', function () {
