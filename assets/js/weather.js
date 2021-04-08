@@ -28,6 +28,28 @@ $('.weatherBtn').on('click', function () {
   $('.btnSearchSection').addClass('w3-center')
 })
 
+$('.weatherName').on('click', function () {
+  // Hide Section
+  $('#dailyTasks').hide();
+  $('.sectionImg').hide();
+  $('.quote-wrapper').hide();
+  $('.between').hide();
+  $('#news').hide();
+  $('#cell3W').hide();
+  $('.weather').show();
+  $('.container').hide();
+  $('.weatherName').hide();
+  // Show Section
+  $('.desktop').show()
+  // styling section
+  $('#cityName').css('text-align', 'center')
+  $('#description').css('text-align', 'center')
+  $('.temperature').css('text-align', 'center')
+  $('.wind-speed').css('text-align', 'center')
+  $('.humidity').css('text-align', 'center')
+  $('.btnSearchSection').addClass('w3-center')
+})
+
 
 $('#news').on('click', function () {
   $('#dailyTasks').hide();
@@ -136,7 +158,7 @@ function currentWeather(weatherUrl) {
       $('#cityNamey').text((data.name.toUpperCase()) + " " + currentDate);
       $("<img>").attr("src", iconUrl).appendTo("#cityName")
       var temp = (data.main.temp);
-      $('#cityName').text(data.name + " - " + data.sys.country);       
+      $('#cityName').text(data.name + " - " + data.sys.country);
       $('#description').text((data.weather[0].description).toUpperCase())
       $('.temperature').text(" Temperature: " + temp.toFixed(0) + ' °C').hide();
       $('.humidity').text(" Humidity: " + data.main.humidity + "%").hide();
@@ -163,7 +185,7 @@ function currentWeather(weatherUrl) {
             $('#uv-index').css('background-color', 'violet')
           }
 
-          
+
 
         })
     })
@@ -192,8 +214,6 @@ function fiveDayForecast(city) {
 
     });
 }
-
-
 
 function initMap() {
   map = new google.maps.Map(document.getElementById("map"), {
