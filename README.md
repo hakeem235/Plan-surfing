@@ -60,6 +60,12 @@
 
  To run a project, please follow the link
 
+ [Plan Surfing](https://hakeem235.github.io/Plan-surfing/)
+
+##GitHub Repo link
+
+[GitHub Repo](https://github.com/hakeem235/Weather-Dashboard)
+
 
 # Comments
 
