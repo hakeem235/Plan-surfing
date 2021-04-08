@@ -11,7 +11,6 @@ var Back2 = document.getElementById('back2');
 var regClick = document.getElementById('click')
 
 var progress = document.getElementById('progress')
-
 regClick.onclick = function(){
     Form0.style.left = '-450px';
     Form1.style.left = '40px';
@@ -19,7 +18,6 @@ regClick.onclick = function(){
 
 
 Next1.onclick = function(){
-    pro
     Form1.style.left = '-450px';
     Form2.style.left = '40px'; 
     progress.style.width = '240px' 
