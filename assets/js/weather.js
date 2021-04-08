@@ -27,6 +27,8 @@ $('.weatherBtn').on('click', function () {
   $('.wind-speed').css('text-align', 'center')
   $('.humidity').css('text-align', 'center')
   $('.btnSearchSection').addClass('w3-center')
+  $('#tasksSquares').hide();
+  $('#newsSquares').hide();
 })
 
 $('.weatherName').on('click', function () {
@@ -49,23 +51,44 @@ $('.weatherName').on('click', function () {
   $('.wind-speed').css('text-align', 'center')
   $('.humidity').css('text-align', 'center')
   $('.btnSearchSection').addClass('w3-center')
+  $('#tasksSquares').hide();
+  $('#newsSquares').hide();
+
 })
 
 
-$('#news').on('click', function () {
+// $('#news').on('click', function () {
+//   $('#dailyTasks').hide();
+//   $('.sectionImg').hide();
+//   $('#current-weather').hide();
+//   $('.quote-wrapper').hide();
+//   $('#newsSections').show();
+//   $('#newsName').hide();
+//   $('#w3Cell').hide();
+//   $('.between').hide();
+//   $('#weatherSection').hide();
+//   $('.newsText').css('text-align', 'center')
+//   $('.loginText').hide();
+//   $('.newsText').show();
+//   $('.description').hide();
+// })
+
+$('.newsBtn').on('click', function () {
+  $('#newsSections').show();
+  $('#mySidebar').hide();
   $('#dailyTasks').hide();
   $('.sectionImg').hide();
   $('#current-weather').hide();
   $('.quote-wrapper').hide();
-  $('#newsSections').show();
   $('#newsName').hide();
   $('#w3Cell').hide();
   $('.between').hide();
   $('#weatherSection').hide();
-  $('.newsText').css('text-align', 'center')
+  $('.newsText').css('text-align', 'center');
   $('.loginText').hide();
   $('.newsText').show();
   $('.description').hide();
+
 })
 
 
