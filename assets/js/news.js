@@ -155,6 +155,9 @@ $('.weatherBtn').on('click', function () {
   $('#humidity').css('text-align', 'center');
 })
 
+$('.taskBtn').on('click', function () {
+  $('#dailyTasks').show();
+})
 
 
 
