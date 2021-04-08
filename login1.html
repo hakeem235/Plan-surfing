@@ -8,10 +8,6 @@
   <link rel="preconnect" href="https://fonts.gstatic.com">
   <!-- Rest Css -->
   <link rel="stylesheet" href="./assets/css/rest.css">
-  <!-- W3.CSS framwork -->
-  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3pro.css">
-  <!--Bulma-->
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.2/css/bulma.min.css">
   <!-- Google Font  -->
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400&display=swap" rel="stylesheet">
   <!-- CSS flie -->
@@ -22,6 +18,17 @@
 <body class="loginBody">
 
   <div class="container-logIn">
+    <form id="form0">
+      <h3 class="logheader">SIGN In</h3>
+      <input type="text" placeholder="Email" required>
+      <input type="password" placeholder="Password" required>
+      
+      <div class="btn-box">
+        <button type="button" id="logIn">Log In</button>
+        <p>Creat an account<span> click here</span></p>
+      </div>
+    </form>
+
     <form id="form1">
       <h3 class="logheader">CREATE ACCOUNT</h3>
       <input type="text" placeholder="Email" required>
@@ -29,9 +36,10 @@
       <input type="password" placeholder="Confirm Password" required>
 
       <div class="btn-box">
-        <button type="button" id="next1">NEXT</button>
+        <button type="button" id="next1">NEXT</button> 
+        <p>If have account<span>Click here</span></p>
       </div>
-      <p>If have account click <span>Here</span></p>
+     
     </form>
 
     <form id="form2">
