@@ -432,7 +432,6 @@ form button {
 
 } 
 
-
 .desktop{
   display: none;
 }
@@ -452,18 +451,6 @@ text-align: center;
        #map {
         height: 100%;
       }
-      
-      /* Optional: Makes the sample page fill the window. */
-      html,
-      body {
-        height: 100%;
-        margin: 0;
-        padding: 0;
-      }
-      
-
-
-
 /* daily tasks*/
 .dailyBtn {
   width: 75px;
@@ -617,13 +604,20 @@ text-align: center;
 
 /********** Medium devices only **********/
  @media (min-width: 1200px) {
+
+  .hero{ 
+    width: 100%;
+  }
+
+  
    .forecast {
     display: flex;
-    flex-direction: row-reverse;
+    flex-direction: row;
     justify-content: center;
     text-align: center;
     }
     .card {
+      width: 100%;
       margin-bottom: 25px;
     }
 

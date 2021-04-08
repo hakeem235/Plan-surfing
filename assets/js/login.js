@@ -8,10 +8,18 @@ var Next1 = document.getElementById('next1');
 var Next2 = document.getElementById('next2');
 var Back1 = document.getElementById('back1');
 var Back2 = document.getElementById('back2');
+var regClick = document.getElementById('click')
 
 var progress = document.getElementById('progress')
 
+regClick.onclick = function(){
+    Form0.style.left = '-450px';
+    Form1.style.left = '40px';
+}
+
+
 Next1.onclick = function(){
+    pro
     Form1.style.left = '-450px';
     Form2.style.left = '40px'; 
     progress.style.width = '240px' 
@@ -40,7 +48,7 @@ var attempt = 3; // Variable to count number of attempts.
 // Below function Executes on click of login button.
 function validate(event) {
     event.preventDefault()
-    var username = document.getElementById("username").value;
+    var username = document.getElementById("email").value;
     var password = document.getElementById("password").value;
     if (username == "admin" && password == "user") {
         window.location.href = "./index.html"; // Redirecting to other page.
