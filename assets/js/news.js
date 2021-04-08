@@ -16,7 +16,6 @@ fetch(urlLogin, {
     $('.newsText').hide();
     $('.loginText').text(firstArticle.title);
     $('.description').text(firstArticle.content);
-    $('#results').text(firstArticle.title)
     $('#results').append('<h2>' + firstArticle.title + '</h2>');
     $('#results').append('<img src=' + firstArticle.image + '>');
     $('#results').append('<p>' + firstArticle.content + '</p>');

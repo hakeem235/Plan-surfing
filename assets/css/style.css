@@ -238,10 +238,12 @@ a {
   margin-top: 3%;
   color: #043C84;
   font-size: 30px;
+  text-align: center;
 }
 
-input {
+#currentSearch {
   margin-top: 5%;
+  
 }
 
 .button {
