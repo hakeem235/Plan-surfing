@@ -20,7 +20,7 @@
 </head>
 
 <body>
-
+    <!--Side Navigation Bar-->
     <nav class="w3-sidebar w3-bar-block w3-card" id="mySidebar">
         <div class="w3-container w3-theme-d2">
             <span onclick="closeSidebar()" class="w3-button w3-display-topright w3-large">X</span>
@@ -31,8 +31,8 @@
         </div>
         <a class="w3-bar-item w3-button" href="./index.html" onclick="closeSidebar()">Home</a>
         <a class="w3-bar-item w3-button newsBtn" href="#" onclick="closeSidebar()">News</a>
-        <a class="w3-bar-item w3-button taskBtn" href="#" onclick="closeSidebar()">Daily Tasks</a>
-        <a class="w3-bar-item w3-button " id="weatherBtn" href="#" onclick="closeSidebar()">Weather</a>
+        <a class="w3-bar-item w3-button taskBtn" href="./dailytask.html" onclick="closeSidebar()">Daily Tasks</a>
+        <a class="w3-bar-item w3-button weatherBtn" href="#" onclick="closeSidebar()">Weather</a>
     </nav>
     <header class="w3-bar w3-card w3-theme">
         <button class="w3-bar-item w3-button w3-xxxlarge w3-hover-theme barColor"
@@ -40,6 +40,7 @@
         <img class="logo" src="./assets/images/logo.png" alt="logo">
         <h1 class="w3-bar-item headerName">Plan Surfing</h1>
     </header>
+    <!--Quotes Section-->
     <hr class=topLine>
     <div class="w3-container">
         <div class="quote-wrapper">
@@ -51,13 +52,14 @@
                 Quote</button>
         </div>
     </div>
+    <!--News,Daily Tasks, Weather Section-->
     <hr class="between">
     <div class="mobileFriendly">
+        <!--News Section-->
         <div class="w3-cell-row w3-card w3-round squares mainScreen" id="newsSquares">
             <div class="w3-cell" id="w3Cell" style="width:30%">
                 <img class="sectionImg" src="./assets/images/news1.jpg" style="width:100%">
             </div>
-            <!--Anastasia's part start-->
             <div class="w3-cell w3-container" id="news">
                 <a href="#">
                     <h3 id="newsName">News</h3>
@@ -81,9 +83,9 @@
 
                     </div>
                 </div>
-                <!--Anastasia's part end-->
             </div>
         </div>
+        <!--Daily Tasks Section-->
         <hr class="between">
         <div class="w3-cell-row w3-card w3-round squares mainScreen" id="tasksSquares">
             <div class="w3-cell" style="width:30%">
@@ -98,6 +100,7 @@
                 </a>
             </div>
         </div>
+        <!--Weather Section-->
         <hr class="between">
         <div class="w3-cell-row w3-card w3-round squares mainScreen" id="weatherSection">
             <div class="w3-cell" id="cell3W" style="width:30%">
@@ -109,8 +112,6 @@
                     <input type="text" placeholder="Search for a City" class="input mt-5" id="search-city">
                     <button class="button mt-5" id="search-button">Search</button>
                 </div>
-
-
                 <a class="weatherMainBtn" href="#">
                     <h3 class="current-city" id="cityName"></h3>
                 </a>
