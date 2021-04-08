@@ -4,8 +4,6 @@
 
 * General info
 * Specifics
- * Login Section
- * Register Section
  * Quotes Section
  * News Section
  * Daily Tasks Section
