@@ -64,10 +64,14 @@ a {
 }
 /*Anastasia's part start*/
 
-#newsName, #cityName, .daily-tasks {
+#newsName, .weatherName, #cityName, .daily-tasks {
   margin-top: 2%;
   margin-left: 2%;
   font-size: 30px;
+}
+
+.btnSearchSection{
+  margin-left: 2%;
 }
 
 
