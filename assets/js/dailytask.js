@@ -14,27 +14,27 @@ $('#dailyTasks').on('click', function () {
   $('.daily-tasks').hide();
   // Show Section
   $('.desktop').hide()
-  })
+})
 
- 
-  $('.taskBtn').on('click', function () {
-    // Hide Section
-    $('#dailyTasks').show();
-    $('.sectionImg').hide();
-    $('.quote-wrapper').hide();
-    $('.between').hide();
-    $('#news').hide();
-    $('#cell3W').hide();
-    $('.weather').hide();
-    $('.container').hide();
-    $('.weatherName').hide();
-    $('#weatherSection').hide();
-    $('#newsSquares').hide();
-    $('.daily-tasks').hide();
-    // Show Section
-    $('.desktop').hide()
-    })
-  
+
+$('.taskBtn').on('click', function () {
+  // Hide Section
+  $('#dailyTasks').show();
+  $('.sectionImg').hide();
+  $('.quote-wrapper').hide();
+  $('.between').hide();
+  $('#news').hide();
+  $('#cell3W').hide();
+  $('.weather').hide();
+  $('.container').hide();
+  $('.weatherName').hide();
+  $('#weatherSection').hide();
+  $('#newsSquares').hide();
+  $('.daily-tasks').hide();
+  // Show Section
+  $('.desktop').hide()
+})
+
 let nav = 0;
 let clicked = null;
 let events = localStorage.getItem('events') ? JSON.parse(localStorage.getItem('events')) : [];
@@ -67,7 +67,7 @@ const weekdays = ['Sunday', 'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Frida
 //parameter passing in, openModal(date)
 function openModal(date) {
   clicked = date;
- 
+
 
   const eventForDay = events.find(e => e.date === clicked);
 
@@ -80,7 +80,7 @@ function openModal(date) {
 
     document.getElementById('eventText5').innerText = eventForDay.title3;
     document.getElementById('eventText6').innerText = eventForDay.startTime3;
-  
+
     deleteEventModal.style.display = 'block';
   } else {
     newEventModal.style.display = 'block';
@@ -102,20 +102,20 @@ function load() {
 
   const firstDayOfMonth = new Date(year, month, 1);
   const daysInMonth = new Date(year, month + 1, 0).getDate();
-  
+
   const dateString = firstDayOfMonth.toLocaleDateString('en-us', {
     weekday: 'long',
     year: 'numeric',
     month: 'numeric',
     day: 'numeric',
   });
-
-  document.getElementById('monthDisplay').innerText = 
+  const paddingDays = weekdays.indexOf(dateString.split(', ')[0]);
+  document.getElementById('monthDisplay').innerText =
     `${dt.toLocaleDateString('en-us', { month: 'long' })} ${year}`;
 
   calendar.innerHTML = '';
 
-  for(let i = 1; i <= paddingDays + daysInMonth; i++) {
+  for (let i = 1; i <= paddingDays + daysInMonth; i++) {
     const daySquare = document.createElement('div');
     daySquare.classList.add('day');
 
@@ -141,7 +141,7 @@ function load() {
       daySquare.classList.add('padding');
     }
 
-    calendar.appendChild(daySquare);    
+    calendar.appendChild(daySquare);
   }
 }
 
@@ -161,17 +161,17 @@ function saveEvent() {
 
     events.push({
       date: clicked,
-        title: eventTitleInput.value,
-        startTime: eventStartTimeInput.value,
-      
-        title2: eventTitleInput2.value,
-        startTime2: eventStartTimeInput2.value,
-        
-        title3: eventTitleInput3.value,
-        startTime3: eventStartTimeInput3.value,
+      title: eventTitleInput.value,
+      startTime: eventStartTimeInput.value,
 
-        title4: eventTitleInput4.value,
-        startTime4: eventStartTimeInput4.value,
+      title2: eventTitleInput2.value,
+      startTime2: eventStartTimeInput2.value,
+
+      title3: eventTitleInput3.value,
+      startTime3: eventStartTimeInput3.value,
+
+      title4: eventTitleInput4.value,
+      startTime4: eventStartTimeInput4.value,
     });
 
     localStorage.setItem('events', JSON.stringify(events));
