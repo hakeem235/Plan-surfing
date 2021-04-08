@@ -6,45 +6,45 @@ var myCities = [];
 var apiKey = "d91f911bcf2c0f925fb6535547a5ddc9";
 var map;
 
-$('.weatherBtn').on('click', function () {
-  // Hide Section
-  $('#dailyTasks').hide();
-  $('.sectionImg').hide();
-  $('.quote-wrapper').hide();
-  $('.between').hide();
-  $('#news').hide();
-  $('#cell3W').hide();
-  $('.weather').show();
-  $('.container').hide();
-  $('.weatherName').hide();
-  // Show Section
-  $('.desktop').show()
-  // styling section
-  $('#cityName').css('text-align', 'center')
-  $('#description').css('text-align', 'center')
-  $('.temperature').css('text-align', 'center')
-  $('.wind-speed').css('text-align', 'center')
-  $('.humidity').css('text-align', 'center')
-  $('.btnSearchSection').addClass('w3-center')
-  $('.mainScreenW').css('display', 'table');
-  $('#tasksSquares').hide();
-  $('#newsSquares').hide();
-})
+// $('.weatherBtn').on('click', function () {
+//   // Hide Section
+//   // $('#dailyTasks').hide();
+//   // $('.sectionImg').hide();
+//   // $('.quote-wrapper').hide();
+//   // $('.between').hide();
+//   // $('#news').hide();
+//   // $('#cell3W').hide();
+//   $('.weather').show();
+//   // $('.container').hide();
+//   // $('.weatherName').hide();
+//   // Show Section
+//   $('.desktop').show()
+//   // styling section
+//   $('#cityName').css('text-align', 'center')
+//   $('#description').css('text-align', 'center')
+//   $('.temperature').css('text-align', 'center')
+//   $('.wind-speed').css('text-align', 'center')
+//   $('.humidity').css('text-align', 'center')
+//   $('.btnSearchSection').addClass('w3-center')
+//   $('.mainScreenW').css('display', 'table');
+//   // $('#tasksSquares').hide();
+//   // $('#newsSquares').hide();
+// })
 
 
 //side bar weather
 $('.weatherMainBtn').on('click', function () {
   // Hide Section
-  $('#dailyTasks').hide();
-  $('.sectionImg').hide();
-  $('.quote-wrapper').hide();
-  $('.between').hide();
-  $('#news').hide();
-  $('#cell3W').hide();
+  // $('#dailyTasks').hide();
+  // $('.sectionImg').hide();
+  // $('.quote-wrapper').hide();
+  // $('.between').hide();
+  // $('#news').hide();
+  // $('#cell3W').hide();
   $('.weather').show();
-  $('.container').hide();
-  $('.weatherName').hide();
-  $('').hide();
+  // $('.container').hide();
+  // $('.weatherName').hide();
+  // $('').hide();
   // Show Section
   $('.desktop').show()
   // styling section
@@ -55,21 +55,21 @@ $('.weatherMainBtn').on('click', function () {
   $('.humidity').css('text-align', 'center')
   $('.btnSearchSection').addClass('w3-center')
   $('.mainScreenW').css('display', 'table');
-  $('#tasksSquares').hide();
-  $('#newsSquares').hide();
+  // $('#tasksSquares').hide();
+  // $('#newsSquares').hide();
 })
 
 $('.weatherName').on('click', function () {
   // Hide Section
-  $('#dailyTasks').hide();
-  $('.sectionImg').hide();
-  $('.quote-wrapper').hide();
-  $('.between').hide();
-  $('#news').hide();
-  $('#cell3W').hide();
+  // $('#dailyTasks').hide();
+  // $('.sectionImg').hide();
+  // $('.quote-wrapper').hide();
+  // $('.between').hide();
+  // $('#news').hide();
+  // $('#cell3W').hide();
   $('.weather').show();
-  $('.container').hide();
-  $('.weatherName').hide();
+  // $('.container').hide();
+  // $('.weatherName').hide();
   // Show Section
   $('.desktop').show()
   // styling section
@@ -80,32 +80,10 @@ $('.weatherName').on('click', function () {
   $('.humidity').css('text-align', 'center')
   $('.btnSearchSection').addClass('w3-center')
   $('.mainScreenW').css('display', 'table');
-  $('#tasksSquares').hide();
-  $('#newsSquares').hide();
+  // $('#tasksSquares').hide();
+  // $('#newsSquares').hide();
 
 })
-
-//side bar News nav
-$('.newsBtn').on('click', function () {
-  $('#newsSections').show();
-  $('#mySidebar').hide();
-  $('#dailyTasks').hide();
-  $('.sectionImg').hide();
-  $('#current-weather').hide();
-  $('.quote-wrapper').hide();
-  $('#newsName').hide();
-  $('#w3Cell').hide();
-  $('.between').hide();
-  $('#weatherSection').hide();
-  $('.newsText').css('text-align', 'center');
-  $('.loginText').hide();
-  $('.newsText').show();
-  $('.description').hide();
-  $('#tasksSquares').hide();
-  $('.mainScreenW').css('display', 'table');
-})
-
-
 
 function getCities() {
   var storage = localStorage.getItem('places')
@@ -119,7 +97,6 @@ getCities();
 
 function printCities(city) {
   placesEl.append('<li>' + (city).toUpperCase() + '</li>');
-  console.log(city)
   $(placesEl).children().attr("class", "list-group-item")
   $('.list-group').css('visibility', 'visible');
   $('.btn-secondary').css('visibility', 'visible');
@@ -130,7 +107,6 @@ function printCities(city) {
 $('#places').on('click', '.list-group-item', function () {
   let clickedCity = ''
   clickedCity = $(this).html();
-  console.log(clickedCity)
   var weatherUrl = generateURL(clickedCity);
   currentWeather(weatherUrl);
   fiveDayForecast(clickedCity);
@@ -189,7 +165,6 @@ function currentWeather(weatherUrl) {
     })
 
     .then(function (data) {
-      console.log(data)
       var currentDate = moment().format('L');
       var weatherIcon = data.weather[0].icon;
       var iconUrl = 'https://openweathermap.org/img/wn/' + weatherIcon + '.png';
