@@ -4,6 +4,7 @@
 
 * General info
 * Specifics
+ * Login Section
  * Quotes Section
  * News Section
  * Daily Tasks Section
@@ -22,6 +23,10 @@
 
 
 # Specifics
+
+ ## Login Page
+
+  Login Page works as a demo, and doesn’t have desired value, however it shows what will happened after user signed in. See comments for clarification of the login page.
 
 
 
@@ -52,6 +57,7 @@
 
  To run a project, please follow the link
 
+
 # Comments
 
- The Power Quad Squad is planning to implement more advanced features in the future. Login and Sign up page will be added. Quotes Section will show specific quotes based on the progress, and the weather forecast. News Section has a limit per day to view articles since it’s is a free plan. For user to be able to view news unlimited times, paid version has to be implemented. Daily calendar will be improved with more advanced features like progress, upcoming or missing tasks alerts, monthly report, what user is accomplished. The application has tremendous potential to grow, helping people to be more productive throughout the day.
+ The Power Quad Squad is planning to implement more advanced features in the future. Login and Sign up page will be added. We couldn’t proceed with login and registration form since we need to have service cloud to store user’s information.  Quotes Section will show specific quotes based on the progress, and the weather forecast. News Section has a limit per day to view articles since it’s is a free plan. For user to be able to view news unlimited times, paid version has to be implemented. Daily calendar will be improved with more advanced features like progress, upcoming or missing tasks alerts, monthly report, what user is accomplished. The application has tremendous potential to grow, helping people to be more productive throughout the day.
