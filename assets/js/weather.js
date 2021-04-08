@@ -17,7 +17,6 @@ $('.weatherBtn').on('click', function () {
   $('.weather').show();
   $('.container').hide();
   $('.weatherName').hide();
-  $('').hide();
   // Show Section
   $('.desktop').show()
   // styling section
@@ -190,6 +189,7 @@ function currentWeather(weatherUrl) {
     })
 
     .then(function (data) {
+      console.log(data)
       var currentDate = moment().format('L');
       var weatherIcon = data.weather[0].icon;
       var iconUrl = 'https://openweathermap.org/img/wn/' + weatherIcon + '.png';
@@ -223,11 +223,16 @@ function currentWeather(weatherUrl) {
           } else {
             $('#uv-index').css('background-color', 'violet')
           }
-
-
-
         })
+        function initMap() {
+          map = new google.maps.Map(document.getElementById("map"), {
+            center: { lat, lng: lon },
+            zoom: 10,
+          });
+        }
+        initMap() 
     })
+    
 }
 // get five day forecast
 function fiveDayForecast(city) {
@@ -254,9 +259,22 @@ function fiveDayForecast(city) {
     });
 }
 
-function initMap() {
-  map = new google.maps.Map(document.getElementById("map"), {
-    center: { lat: -34.397, lng: 150.644 },
-    zoom: 8,
-  });
-}
+
+
+// function iniMap() {
+//   var lat = data.coord.lat;
+//   var lon = data.coord.lon;
+//   var latLonUrl = `https://api.openweathermap.org/data/2.5/uvi?lat=${lat}&lon=${lon}&appid=${apiKey}`;
+//   fetch(latLonUrl)
+//     .then(function (response) {
+//       return response.json()
+//     })
+//     .then(function (data) {
+//       map = new google.maps.Map(document.getElementById("map"), {
+//         center: { lat: lat, lng: lon },
+//         zoom: 8,
+//       })
+//     })
+// }
+
+// iniMap()
