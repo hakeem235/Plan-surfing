@@ -17,6 +17,7 @@ $('.weatherBtn').on('click', function () {
   $('.weather').show();
   $('.container').hide();
   $('.weatherName').hide();
+  $('').hide();
   // Show Section
   $('.desktop').show()
   // styling section

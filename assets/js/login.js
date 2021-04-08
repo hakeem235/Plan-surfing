@@ -1,8 +1,9 @@
-var Form0 = document.getElementById('form3');
+var Form0 = document.getElementById('form0');
 var Form1 = document.getElementById('form1');
 var Form2 = document.getElementById('form2');
 var Form3 = document.getElementById('form3');
 
+var Login = document.getElementById('logIn');
 var Next1 = document.getElementById('next1');
 var Next2 = document.getElementById('next2');
 var Back1 = document.getElementById('back1');
