@@ -64,6 +64,8 @@ a {
 }
 /*Anastasia's part start*/
 
+
+
 #newsName, .weatherName, #cityName, .daily-tasks {
   margin-top: 2%;
   margin-left: 2%;
@@ -381,7 +383,7 @@ footer {
 .container {
   width: 360px;
   height: 400px;
-  margin: 8% auto;
+  margin: 0% auto;
   background: #fff;
   position: relative;
   overflow: hidden;
@@ -525,7 +527,26 @@ text-align: center;
     .card {
       margin-bottom: 25px;
     }
+
+    .mobileFriendly {
+      display: flex;
+      justify-content: space-between;
+    }
+
+    .squares {
+      margin-left: 25px;
+     
+    }
+    .w3-cell-row {
+      display: flex;
+    }
+
+    .newsPhoto {
+      width:80%;
+      height: 50%;
+    }
  }
+
 
   
   
