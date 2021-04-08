@@ -8,7 +8,9 @@ var map;
 
 //side bar weather
 
-
+$('#cityName').on(function(){
+  $('.weather').show();
+})
 
 
 
