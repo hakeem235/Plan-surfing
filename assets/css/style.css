@@ -470,11 +470,6 @@ input {
   color: white;
 }
 
-.desktop{
-  display: none;
-}
-
-
 .forecast {
 display: flex;
 flex-direction: column;
@@ -577,6 +572,13 @@ footer {
   #search-city {
     margin-left: -66%;
       
+  }
+
+  #current-weather{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
   }
 
  }

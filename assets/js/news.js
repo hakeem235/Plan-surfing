@@ -1,7 +1,7 @@
 //news based on location picked when registred
 //var currentLocation = $('#location').val();
 //var urlLogin = 'https://gnews.io/api/v4/search?q=' + currentLocation + '&token=de3770744bd87a3086cf2a0c1b84b3a4';
-var urlLogin = 'https://gnews.io/api/v4/search?q=ottawa&token=de3770744bd87a3086cf2a0c1b84b3a4';
+var urlLogin = 'https://gnews.io/api/v4/search?q=ottawa&token=3ec810557eb7a82c5da0977da4ddca5e';
 fetch(urlLogin, {
 })
   .then(function (response) {
@@ -16,6 +16,7 @@ fetch(urlLogin, {
     $('.newsText').hide();
     $('.loginText').text(firstArticle.title);
     $('.description').text(firstArticle.content);
+    $('#results').text(firstArticle.title)
     $('#results').append('<h2>' + firstArticle.title + '</h2>');
     $('#results').append('<img src=' + firstArticle.image + '>');
     $('#results').append('<p>' + firstArticle.content + '</p>');
@@ -25,25 +26,10 @@ fetch(urlLogin, {
 
 //clicking on the News title
 $('#news').on('click', function () {
-  $('#dailyTasks').hide();
-  $('.sectionImg').hide();
-  $('#current-weather').hide();
-  $('.quote-wrapper').hide();
   $('#newsSections').show();
-  $('#newsName').hide();
-  $('#w3Cell').hide();
-  $('.between').hide();
-  $('#weatherSection').hide();
-  $('.weatherMainBtn').hide()
   $('.newsText').css('text-align', 'center');
-  $('.loginText').hide();
   $('.newsText').show();
-  $('.description').hide();
-  $('#tasksSquares').hide();
   $('.mainScreen').css('display', 'table');
-  $('.mainScreenW').hide();
-
-
 })
 
 //clicking on serch button
@@ -55,7 +41,7 @@ $('#searchBtn').on('click', function () {
 
   //fetch based on input info
   var currentSearch = $('#currentSearch').val();
-  var urlNews = 'https://gnews.io/api/v4/search?q=' + currentSearch + '&token=0453f858d186497aada1593f7f369718';
+  var urlNews = 'https://gnews.io/api/v4/search?q=' + currentSearch + '&token=3ec810557eb7a82c5da0977da4ddca5e';
 
   if (currentSearch !== "") {
     fetch(urlNews, {
@@ -111,29 +97,29 @@ $('#clearBtn').on('click', function () {
 
 });
 
-//sidebar nav
-$('.newsBtn').on('click', function () {
-  $('#newsSections').show();
-  //$('#mySidebar').hide();
-  $('#dailyTasks').hide();
-  $('.sectionImg').hide();
-  $('#current-weather').hide();
-  $('.quote-wrapper').hide();
-  $('#newsName').hide();
-  $('#w3Cell').hide();
-  $('.between').hide();
-  $('#weatherSection').hide();
-  $('.newsText').css('text-align', 'center');
-  $('.loginText').hide();
-  $('.newsText').show();
-  $('.description').hide();
-  $('#tasksSquares').hide();
-  $('.mainScreen').css('display', 'table');
-  $('.mainScreenW').hide();
-  $('#newsSquares').show();
+// //sidebar nav
+// $('.newsBtn').on('click', function () {
+//   $('#newsSections').show();
+//   //$('#mySidebar').hide();
+//   $('#dailyTasks').hide();
+//   $('.sectionImg').hide();
+//   $('#current-weather').hide();
+//   $('.quote-wrapper').hide();
+//   $('#newsName').hide();
+//   $('#w3Cell').hide();
+//   $('.between').hide();
+//   $('#weatherSection').hide();
+//   $('.newsText').css('text-align', 'center');
+//   $('.loginText').hide();
+//   $('.newsText').show();
+//   $('.description').hide();
+//   $('#tasksSquares').hide();
+//   $('.mainScreen').css('display', 'table');
+//   $('.mainScreenW').hide();
+//   $('#newsSquares').show();
 
 
-})
+// })
 
 // // weather button
 // $('.weatherBtn').on('click', function () {
@@ -161,9 +147,9 @@ $('.newsBtn').on('click', function () {
 
 // })
 
-$('.taskBtn').on('click', function () {
-  $('#dailyTasks').show();
-})
+// $('.taskBtn').on('click', function () {
+//   $('#dailyTasks').show();
+// })
 
 
 

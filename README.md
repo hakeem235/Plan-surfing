@@ -43,6 +43,9 @@
 
  ## Daily Tasks Section
 
+  
+   On viewing the home page, the user is presented with their tasks at hand on the current day. Users have option to add or remove tasks when clicking on the card. When users click the link to their daily tasks, a calender format is presented showing all past, present and future duties. When operating in the calender format, users are able to select a specific date where they are able to add an event title and at precise time. When users save their events, it stores in their local storage. Users are able to see all days and months to an endless period.
+
 
  ## Weather Section
 
