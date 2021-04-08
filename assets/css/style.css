@@ -535,16 +535,37 @@ text-align: center;
 
     .squares {
       margin-left: 25px;
+      margin-right: 25px;
      
     }
     .w3-cell-row {
       display: flex;
     }
 
-    .newsPhoto {
-      width:80%;
-      height: 50%;
+    .sectionImg {
+      display: none;
     }
+
+    #newsName {
+      margin-left: 0;
+      text-align: center;
+      font-size: 30px;
+      margin-left: -40%;
+    }
+
+    .daily-tasks {
+      margin-left: -7%;
+    }
+
+    .weatherName {
+      margin-left: 7%;
+    }
+
+    #description, .input {
+      margin-left: -30%;
+      
+    }
+
  }
 
 
