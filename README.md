@@ -53,7 +53,23 @@
 
 
 
-# Screenhots 
+# Screenhots  
+   
+  ![Start Pge](/assets/images/login1.png)
+
+  ![Login Page](/assets/images/login2.png)
+ 
+  ![Main page](/assets/images/1.png)
+
+  ![Quotes](/assets/images/quotes.png)
+
+  ![News](/assets/images/news1.png)
+
+  ![Daily Tasks]()
+
+  ![Weather](/assets/images/weather1.png)
+
+  ![Side Bar](/assets/images/news4.png)
 
 
 # Deployment of application
@@ -62,7 +78,7 @@
 
  [Plan Surfing](https://hakeem235.github.io/Plan-surfing/)
 
-##GitHub Repo link
+ * GitHub Repo link
 
 [GitHub Repo](https://github.com/hakeem235/Weather-Dashboard)
 
