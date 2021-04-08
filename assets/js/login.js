@@ -6,7 +6,7 @@ function validate(event) {
     var username = document.getElementById("email").value;
     var password = document.getElementById("password").value;
     if (username == "admin" && password == "user") {
-        window.location.href = "./index.html"; // Redirecting to other page.
+        window.location.href = "./home.html"; // Redirecting to other page.
         return false;
     }
     else {
