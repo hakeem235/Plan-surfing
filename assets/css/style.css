@@ -379,6 +379,10 @@ form button {
   cursor: pointer;
 }
 
+#form1{
+  left:450px
+}
+
 #form2{
   left: 450px;
 }
