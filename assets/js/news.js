@@ -15,12 +15,12 @@ fetch(urlLogin, {
     console.log(firstArticle)
 
     $('.newsText').hide();
-    $('.loginText').text(firstArticle.title)
-    $('.description').text(firstArticle.content)
-    $('#results').append('<h2>' + firstArticle.title + '</h2>')
-    $('#results').append('<img src=' + firstArticle.image + '>')
-    $('#results').append('<p>' + firstArticle.content + '</p>')
-    $('#results').append('<h4>' + firstArticle.source.name + '</h4>')
+    $('.loginText').text(firstArticle.title);
+    $('.description').text(firstArticle.content);
+    $('#results').append('<h2>' + firstArticle.title + '</h2>');
+    $('#results').append('<img src=' + firstArticle.image + '>');
+    $('#results').append('<p>' + firstArticle.content + '</p>');
+    $('#results').append('<h4>' + firstArticle.source.name + '</h4>');
     $('#results').append('<a target="_blank" href="' + firstArticle.url + '">' + firstArticle.url + '</a>');
 
 
@@ -82,10 +82,10 @@ $('#searchBtn').on('click', function () {
 
           $('.is-loading').hide();
           $('.is-link').show();
-          $('#results').append('<h2>' + latestArticle[i].title + '</h2>')
-          $('#results').append('<img src=' + latestArticle[i].image + '>')
-          $('#results').append('<p>' + latestArticle[i].content + '</p>')
-          $('#results').append('<h4>' + latestArticle[i].source.name + '</h4>')
+          $('#results').append('<h2>' + latestArticle[i].title + '</h2>');
+          $('#results').append('<img src=' + latestArticle[i].image + '>');
+          $('#results').append('<p>' + latestArticle[i].content + '</p>');
+          $('#results').append('<h4>' + latestArticle[i].source.name + '</h4>');
           $('#results').append('<a target="_blank" href="' + latestArticle[i].url + '">' + latestArticle[i].url + '</a>');
 
         }
@@ -95,8 +95,7 @@ $('#searchBtn').on('click', function () {
 
 
   } else {
-    $('.firstArticleText').html('No results found. Please try a different search')
-    console.log('hello')
+    $('.firstArticleText').html('No results found. Please try a different search');
     $('.is-loading').hide();
     $('.is-link').show();
 
@@ -111,13 +110,12 @@ $('#searchBtn').on('click', function () {
 $('#clearBtn').on('click', function () {
   $('#results').empty()
 
-
 });
 
 
 $('#newsBtn').on('click', function () {
-  $('#newsSections').show()
-  $('#mySidebar').hide()
+  $('#newsSections').show();
+  $('#mySidebar').hide();
   $('#dailyTasks').hide();
   $('.sectionImg').hide();
   $('#current-weather').hide();
@@ -126,7 +124,7 @@ $('#newsBtn').on('click', function () {
   $('#w3Cell').hide();
   $('.between').hide();
   $('#weatherSection').hide();
-  $('.newsText').css('text-align', 'center')
+  $('.newsText').css('text-align', 'center');
   $('.loginText').hide();
   $('.newsText').show();
   $('.description').hide();
@@ -148,11 +146,11 @@ $('.weatherBtn').on('click', function () {
   $('#wind-speed').show();
   $('#temperature').show();
   // styling section
-  $('#cityName').css('text-align', 'center')
-  $('#description').css('text-align', 'center')
-  $('#temperature').css('text-align', 'center')
-  $('#wind-speed').css('text-align', 'center')
-  $('#humidity').css('text-align', 'center')
+  $('#cityName').css('text-align', 'center');
+  $('#description').css('text-align', 'center');
+  $('#temperature').css('text-align', 'center');
+  $('#wind-speed').css('text-align', 'center');
+  $('#humidity').css('text-align', 'center');
 })
 
 
