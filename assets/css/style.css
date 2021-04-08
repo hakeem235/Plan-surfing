@@ -216,13 +216,16 @@ a {
 }
 
 #currentSearch {
-  margin-top: 5%;
+  margin: 5% 5% 2% 5%;
+  max-width: 70%;
   
 }
 
 .button {
-    margin: 5% 1% 5% 0;
-}
+  margin-left: 5%;
+  margin-top: 5%;
+  
+} 
 
 .is-loading{
     display: none;
@@ -249,7 +252,6 @@ a {
 #description {
   margin-left: 2%;
 }
-
 
 
 .headerName{
@@ -488,13 +490,6 @@ text-align: center;
   height: 100%;
  }
 
-
-/* .container-mobile-screen{
-  min-height: 100%;
-  /* This is the same as the height of your footer */
-  /* margin-bottom: -25px;
-} */ 
-
 footer {
     position: fixed;
     left: 0;
@@ -542,6 +537,17 @@ footer {
   .newsText {
     text-align: center;
   }
+
+  #currentSearch {
+    margin: 5% 5% 2% 5%;
+    max-width: 70%;
+    
+  }
+  
+  .button {
+    margin-left:0%;
+    
+  } 
 
 
   /*Daily Tasks Section*/
