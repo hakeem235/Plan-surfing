@@ -85,25 +85,25 @@ $('.weatherName').on('click', function () {
 
 })
 
-//side bar News nav
-$('.newsBtn').on('click', function () {
-  $('#newsSections').show();
-  $('#mySidebar').hide();
-  $('#dailyTasks').hide();
-  $('.sectionImg').hide();
-  $('#current-weather').hide();
-  $('.quote-wrapper').hide();
-  $('#newsName').hide();
-  $('#w3Cell').hide();
-  $('.between').hide();
-  $('#weatherSection').hide();
-  $('.newsText').css('text-align', 'center');
-  $('.loginText').hide();
-  $('.newsText').show();
-  $('.description').hide();
-  $('#tasksSquares').hide();
-  $('.mainScreenW').css('display', 'table');
-})
+// //side bar News nav
+// $('.newsBtn').on('click', function () {
+//   $('#newsSections').show();
+//   $('#mySidebar').hide();
+//   $('#dailyTasks').hide();
+//   $('.sectionImg').hide();
+//   $('#current-weather').hide();
+//   $('.quote-wrapper').hide();
+//   $('#newsName').hide();
+//   $('#w3Cell').hide();
+//   $('.between').hide();
+//   $('#weatherSection').hide();
+//   $('.newsText').css('text-align', 'center');
+//   $('.loginText').hide();
+//   $('.newsText').show();
+//   $('.description').hide();
+//   $('#tasksSquares').hide();
+//   $('.mainScreenW').css('display', 'table');
+// })
 
 
 
@@ -224,15 +224,15 @@ function currentWeather(weatherUrl) {
             $('#uv-index').css('background-color', 'violet')
           }
         })
-        function initMap() {
-          map = new google.maps.Map(document.getElementById("map"), {
-            center: { lat, lng: lon },
-            zoom: 10,
-          });
-        }
-        initMap() 
+      function initMap() {
+        map = new google.maps.Map(document.getElementById("map"), {
+          center: { lat, lng: lon },
+          zoom: 10,
+        });
+      }
+      initMap()
     })
-    
+
 }
 // get five day forecast
 function fiveDayForecast(city) {

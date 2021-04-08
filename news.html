@@ -1,54 +1,76 @@
-<!-- <!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
 
 <head>
-  <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-  <title>Weather Dashboard</title>
-  <!--Bootstrap CSS CDN-->
-<!-- Rest Css 
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Plan Surfing | Home page</title>
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <!-- Rest Css -->
   <link rel="stylesheet" href="./assets/css/rest.css">
-  <!-- W3.CSS framwork 
-  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3pro.css">
-  <!--Bulma
+  <!--Bulma-->
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.2/css/bulma.min.css">
-  <!-- Google Font  
+  <!-- W3.CSS framwork -->
+  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3pro.css">
+  <!-- Google Font  -->
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400&display=swap" rel="stylesheet">
+  <!-- CSS flie -->
   <link rel="stylesheet" href="./assets/css/style.css">
+  <title>U Calender</title>
 </head>
 
 <body>
-  <header class="w3-container w3-card">
-    <img class="weahterLogo" src="./assets/images/logo.png" alt="logo">
-    <h1 class="w3-bar-item headerName">Plan Surfing</h1>
-    <nav class="w3-center w3-xlarge">
-      <a href="index.html" class="w3-bar-item w3-button w3-hover-none ">Home</a>
-      <a href="./weather.html" class="w3-bar-item w3-button w3-hover-none ">Weather</a>
-      <a href="./news.html" class="w3-bar-item w3-button w3-hover-none ">News</a>
-      <a href="#" class="w3-bar-item w3-button w3-hover-none ">Daily Tasks</a>
-    </nav>
-  </header>
-  <div class="news" id="news">
-    <p class="newsText1">Get Local and Nationwide Daily News</p>
-    <div class="news-section1" id="newsSections1">
-      <input class="input is-info" id="currentSearch" type="text" placeholder="Find what is happening around you...">
-      <button class="button is-link" id="searchBtn">Search</button>
-      <button class="button is-loading">Loading</button>
-      <button class="button" id="clearBtn">Clear</button>
-      <h2 class="firstArticleText"></h2>
-      <div id="results" class="results">
-        <h2 id="textEmpty"></h2>
-        <p></p>
-        <p></p>
-        <h4></h4>
-        <a href=""></a>
+  <nav class="w3-sidebar w3-bar-block w3-card" id="mySidebar">
+    <div class="w3-container w3-theme-d2">
+      <span onclick="closeSidebar()" class="w3-button w3-display-topright w3-large">X</span>
+      <br>
+      <div class="w3-padding w3-center">
+        <img class="w3-circle" src="./assets/images/pngwing.com.png" alt="avatar" style="width:75%">
       </div>
     </div>
-    <script src="https://code.jquery.com/jquery.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
-    <script src="./assets/js/news.js"></script>
-    <script src="./assets/js/script.js"></script>
+    <a class="w3-bar-item w3-button" href="./index.html" onclick="closeSidebar()">Home</a>
+    <a class="w3-bar-item w3-button newsBtn" href="#" onclick="closeSidebar()">News</a>
+    <a class="w3-bar-item w3-button taskBtn" href="./dailytask.html" onclick="closeSidebar()">Daily Tasks</a>
+    <a class="w3-bar-item w3-button weatherBtn" href="#" onclick="closeSidebar()">Weather</a>
+  </nav>
+  <header class="w3-bar w3-card w3-theme">
+    <button class="w3-bar-item w3-button w3-xxxlarge w3-hover-theme barColor" onclick="openSidebar()">&#9776;</button>
+    <img class="logo" src="./assets/images/logo.png" alt="logo">
+    <h1 class="w3-bar-item headerName">Plan Surfing</h1>
+  </header>
+  <p class="newsText">Get Local and Nationwide Daily News</p>
+
+  <input class="input is-info" id="currentSearch" type="text" placeholder="Find what is happening around you...">
+  <button class="button is-link" id="searchBtn">Search</button>
+  <button class="button is-loading">Loading</button>
+  <button class="button" id="clearBtn">Clear</button>
+  <div class="w3-card">
+    <h2 class="firstArticleText">
+    </h2>
+    <div id="results">
+      <h2 id="textEmpty"></h2>
+      <p></p>
+      <p></p>
+      <h4></h4>
+      <a href=""></a>
+    </div>
+  </div>
+
+
+
+
+  <hr class="bottomLine">
+
+  <footer class="w3-container w3-card ">
+    <h4>© 2021 The Power Quad Squad Production</h4>
+  </footer>
+  <script src="https://code.jquery.com/jquery.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.29.1/moment.min.js"></script>
+  <script src="./assets/js/script.js"></script>
+  <script src="./assets/js/news.js"></script>
 </body>
 
-</html> -->
+</html>
