@@ -75,7 +75,9 @@ a {
 .btnSearchSection{
   margin-left: 2%;
 }
-
+.weatherName{
+  cursor: pointer;
+}
 
 .news-section {
     display: none;
@@ -259,66 +261,6 @@ footer {
   box-shadow: 1px 1px 1px 1px lightblue;
 }
 */
-.loginbox{
-  width: 300px;
-  padding: 30ox;
-  position:absolute;
-  top: 50%;
-  left: 50%;
-  border-radius: 10px;
-  transform: translate(-50%,-50% );
-  background: rgba(0, 0, 0, 0.4);
-  box-shadow: 5px 10px 8px #0f0f0f;
-  text-align: center; 
-}
-
-.loginbox h1{
-  color: whitesmoke;
-  text-transform: uppercase;
-  font-weight: 700;
-}
-
-.loginbox input[type="text"], .loginbox input[type="password"], .loginbox input[type="file"], .loginbox input[type="text"]
-{
-  border: 0;
-  background: none;
-  display: block;
-  margin: 20px auto;
-  text-align: center;
-  border: 3px solid #87cefa;
-  padding: 14px 10px;
-  width: 220px;
-  outline: none;
-  color: whitesmoke;
-  border-radius: 24px ;
- transition: 0.25px;
-
-}
-
-.loginbox input[type="text"]:focus, .loginbox input[type="password"]:focus{
-  width: 270px  ;
-  border-color: #2e739e ;
-}
-
-.loginbox input[type="submit"]{
-
- border: 0;
-  background: none;
-  display: block;
-  margin: 20px auto;
-  text-align: center;
-  border: 3px solid #2e739e;
-  padding: 14px 35px; 
-  outline: none;
-  color: whitesmoke;
-  border-radius: 24px ;
- transition: 0.25px;
- cursor: pointer;
-}
-
-.loginbox input[type="submit"]:hover{
-  background: #87cefa;
-}
 
 .intro {
  background: #87cefa;
@@ -380,10 +322,15 @@ footer {
 
 
 }
-.container {
+.container-logIn {
   width: 360px;
+<<<<<<< HEAD
   height: 400px;
   margin: 0% auto;
+=======
+  height: 500px;
+  margin: 8% auto;
+>>>>>>> 0ce57c8bb345cd76181f5ab29d1cc974a825e2de
   background: #fff;
   position: relative;
   overflow: hidden;
@@ -395,7 +342,7 @@ footer {
   color: #777;
 }
 
-.container form{
+.container-logIn form{
   width: 280px;
   position: absolute;
   top: 100px;
