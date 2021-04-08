@@ -315,10 +315,6 @@ form button {
   cursor: pointer;
 }
 
-#form1{
-  left:450px
-}
-
 #form2{
   left: 450px;
 }
@@ -387,15 +383,6 @@ text-align: center;
  #map {
         height: 100%;
       }
-<<<<<<< HEAD
-      
- 
-      
-
-
-
-=======
->>>>>>> 8fd569ae44a8710faeef18a06742dd2bc7a22fd7
 /* daily tasks*/
 .dailyBtn {
   width: 75px;

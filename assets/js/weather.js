@@ -208,6 +208,7 @@ function currentWeather(weatherUrl) {
     })
 
     .then(function (data) {
+      console.log(data)
       var currentDate = moment().format('L');
       var weatherIcon = data.weather[0].icon;
       var iconUrl = 'https://openweathermap.org/img/wn/' + weatherIcon + '.png';
@@ -242,7 +243,15 @@ function currentWeather(weatherUrl) {
             $('#uv-index').css('background-color', 'violet')
           }
         })
+        function initMap() {
+          map = new google.maps.Map(document.getElementById("map"), {
+            center: { lat, lng: lon },
+            zoom: 10,
+          });
+        }
+        initMap() 
     })
+    
 }
 // get five day forecast
 function fiveDayForecast(city) {
@@ -269,12 +278,7 @@ function fiveDayForecast(city) {
     });
 }
 
-function initMap() {
-  map = new google.maps.Map(document.getElementById("map"), {
-    center: { lat: -34.397, lng: 150.644 },
-    zoom: 8,
-  });
-}
+
 
 // function iniMap() {
 //   var lat = data.coord.lat;
