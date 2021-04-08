@@ -6,106 +6,52 @@ var myCities = [];
 var apiKey = "d91f911bcf2c0f925fb6535547a5ddc9";
 var map;
 
-$('.weatherBtn').on('click', function () {
-  // Hide Section
-  $('#dailyTasks').hide();
-  $('.sectionImg').hide();
-  $('.quote-wrapper').hide();
-  $('.between').hide();
-  $('#news').hide();
-  $('#cell3W').hide();
-  $('.weather').show();
-  $('.container').hide();
-  $('.weatherName').hide();
-  // Show Section
-  $('.desktop').show()
-  // styling section
-  $('#cityName').css('text-align', 'center')
-  $('#description').css('text-align', 'center')
-  $('.temperature').css('text-align', 'center')
-  $('.wind-speed').css('text-align', 'center')
-  $('.humidity').css('text-align', 'center')
-  $('.btnSearchSection').addClass('w3-center')
-  $('.mainScreenW').css('display', 'table');
-  $('#tasksSquares').hide();
-  $('#newsSquares').hide();
-})
-
-
 //side bar weather
-$('.weatherMainBtn').on('click', function () {
-  // Hide Section
-  $('#dailyTasks').hide();
-  $('.sectionImg').hide();
-  $('.quote-wrapper').hide();
-  $('.between').hide();
-  $('#news').hide();
-  $('#cell3W').hide();
+
+$('#cityName').on(function(){
   $('.weather').show();
-  $('.container').hide();
-  $('.weatherName').hide();
-  $('').hide();
-  // Show Section
-  $('.desktop').show()
-  // styling section
-  $('#cityName').css('text-align', 'center')
-  $('#description').css('text-align', 'center')
-  $('.temperature').css('text-align', 'center')
-  $('.wind-speed').css('text-align', 'center')
-  $('.humidity').css('text-align', 'center')
-  $('.btnSearchSection').addClass('w3-center')
-  $('.mainScreenW').css('display', 'table');
-  $('#tasksSquares').hide();
-  $('#newsSquares').hide();
 })
 
-$('.weatherName').on('click', function () {
-  // Hide Section
-  $('#dailyTasks').hide();
-  $('.sectionImg').hide();
-  $('.quote-wrapper').hide();
-  $('.between').hide();
-  $('#news').hide();
-  $('#cell3W').hide();
-  $('.weather').show();
-  $('.container').hide();
-  $('.weatherName').hide();
-  // Show Section
-  $('.desktop').show()
-  // styling section
-  $('#cityName').css('text-align', 'center')
-  $('#description').css('text-align', 'center')
-  $('.temperature').css('text-align', 'center')
-  $('.wind-speed').css('text-align', 'center')
-  $('.humidity').css('text-align', 'center')
-  $('.btnSearchSection').addClass('w3-center')
-  $('.mainScreenW').css('display', 'table');
-  $('#tasksSquares').hide();
-  $('#newsSquares').hide();
 
-})
 
-// //side bar News nav
-// $('.newsBtn').on('click', function () {
-//   $('#newsSections').show();
-//   $('#mySidebar').hide();
-//   $('#dailyTasks').hide();
-//   $('.sectionImg').hide();
-//   $('#current-weather').hide();
-//   $('.quote-wrapper').hide();
-//   $('#newsName').hide();
-//   $('#w3Cell').hide();
-//   $('.between').hide();
-//   $('#weatherSection').hide();
-//   $('.newsText').css('text-align', 'center');
-//   $('.loginText').hide();
-//   $('.newsText').show();
-//   $('.description').hide();
-//   $('#tasksSquares').hide();
+
+
+
+
+
+// $('.weatherMainBtn').on('click', function () {
+  
+//   $('.weather').show();
+ 
+//   $('.desktop').show()
+//   // styling section
+//   $('#cityName').css('text-align', 'center')
+//   $('#description').css('text-align', 'center')
+//   $('.temperature').css('text-align', 'center')
+//   $('.wind-speed').css('text-align', 'center')
+//   $('.humidity').css('text-align', 'center')
+//   $('.btnSearchSection').addClass('w3-center')
 //   $('.mainScreenW').css('display', 'table');
+  
 // })
 
+// $('.weatherName').on('click', function () {
+  
+//   $('.weather').show();
+  
+//   // Show Section
+//   $('.desktop').show()
+//   // styling section
+//   $('#cityName').css('text-align', 'center')
+//   $('#description').css('text-align', 'center')
+//   $('.temperature').css('text-align', 'center')
+//   $('.wind-speed').css('text-align', 'center')
+//   $('.humidity').css('text-align', 'center')
+//   $('.btnSearchSection').addClass('w3-center')
+//   $('.mainScreenW').css('display', 'table');
+ 
 
+// })
 
 function getCities() {
   var storage = localStorage.getItem('places')
@@ -119,7 +65,6 @@ getCities();
 
 function printCities(city) {
   placesEl.append('<li>' + (city).toUpperCase() + '</li>');
-  console.log(city)
   $(placesEl).children().attr("class", "list-group-item")
   $('.list-group').css('visibility', 'visible');
   $('.btn-secondary').css('visibility', 'visible');
@@ -130,7 +75,6 @@ function printCities(city) {
 $('#places').on('click', '.list-group-item', function () {
   let clickedCity = ''
   clickedCity = $(this).html();
-  console.log(clickedCity)
   var weatherUrl = generateURL(clickedCity);
   currentWeather(weatherUrl);
   fiveDayForecast(clickedCity);
@@ -189,7 +133,6 @@ function currentWeather(weatherUrl) {
     })
 
     .then(function (data) {
-      console.log(data)
       var currentDate = moment().format('L');
       var weatherIcon = data.weather[0].icon;
       var iconUrl = 'https://openweathermap.org/img/wn/' + weatherIcon + '.png';
@@ -199,9 +142,9 @@ function currentWeather(weatherUrl) {
       var temp = (data.main.temp);
       $('#cityName').text(data.name + " - " + data.sys.country);
       $('#description').text((data.weather[0].description).toUpperCase())
-      $('.temperature').text(" Temperature: " + temp.toFixed(0) + ' °C').hide();
-      $('.humidity').text(" Humidity: " + data.main.humidity + "%").hide();
-      $('.wind-speed').text("Wind Speed: " + data.wind.speed.toFixed(1) + ' MPH').hide();
+      $('.temperature').text(" Temperature: " + temp.toFixed(0) + ' °C');
+      $('.humidity').text(" Humidity: " + data.main.humidity + "%");
+      $('.wind-speed').text("Wind Speed: " + data.wind.speed.toFixed(1) + ' MPH');
 
       //get UV Index
       var lat = data.coord.lat;
@@ -258,23 +201,3 @@ function fiveDayForecast(city) {
 
     });
 }
-
-
-
-// function iniMap() {
-//   var lat = data.coord.lat;
-//   var lon = data.coord.lon;
-//   var latLonUrl = `https://api.openweathermap.org/data/2.5/uvi?lat=${lat}&lon=${lon}&appid=${apiKey}`;
-//   fetch(latLonUrl)
-//     .then(function (response) {
-//       return response.json()
-//     })
-//     .then(function (data) {
-//       map = new google.maps.Map(document.getElementById("map"), {
-//         center: { lat: lat, lng: lon },
-//         zoom: 8,
-//       })
-//     })
-// }
-
-// iniMap()

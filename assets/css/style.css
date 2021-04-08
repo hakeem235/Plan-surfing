@@ -28,6 +28,7 @@ h1 {
   margin: 0% auto;
   height: 500px;
   margin: 8% auto;
+  border-radius: 10px;
   background: #fff;
   position: relative;
   overflow: hidden;
@@ -52,11 +53,13 @@ form input {
   padding: 10px 5px;
   margin: 5px 0 ;
   border: 0;
-  border-bottom: 1px solid #999;
+  border: 1px solid #999;
+  border-radius: 25px;
   outline: none;
   background: transparent;
 }
 ::placeholder{
+  text-align: center;
   color: #777;
 }
 
@@ -79,55 +82,26 @@ form button {
   cursor: pointer;
 }
 
-#form1{
-  left:450px
-}
-
-#form2{
-  left: 450px;
-}
-
-#form3{
-  left: 450px;
-}
-
 .step-row{
-  width: 360px;
-  height: 40px;
+  width: 100%;
+  height: 60px;
   margin: 0 auto;
   display: flex;
   align-items: center;
   box-shadow: 0 -1px 5px -1px #000;
   position: relative;
+  background: linear-gradient(to right, #043c84, #87cefa);
 }
 
 .step-col {
-  width: 120px;
-  text-align: center;
-  color: #333;    
+  width: 100%;
+  text-align: center;   
   position: relative;
 }
 
-#progress{
-  position: absolute;
-  height: 100%;
-  width: 120px;
-  background: linear-gradient(to right, #043c84, #87cefa);
-  transition: 1s; 
+.step-col h3 {
+  color: whitesmoke;
 }
-
-#progress::after{
-  content: '';
-  height: 0;
-  width: 0;
-  border-top: 20px solid transparent;
-  border-bottom: 20px solid transparent;
-  position: absolute;
-  right: -20px;
-  top: 0;
-  border-left: 20px solid #87cefa;
-
-} 
 
 /*Main Page Section*/
 
@@ -238,10 +212,12 @@ a {
   margin-top: 3%;
   color: #043C84;
   font-size: 30px;
+  text-align: center;
 }
 
-input {
+#currentSearch {
   margin-top: 5%;
+  
 }
 
 .button {
@@ -496,11 +472,6 @@ input {
   color: white;
 }
 
-.desktop{
-  display: none;
-}
-
-
 .forecast {
 display: flex;
 flex-direction: column;
@@ -603,6 +574,13 @@ footer {
   #search-city {
     margin-left: -66%;
       
+  }
+
+  #current-weather{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
   }
 
  }
