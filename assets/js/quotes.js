@@ -11,20 +11,17 @@ function randomQuote() {
     .then(function (response) {
       return response.json();
     })
-   // .then(function (data) {
-   //   console.log("data", data);
-   //   quotesArr = data;
-   //  quoteObj = quotesArr[Math.floor(Math.random() * quotesArr.length)];
-   //   console.log("quoteObj", quoteObj)
-   .then(function (data) {
-    console.log("data", data);
-    quoteText.textContent = data.content;
-    quoteTags.textContent = data.tags;
-    quoteAuthor.textContent = `- ${data.author}`;
+
+    .then(function (data) {
+      console.log("data", data);
+      quoteText.textContent = data.content;
+      quoteTags.textContent = data.tags;
+      quoteAuthor.textContent = `- ${data.author}`;
     });
-  }
-  
+}
+
 randomQuote();
-genQuoteBtn.addEventListener('click', function(){
-randomQuote()});
-setInterval(randomQuote() ,10000);
+genQuoteBtn.addEventListener('click', function () {
+  randomQuote()
+});
+setInterval(randomQuote(), 10000);

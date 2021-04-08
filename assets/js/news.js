@@ -1,7 +1,4 @@
-//news based on location picked when registred
-//var currentLocation = $('#location').val();
-//var urlLogin = 'https://gnews.io/api/v4/search?q=' + currentLocation + '&token=de3770744bd87a3086cf2a0c1b84b3a4';
-var urlLogin = 'https://gnews.io/api/v4/search?q=ottawa&token=3ec810557eb7a82c5da0977da4ddca5e';
+var urlLogin = 'https://gnews.io/api/v4/search?q=ottawa&token=3e5608a2974ad85ff60123f63bdb05c4';
 fetch(urlLogin, {
 })
   .then(function (response) {
@@ -40,7 +37,7 @@ $('#searchBtn').on('click', function () {
 
   //fetch based on input info
   var currentSearch = $('#currentSearch').val();
-  var urlNews = 'https://gnews.io/api/v4/search?q=' + currentSearch + '&token=3ec810557eb7a82c5da0977da4ddca5e';
+  var urlNews = 'https://gnews.io/api/v4/search?q=' + currentSearch + '&token=3e5608a2974ad85ff60123f63bdb05c4';
 
   if (currentSearch !== "") {
     fetch(urlNews, {
@@ -95,60 +92,5 @@ $('#clearBtn').on('click', function () {
   $('#results').empty()
 
 });
-
-// //sidebar nav
-// $('.newsBtn').on('click', function () {
-//   $('#newsSections').show();
-//   //$('#mySidebar').hide();
-//   $('#dailyTasks').hide();
-//   $('.sectionImg').hide();
-//   $('#current-weather').hide();
-//   $('.quote-wrapper').hide();
-//   $('#newsName').hide();
-//   $('#w3Cell').hide();
-//   $('.between').hide();
-//   $('#weatherSection').hide();
-//   $('.newsText').css('text-align', 'center');
-//   $('.loginText').hide();
-//   $('.newsText').show();
-//   $('.description').hide();
-//   $('#tasksSquares').hide();
-//   $('.mainScreen').css('display', 'table');
-//   $('.mainScreenW').hide();
-//   $('#newsSquares').show();
-
-
-// })
-
-// // weather button
-// $('.weatherBtn').on('click', function () {
-//   // Hide Section
-//   $('#dailyTasks').hide();
-//   $('.sectionImg').hide();
-//   $('.quote-wrapper').hide();
-//   $('.between').hide();
-//   $('#news').hide();
-//   $('#cell3W').hide();
-//   $('#tasksSquares').hide();
-//   $('#newsSquares').hide();
-//   // Show Section
-//   $('#weatherSection').show();
-//   $('#humidity').show();
-//   $('#wind-speed').show();
-//   $('#temperature').show();
-//   // styling section
-//   $('#cityName').css('text-align', 'center');
-//   $('#description').css('text-align', 'center');
-//   $('#temperature').css('text-align', 'center');
-//   $('#wind-speed').css('text-align', 'center');
-//   $('#humidity').css('text-align', 'center');
-//   $('.mainScreenW').css('display', 'table');
-
-// })
-
-// $('.taskBtn').on('click', function () {
-//   $('#dailyTasks').show();
-// })
-
 
 

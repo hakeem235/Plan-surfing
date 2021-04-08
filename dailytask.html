@@ -51,18 +51,18 @@
     </div>
   </div>
   <br><br>
-  <div id="openModal"></div>
-
-  <div id="container" style="width:800px; margin:0 auto;">
-
+  <form>
+    <button type="button" onclick="this.form.timeField.value=getTimeStamp()">Get time stamp</button>
+    <input type="text" name="timeField" size="11">
+  </form>
+  <div id="container">
     <div id="header">
       <div id="monthDisplay"></div>
       <div>
-        <button class="dailyBtn" id="backButton">Back</button>
-        <button class="dailyBtn" id="nextButton">Next</button>
+        <button id="backButton">Back</button>
+        <button id="nextButton">Next</button>
       </div>
     </div>
-
     <div id="weekdays">
       <div>Sunday</div>
       <div>Monday</div>
@@ -72,54 +72,36 @@
       <div>Friday</div>
       <div>Saturday</div>
     </div>
-
     <div id="calendar"></div>
   </div>
-
   <div id="newEventModal">
     <h2>Events for the Day</h2>
-
     <input id="eventTitleInput" placeholder="Event Title" />
     <input type="time" id="eventStartTimeInput" name="appt" min="09:00" max="18:00" required>
-
     <br> <br>
-
     <input id="eventTitleInput2" placeholder="Event Title" />
     <input type="time" id="eventStartTimeInput2" name="appt" min="09:00" max="18:00" required>
-
     <br> <br>
-
     <input id="eventTitleInput3" placeholder="Event Title" />
     <input type="time" id="eventStartTimeInput3" name="appt" min="09:00" max="18:00" required>
-
     <br> <br>
-
     <input id="eventTitleInput4" placeholder="Event Title" />
     <input type="time" id="eventStartTimeInput4" name="appt" min="09:00" max="18:00" required>
-
     <br> <br>
-
     <button id="saveButton">Save</button>
     <button id="cancelButton">Cancel</button>
-
-
   </div>
-
   <div id="deleteEventModal">
     <h2>Event</h2>
-
     <p id="eventText"></p>
     <p id="eventText2"></p>
     <br>
-
     <p id="eventText3"></p>
     <p id="eventText4"></p>
     <br>
-
     <p id="eventText5"></p>
     <p id="eventText6"></p>
     <br>
-
     <button id="deleteButton">Delete</button>
     <button id="closeButton">Close</button>
   </div>
