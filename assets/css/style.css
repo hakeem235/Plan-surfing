@@ -324,13 +324,10 @@ footer {
 }
 .container-logIn {
   width: 360px;
-<<<<<<< HEAD
   height: 400px;
   margin: 0% auto;
-=======
   height: 500px;
   margin: 8% auto;
->>>>>>> 0ce57c8bb345cd76181f5ab29d1cc974a825e2de
   background: #fff;
   position: relative;
   overflow: hidden;
@@ -508,9 +505,13 @@ text-align: center;
       margin-left: 7%;
     }
 
-    #description, .input {
+     #search-city {
       margin-left: -30%;
       
+    }
+
+    #description {
+      margin-left: 13%;
     }
 
  }

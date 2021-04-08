@@ -42,6 +42,7 @@ $('#news').on('click', function () {
   $('.loginText').hide();
   $('.newsText').show();
   $('.description').hide();
+  $('#tasksSquares').hide();
 
 
 })
@@ -113,7 +114,7 @@ $('#clearBtn').on('click', function () {
 });
 
 
-$('#newsBtn').on('click', function () {
+$('.newsBtn').on('click', function () {
   $('#newsSections').show();
   $('#mySidebar').hide();
   $('#dailyTasks').hide();
