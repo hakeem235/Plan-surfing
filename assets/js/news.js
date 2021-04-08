@@ -129,6 +129,7 @@ $('.newsBtn').on('click', function () {
   $('.loginText').hide();
   $('.newsText').show();
   $('.description').hide();
+  $('#tasksSquares').hide();
 
 })
 
