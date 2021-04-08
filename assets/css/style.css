@@ -518,11 +518,11 @@ text-align: center;
  }
 
 
-.container-mobile-screen{
+/* .container-mobile-screen{
   min-height: 100%;
   /* This is the same as the height of your footer */
-  margin-bottom: -25px;
-}
+  /* margin-bottom: -25px;
+} */ 
 
 footer {
     position: fixed;
