@@ -41,7 +41,7 @@ $('#news').on('click', function () {
   $('.description').hide();
   $('#tasksSquares').hide();
   $('.mainScreen').css('display', 'table');
-  //$('mainScreenW').hide();
+  $('.mainScreenW').hide();
 
 
 })
@@ -55,7 +55,7 @@ $('#searchBtn').on('click', function () {
 
   //fetch based on input info
   var currentSearch = $('#currentSearch').val();
-  var urlNews = 'https://gnews.io/api/v4/search?q=' + currentSearch + '&token=de3770744bd87a3086cf2a0c1b84b3a4';
+  var urlNews = 'https://gnews.io/api/v4/search?q=' + currentSearch + '&token=0453f858d186497aada1593f7f369718';
 
   if (currentSearch !== "") {
     fetch(urlNews, {
@@ -114,7 +114,7 @@ $('#clearBtn').on('click', function () {
 //sidebar nav
 $('.newsBtn').on('click', function () {
   $('#newsSections').show();
-  $('#mySidebar').hide();
+  //$('#mySidebar').hide();
   $('#dailyTasks').hide();
   $('.sectionImg').hide();
   $('#current-weather').hide();
@@ -129,35 +129,37 @@ $('.newsBtn').on('click', function () {
   $('.description').hide();
   $('#tasksSquares').hide();
   $('.mainScreen').css('display', 'table');
-  // $('mainScreenW').hide();
+  $('.mainScreenW').hide();
+  $('#newsSquares').show();
+
 
 })
 
-// weather button
-$('.weatherBtn').on('click', function () {
-  // Hide Section
-  $('#dailyTasks').hide();
-  $('.sectionImg').hide();
-  $('.quote-wrapper').hide();
-  $('.between').hide();
-  $('#news').hide();
-  $('#cell3W').hide();
-  $('#tasksSquares').hide();
-  $('#newsSquares').hide();
-  // Show Section
-  $('#weatherSection').show();
-  $('#humidity').show();
-  $('#wind-speed').show();
-  $('#temperature').show();
-  // styling section
-  $('#cityName').css('text-align', 'center');
-  $('#description').css('text-align', 'center');
-  $('#temperature').css('text-align', 'center');
-  $('#wind-speed').css('text-align', 'center');
-  $('#humidity').css('text-align', 'center');
-  $('.mainScreenW').css('display', 'table');
+// // weather button
+// $('.weatherBtn').on('click', function () {
+//   // Hide Section
+//   $('#dailyTasks').hide();
+//   $('.sectionImg').hide();
+//   $('.quote-wrapper').hide();
+//   $('.between').hide();
+//   $('#news').hide();
+//   $('#cell3W').hide();
+//   $('#tasksSquares').hide();
+//   $('#newsSquares').hide();
+//   // Show Section
+//   $('#weatherSection').show();
+//   $('#humidity').show();
+//   $('#wind-speed').show();
+//   $('#temperature').show();
+//   // styling section
+//   $('#cityName').css('text-align', 'center');
+//   $('#description').css('text-align', 'center');
+//   $('#temperature').css('text-align', 'center');
+//   $('#wind-speed').css('text-align', 'center');
+//   $('#humidity').css('text-align', 'center');
+//   $('.mainScreenW').css('display', 'table');
 
-})
+// })
 
 $('.taskBtn').on('click', function () {
   $('#dailyTasks').show();

@@ -54,7 +54,7 @@ $('.weatherMainBtn').on('click', function () {
   $('.wind-speed').css('text-align', 'center')
   $('.humidity').css('text-align', 'center')
   $('.btnSearchSection').addClass('w3-center')
-  $('.mainScreen').css('display', 'table');
+  $('.mainScreenW').css('display', 'table');
   $('#tasksSquares').hide();
   $('#newsSquares').hide();
 })
@@ -79,7 +79,7 @@ $('.weatherName').on('click', function () {
   $('.wind-speed').css('text-align', 'center')
   $('.humidity').css('text-align', 'center')
   $('.btnSearchSection').addClass('w3-center')
-  $('.mainScreen').css('display', 'table');
+  $('.mainScreenW').css('display', 'table');
   $('#tasksSquares').hide();
   $('#newsSquares').hide();
 
@@ -101,9 +101,8 @@ $('.newsBtn').on('click', function () {
   $('.loginText').hide();
   $('.newsText').show();
   $('.description').hide();
-  $('.mainScreen').css('display', 'table');
-
-
+  $('#tasksSquares').hide();
+  $('.mainScreenW').css('display', 'table');
 })
 
 

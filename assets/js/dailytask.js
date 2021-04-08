@@ -1,39 +1,3 @@
-$('#dailyTasks').on('click', function () {
-  // Hide Section
-  $('#dailyTasks').show();
-  $('.sectionImg').hide();
-  $('.quote-wrapper').hide();
-  $('.between').hide();
-  $('#news').hide();
-  $('#cell3W').hide();
-  $('.weather').hide();
-  $('.container').hide();
-  $('.weatherName').hide();
-  $('#weatherSection').hide();
-  $('#newsSquares').hide();
-  $('.daily-tasks').hide();
-  // Show Section
-  $('.desktop').hide()
-})
-
-
-$('.taskBtn').on('click', function () {
-  // Hide Section
-  $('#dailyTasks').show();
-  $('.sectionImg').hide();
-  $('.quote-wrapper').hide();
-  $('.between').hide();
-  $('#news').hide();
-  $('#cell3W').hide();
-  $('.weather').hide();
-  $('.container').hide();
-  $('.weatherName').hide();
-  $('#weatherSection').hide();
-  $('#newsSquares').hide();
-  $('.daily-tasks').hide();
-  // Show Section
-  $('.desktop').hide()
-})
 
 let nav = 0;
 let clicked = null;
