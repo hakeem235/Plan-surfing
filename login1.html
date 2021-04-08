@@ -20,20 +20,20 @@
   <div class="container-logIn">
     <form id="form0">
       <h3 class="logheader">SIGN In</h3>
-      <input type="text" placeholder="Email" required>
-      <input type="password" placeholder="Password" required>
+      <input type="text" id="email" placeholder="Enter Your Email" required>
+      <input type="password" id="password" placeholder="Password" required>
       
       <div class="btn-box">
         <button type="button" id="logIn">Log In</button>
-        <p>Creat an account<span> click here</span></p>
+        <p>Creat an account<span id="click"><a href="#">click here</a> </span></p>
       </div>
     </form>
 
     <form id="form1">
       <h3 class="logheader">CREATE ACCOUNT</h3>
-      <input type="text" placeholder="Email" required>
-      <input type="password" placeholder="Password" required>
-      <input type="password" placeholder="Confirm Password" required>
+      <input type="text" class="email" placeholder="Email" required>
+      <input type="password" class="password" placeholder="Password" required>
+      <input type="password" class="conPassword" placeholder="Confirm Password" required>
 
       <div class="btn-box">
         <button type="button" id="next1">NEXT</button> 
@@ -44,8 +44,8 @@
 
     <form id="form2">
       <h3 class="logheader">SOCTAL LINKS</h3>
-      <input type="text" placeholder="Full Name" required>
-      <input type="text" placeholder="Where are from" required>
+      <input type="text" class="fName" placeholder="Full Name" required>
+      <input type="text" class="myCity" placeholder="Where are from" required>
 
       <div class="btn-box">
         <button type="button" id="back1">BACK</button>
@@ -54,7 +54,7 @@
     </form>
     <form id="form3">
       <h3 class="logheader">UPLODE YOUR IMG</h3>
-      <input type="file" placeholder="Full Name" required>
+      <input type="file" class="profilaImg" placeholder="Full Name" required>
 
       <div class="btn-box">
         <button type="button" id="back2">BACK</button>

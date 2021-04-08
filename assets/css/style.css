@@ -315,6 +315,10 @@ form button {
   cursor: pointer;
 }
 
+#form1{
+  left:450px
+}
+
 #form2{
   left: 450px;
 }
@@ -364,7 +368,6 @@ form button {
 
 } 
 
-
 .desktop{
   display: none;
 }
@@ -384,12 +387,15 @@ text-align: center;
  #map {
         height: 100%;
       }
+<<<<<<< HEAD
       
  
       
 
 
 
+=======
+>>>>>>> 8fd569ae44a8710faeef18a06742dd2bc7a22fd7
 /* daily tasks*/
 .dailyBtn {
   width: 75px;
@@ -543,13 +549,15 @@ text-align: center;
 
 /********** Medium devices only **********/
  @media (min-width: 1200px) {
+
    .forecast {
     display: flex;
-    flex-direction: row-reverse;
+    flex-direction: row;
     justify-content: center;
     text-align: center;
     }
     .card {
+      width: 100%;
       margin-bottom: 25px;
     }
 
