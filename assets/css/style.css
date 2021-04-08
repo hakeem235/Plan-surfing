@@ -24,6 +24,8 @@ h1 {
 a {
     text-decoration: none;
 }
+
+
 .logo {
     display: flex;
     width: 13%;
@@ -31,117 +33,14 @@ a {
    margin-top: 8px;
 }
 
-.map{
-  width: 100%;
-}
-
-.weahterLogo{
-  display: flex;
-  width: 5%;
- float: right;
- margin-top: 8px;
-
-}
-#description {
-  margin-left: 2%;
-}
-
-.forecast{
-  display: flex;
-}
-
-.headerName{
-    color:#043C84;
-    display: flex;
-    float: left;
-}
-.header {
-    flex-direction: row-reverse;
-    background: rgb(165, 165, 165);
-}
-.barColor, h3, nav, footer  {
-    color: #043C84;
-}
-/*Anastasia's part start*/
-
-
-
 #newsName, .weatherName, #cityName, .daily-tasks {
   margin-top: 2%;
   margin-left: 2%;
   font-size: 30px;
 }
 
-.btnSearchSection{
-  margin-left: 2%;
-}
-.weatherName{
-  cursor: pointer;
-}
+/*Quotes Section*/
 
-.news-section {
-    display: none;
-}
-
-.newsText {
-  margin-top: 3%;
-  color: #043C84;
-  font-size: 30px;
-}
-
-input {
-  margin-top: 5%;
-}
-
-.button {
-    margin: 5% 1% 5% 0;
-}
-
-.is-loading{
-    display: none;
-}
-
-.loginText {
-  margin-top: 3%;
-  color: #043C84;
-  font-weight: bold;
-  cursor: pointer;
-}
-
-.loginText, .description {
-  margin: 3% 2% 3% 2%;
-  
-}
-
-.firstArticleText {
-  text-align: center;
-  color: #043C84;
-  font-size: 40px;
-}
-
-/* .newsText1 {
-  text-align: center;
-  margin-top: 5%;
-  color:#043C84;
-  font-size: 40px;
-}  */
-
-/*Anastasia's part end*/
-.container-mobile-screen{
-  min-height: 100%;
-  /* This is the same as the height of your footer */
-  margin-bottom: -25px;
-}
-
-footer {
-    position: fixed;
-    left: 0;
-    bottom: 0;
-    width: 100%;
-    /* make this the same (in negative value) on the container above the footer */
-    height: 25px;
-}
-/*mobile version*/
 .quote-wrapper{
   font-family: 'Poppins', sans-serif;
  justify-content: center;
@@ -201,66 +100,103 @@ footer {
 #gen-quote-btn:hover{
   box-shadow: 1px 1px 1px 1px lightblue;
 }
-/*
-.dsk-quote-wrapper{
-  font-family: 'Poppins', sans-serif;
- justify-content: center;
- align-items: center;
- text-align: center;
- font-size: 0.9rem;
- background-color:rgb(255, 255, 255);
- border-radius: 5px;
- box-shadow: cornsilk;
+
+
+/*News part*/
+
+.btnSearchSection{
+  margin-left: 2%;
 }
-
-.dsk-quote-wrapper h2{
-  color: #043C84;
-  font-size: 1.5rem;
-  margin-bottom: 0.5rem;
-  text-decoration: underline;
-}
-
-.dsk-quote-wrapper small{
-  font-size: 700;
-  padding: 1.9rem 1rem;
-  margin-bottom: 2.0rem;
-  margin-top: 1.5rem;
-  font-variant: small-caps;
-  visibility: hidden;
-}
-
-.dsk-quote-wrapper blockquote{
-  padding: 1.5rem 0;
-  font-weight: 300;
-  margin-top: 0.5rem;
-  margin-bottom: 0.5rem;
-} 
-
-.dsk-quote-wrapper cite{
-  display: block;
-  font-style: italic;
-  margin-bottom: 1rem;
-}
-
-.w3-border {
-  border: 1px solid #043C84!important;
-  outline: none;
-}
-
-#dsk-gen-quote-btn{
-  font-size: 0.8rem;
-  padding: 0.3rem 1.0rem;
+.weatherName{
   cursor: pointer;
-  border-radius: 1.2rem;
-  background-color: #ffffff;
-  border-color: #043C84;
+}
+
+.news-section {
+    display: none;
+}
+
+.newsText {
+  margin-top: 3%;
+  color: #043C84;
+  font-size: 30px;
+}
+
+input {
+  margin-top: 5%;
+}
+
+.button {
+    margin: 5% 1% 5% 0;
+}
+
+.is-loading{
+    display: none;
+}
+
+.loginText {
+  margin-top: 3%;
+  color: #043C84;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.loginText, .description {
+  margin: 3% 2% 3% 2%;
   
 }
 
-#dsk-gen-quote-btn:hover{
-  box-shadow: 1px 1px 1px 1px lightblue;
+.firstArticleText {
+  text-align: center;
+  color: #043C84;
+  font-size: 40px;
 }
-*/
+
+#description {
+  margin-left: 2%;
+}
+
+.forecast{
+  display: flex;
+}
+
+.headerName{
+    color:#043C84;
+    display: flex;
+    float: left;
+}
+.header {
+    flex-direction: row-reverse;
+    background: rgb(165, 165, 165);
+}
+.barColor, h3, nav, footer  {
+    color: #043C84;
+}
+
+
+
+.container-mobile-screen{
+  min-height: 100%;
+  /* This is the same as the height of your footer */
+  margin-bottom: -25px;
+}
+
+footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    /* make this the same (in negative value) on the container above the footer */
+    height: 25px;
+}
+/*Weather Section*/
+
+.weahterLogo{
+  display: flex;
+  width: 5%;
+ float: right;
+ margin-top: 8px;
+
+}
 
 .intro {
  background: #87cefa;
@@ -448,9 +384,18 @@ text-align: center;
 
 /* Always set the map height explicitly to define the size of the div
        * element that contains the map. */
-       #map {
+ #map {
         height: 100%;
       }
+<<<<<<< HEAD
+      
+ 
+      
+
+
+
+=======
+>>>>>>> 8fd569ae44a8710faeef18a06742dd2bc7a22fd7
 /* daily tasks*/
 .dailyBtn {
   width: 75px;
@@ -641,43 +586,36 @@ text-align: center;
       margin-left: -40%;
     }
 
+    .newsText {
+      text-align: center;
+    }
+
     .daily-tasks {
       margin-left: -7%;
+    }
+
+    #cityName, #description {
+      margin-left: 0;
     }
 
     .weatherName {
       margin-left: 7%;
     }
 
+    .btnSearchSection {
+      margin-left: 25%;
+  }
+
      #search-city {
-      margin-left: -30%;
+      margin-left: -66%;
       
     }
 
-    #description {
+    /* #description {
       margin-left: 13%;
-    }
+    } */
 
  }
 
 
   
-  
-
-
-/********** Small devices only **********/
-/* @media (min-width: 768px) and (max-width: 991px) {
-  .container-desktop-screen{
-    display: none;
-  }
-  
- 
-} */
-
-/********** Extra small devices only **********/
-/* @media (max-width: 767px) { */
-  /* .container-desktop-screen{
-    display: none;
-  }
-
-} */

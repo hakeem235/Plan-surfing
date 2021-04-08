@@ -26,8 +26,39 @@ $('.weatherBtn').on('click', function () {
   $('.wind-speed').css('text-align', 'center')
   $('.humidity').css('text-align', 'center')
   $('.btnSearchSection').addClass('w3-center')
+  $('.mainScreen').css('display', 'table');
   $('#tasksSquares').hide();
   $('#newsSquares').hide();
+  $('.btnSearchSection').css('margin-left', '40%')
+})
+
+
+//side bar weather
+$('.weatherMainBtn').on('click', function () {
+  // Hide Section
+  $('#dailyTasks').hide();
+  $('.sectionImg').hide();
+  $('.quote-wrapper').hide();
+  $('.between').hide();
+  $('#news').hide();
+  $('#cell3W').hide();
+  $('.weather').show();
+  $('.container').hide();
+  $('.weatherName').hide();
+  $('').hide();
+  // Show Section
+  $('.desktop').show()
+  // styling section
+  $('#cityName').css('text-align', 'center')
+  $('#description').css('text-align', 'center')
+  $('.temperature').css('text-align', 'center')
+  $('.wind-speed').css('text-align', 'center')
+  $('.humidity').css('text-align', 'center')
+  $('.btnSearchSection').addClass('w3-center')
+  $('.mainScreen').css('display', 'table');
+  $('#tasksSquares').hide();
+  $('#newsSquares').hide();
+  $('.btnSearchSection').css('margin-left', '40%')
 })
 
 $('.weatherName').on('click', function () {
@@ -50,8 +81,10 @@ $('.weatherName').on('click', function () {
   $('.wind-speed').css('text-align', 'center')
   $('.humidity').css('text-align', 'center')
   $('.btnSearchSection').addClass('w3-center')
+  $('.mainScreen').css('display', 'table');
   $('#tasksSquares').hide();
   $('#newsSquares').hide();
+  $('.btnSearchSection').css('margin-left', '40%')
 
 })
 
@@ -87,6 +120,7 @@ $('.newsBtn').on('click', function () {
   $('.loginText').hide();
   $('.newsText').show();
   $('.description').hide();
+  $('.mainScreen').css('display', 'table');
 
 })
 
@@ -185,7 +219,7 @@ function currentWeather(weatherUrl) {
       $('#description').text((data.weather[0].description).toUpperCase())
       $('.temperature').text(" Temperature: " + temp.toFixed(0) + ' °C').hide();
       $('.humidity').text(" Humidity: " + data.main.humidity + "%").hide();
-      $('.wind-speed').text("wind Speed: " + data.wind.speed.toFixed(1) + ' MPH').hide();
+      $('.wind-speed').text("Wind Speed: " + data.wind.speed.toFixed(1) + ' MPH').hide();
 
       //get UV Index
       var lat = data.coord.lat;
