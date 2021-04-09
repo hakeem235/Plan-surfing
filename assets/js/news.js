@@ -1,3 +1,5 @@
+//if limit of API's exceeded use one of this API key '3e5608a2974ad85ff60123f63bdb05c4', '3ec810557eb7a82c5da0977da4ddca5e'
+
 var urlLogin = 'https://gnews.io/api/v4/search?q=ottawa&token=0453f858d186497aada1593f7f369718';
 fetch(urlLogin, {
 })
