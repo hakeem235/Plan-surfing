@@ -91,7 +91,7 @@
             <div class="w3-cell" id="cell3W" style="width:30%">
                 <img class="sectionImg" src="./assets/images/weather.jpg" style="width:100%">
             </div>
-            <div class="w3-cell w3-container w3-center" id="#current-weather">
+            <div class="w3-cell w3-container" id="#current-weather">
                 <a href="./weather.html">
                     <h3 class="weatherName">Weather</h3>
                 </a>
@@ -100,14 +100,15 @@
                         <input type="text" placeholder="Search for a City" class="input mt-5" id="search-city">
                         <button class="button mt-5" id="search-button">Search</button>
                     </div>
-                    <a class="weatherMainBtn w3-center" href="#">
-                        <h3 class="current-city" id="cityName"></h3>
-                    </a>
-                    <p class="weather Wdescription" id="description"></p>
-                    <p class="weather temperature" id="temperature"></p>
-                    <p class="weather humidity" id="humidity"></p>
-                    <p class="weather wind-speed" id="wind-speed"></p>
-                    </a>
+                    <div class="mainSectionWeather">
+                        <a class="weatherMainBtn w3-center" href="#">
+                            <h3 class="current-city" id="cityName"></h3>
+                        </a>
+                        <p class="weather Wdescription" id="description"></p>
+                        <p class="weather temperature" id="temperature"></p>
+                        <p class="weather humidity" id="humidity"></p>
+                        <p class="weather wind-speed" id="wind-speed"></p>
+                    </div>
                 </div>
             </div>
         </div>

@@ -389,7 +389,6 @@ a {
   box-shadow: 0px 0px 3px gray;
 }
 
-
 #eventTitleInput.error {
   border: 2px solid red;
 }
@@ -424,6 +423,7 @@ a {
   cursor: pointer;
 }
 
+
 .weahterLogo{
   display: flex;
   width: 5%;
@@ -431,6 +431,11 @@ a {
  margin-top: 8px;
 
 }
+
+.mainSectionWeather{
+ margin-right: 40px;
+}
+
 
 .intro {
  background: #87cefa;
@@ -597,6 +602,11 @@ footer {
     justify-content: center;
     align-items: center;
   }
+
+
+.mainSectionWeather{
+text-align: center;
+}
 
  }
 
