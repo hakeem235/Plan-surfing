@@ -270,6 +270,11 @@ a {
 
 /* Daily Tasks Section*/
 
+.dateTime, p {
+  margin-left: 2%;
+  margin-top: 5%;
+}
+
 #header {
   padding: 10px;
   color: #1e298b;
@@ -283,14 +288,10 @@ a {
 }
 #container {
   width: 770px;
-
-    margin-left: auto;
-    margin-right: auto;
- 
-
-
-
+ margin-left: auto;
+ margin-right: auto;
 }
+
 #weekdays {
   width: 100%;
   display: flex;
@@ -570,7 +571,8 @@ footer {
   }
 
   .dateTime, p {
-    margin: 5%;
+    margin-left: 0%;
+    margin-bottom: 5%;
   }
 
   /*Weather Section*/
@@ -608,14 +610,13 @@ footer {
     ;
   }
 
-
-.mainSectionWeather{
-text-align: center;
-font-size: 15px;
-}
-.subWeather{
-  font-size: 13px;
-}
+  .mainSectionWeather{
+   text-align: center;
+   font-size: 15px;
+  }
+ .subWeather{
+   font-size: 13px;
+ }
 
  }
 
