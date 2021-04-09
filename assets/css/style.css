@@ -433,7 +433,7 @@ a {
 }
 
 .mainSectionWeather{
- margin-right: 40px;
+ margin-right: 150px;
 }
 
 
@@ -563,7 +563,6 @@ footer {
     
   } 
 
-
   /*Daily Tasks Section*/
   .daily-tasks {
     margin-left: -7%;
@@ -601,11 +600,13 @@ footer {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    ;
   }
 
 
 .mainSectionWeather{
 text-align: center;
+font-size: 40px;
 }
 
  }
