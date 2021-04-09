@@ -19,26 +19,25 @@
   <link rel="stylesheet" href="./assets/css/style.css">
   <title>Plan Surfing | Daily Task</title>
 </head>
-
-<body>
-  <nav class="w3-sidebar w3-bar-block w3-card" id="mySidebar">
-    <div class="w3-container w3-theme-d2">
-      <span onclick="closeSidebar()" class="w3-button w3-display-topright w3-large">X</span>
-      <br>
-      <div class="w3-padding w3-center">
-        <img class="w3-circle" src="./assets/images/pngwing.com.png" alt="avatar" style="width:75%">
-      </div>
+<nav class="w3-sidebar w3-bar-block w3-card" id="mySidebar">
+  <div class="w3-container w3-theme-d2">
+    <span onclick="closeSidebar()" class="w3-button w3-display-topright w3-large">X</span>
+    <br>
+    <div class="w3-padding w3-center">
+      <img class="w3-circle" src="./assets/images/pngwing.com.png" alt="avatar" style="width:75%">
     </div>
-    <a class="w3-bar-item w3-button" href="./home.html" onclick="closeSidebar()">Home</a>
-    <a class="w3-bar-item w3-button newsBtn" href="./news.html" onclick="closeSidebar()">News</a>
-    <a class="w3-bar-item w3-button taskBtn" href="#" onclick="closeSidebar()">Daily Tasks</a>
-    <a class="w3-bar-item w3-button weatherBtn" href="./weather.html" onclick="closeSidebar()">Weather</a>
-  </nav>
-  <header class="w3-bar w3-card w3-theme">
-    <button class="w3-bar-item w3-button w3-xxxlarge w3-hover-theme barColor" onclick="openSidebar()">&#9776;</button>
-    <img class="logo" src="./assets/images/logo.png" alt="logo">
-    <h1 class="w3-bar-item headerName">Plan Surfing</h1>
-  </header>
+  </div>
+  <a class="w3-bar-item w3-button" href="./home.html" onclick="closeSidebar()">Home</a>
+  <a class="w3-bar-item w3-button newsBtn" href="./news.html" onclick="closeSidebar()">News</a>
+  <a class="w3-bar-item w3-button taskBtn" href="#" onclick="closeSidebar()">Daily Tasks</a>
+  <a class="w3-bar-item w3-button weatherBtn" href="./weather.html" onclick="closeSidebar()">Weather</a>
+</nav>
+<header class="w3-bar w3-card w3-theme">
+  <button class="w3-bar-item w3-button w3-xxxlarge w3-hover-theme barColor" onclick="openSidebar()">&#9776;</button>
+  <img class="logo" src="./assets/images/logo.png" alt="logo">
+  <h1 class="w3-bar-item headerName">Plan Surfing</h1>
+</header>
+<body>
   <hr class=topLine>
   <div class="w3-container">
     <div class="quote-wrapper">
@@ -51,7 +50,7 @@
     </div>
   </div>
   <br><br>
-  <div id="container ">
+  <div id="w3-container  w3-card ">
     <div id="header">
       <div id="monthDisplay"></div>
       <div>
@@ -69,7 +68,7 @@
       <div>Friday</div>
       <div>Saturday</div>
     </div>
-    <div id="calendar"></div>
+    <div id="calendar "></div>
   </div>
   <div id="DailyEvents">
     <h2>Events for the Day</h2>
@@ -93,14 +92,14 @@
   <div id="deleteEventModal">
     <h2>Daily Events</h2>
 
-    <p id="displayText"></p>
-    <p id="displayTextTwo"></p>
+    <p id="display"></p>
+    <p id="displayTwo"></p>
     <br>
     <p id="displayThree"></p>
-    <p id="displayTextFour"></p>
+    <p id="displayFour"></p>
     <br>
-    <p id="displayTextFive"></p>
-    <p id="displayTextSix"></p>
+    <p id="displayFive"></p>
+    <p id="displaySix"></p>
     <br>
     <button id="deleteButton">Delete</button>
     <button id="closeButton">Close</button>

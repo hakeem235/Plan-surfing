@@ -25,14 +25,14 @@ function openModal(date) {
   const eventForDay = events.find(e => e.date === clicked);
   if (eventForDay) {
 
-    document.getElementById('displayText').innerText = eventForDay.title;
-    document.getElementById('displayTextTwo').innerText = eventForDay.startTime;
+    document.getElementById('display').innerText = eventForDay.tasks;
+    document.getElementById('displayTwo').innerText = eventForDay.startTime;
 
-    document.getElementById('displayTextThree').innerText = eventForDay.titleTwo;
-    document.getElementById('displayTextFour').innerText = eventForDay.startTimeTwo;
+    document.getElementById('displayThree').innerText = eventForDay.tasksTwo;
+    document.getElementById('displayFour').innerText = eventForDay.startTimeTwo;
 
-    document.getElementById('displayTextFive').innerText = eventForDay.titleThree;
-    document.getElementById('displayTextSix').innerText = eventForDay.startTimeThree;
+    document.getElementById('displayFive').innerText = eventForDay.tasksThree;
+    document.getElementById('displaySix').innerText = eventForDay.startTimeThree;
 
 
     deleteEventModal.style.display = 'block';
