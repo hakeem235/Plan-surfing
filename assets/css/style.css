@@ -610,7 +610,10 @@ footer {
 
 .mainSectionWeather{
 text-align: center;
-font-size: 40px;
+font-size: 15px;
+}
+.subWeather{
+  font-size: 13px;
 }
 
  }
