@@ -13,7 +13,6 @@ function randomQuote() {
     })
 
     .then(function (data) {
-      console.log("data", data);
       quoteText.textContent = data.content;
       quoteTags.textContent = data.tags;
       quoteAuthor.textContent = `- ${data.author}`;
