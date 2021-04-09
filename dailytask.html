@@ -6,7 +6,6 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Plan Surfing | Home page</title>
   <link rel="preconnect" href="https://fonts.gstatic.com">
   <!-- Rest Css -->
   <link rel="stylesheet" href="./assets/css/rest.css">
@@ -18,49 +17,44 @@
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400&display=swap" rel="stylesheet">
   <!-- CSS flie -->
   <link rel="stylesheet" href="./assets/css/style.css">
-  <title>U Calender</title>
+  <title>Plan Surfing | Daily Task</title>
 </head>
-
-<body>
-  <nav class="w3-sidebar w3-bar-block w3-card" id="mySidebar">
-    <div class="w3-container w3-theme-d2">
-      <span onclick="closeSidebar()" class="w3-button w3-display-topright w3-large">X</span>
-      <br>
-      <div class="w3-padding w3-center">
-        <img class="w3-circle" src="./assets/images/pngwing.com.png" alt="avatar" style="width:75%">
-      </div>
-    </div>
-    <a class="w3-bar-item w3-button" href="./index.html" onclick="closeSidebar()">Home</a>
-    <a class="w3-bar-item w3-button newsBtn" href="./news.html" onclick="closeSidebar()">News</a>
-    <a class="w3-bar-item w3-button taskBtn" href="#" onclick="closeSidebar()">Daily Tasks</a>
-    <a class="w3-bar-item w3-button weatherBtn" href="#" onclick="closeSidebar()">Weather</a>
-  </nav>
-  <header class="w3-bar w3-card w3-theme">
-    <button class="w3-bar-item w3-button w3-xxxlarge w3-hover-theme barColor" onclick="openSidebar()">&#9776;</button>
-    <img class="logo" src="./assets/images/logo.png" alt="logo">
-    <h1 class="w3-bar-item headerName">Plan Surfing</h1>
-  </header>
-  <hr class=topLine>
-  <div class="w3-container">
-    <div class="quote-wrapper">
-      <h2>Quote Of The Day</h2>
-      <small id="quote-tags"></small>
-      <blockquote id="quote-text"></blockquote>
-      <cite id="quote-author"></cite>
-      <button type="button" id="gen-quote-btn">Get New
-        Quote</button>
+<nav class="w3-sidebar w3-bar-block w3-card" id="mySidebar">
+  <div class="w3-container w3-theme-d2">
+    <span onclick="closeSidebar()" class="w3-button w3-display-topright w3-large">X</span>
+    <br>
+    <div class="w3-padding w3-center">
+      <img class="w3-circle" src="./assets/images/pngwing.com.png" alt="avatar" style="width:75%">
     </div>
   </div>
-  <br><br>
-  <div id="openModal"></div>
-
-  <div id="container" style="width:800px; margin:0 auto;">
-
+  <a class="w3-bar-item w3-button" href="./home.html" onclick="closeSidebar()">Home</a>
+  <a class="w3-bar-item w3-button newsBtn" href="./news.html" onclick="closeSidebar()">News</a>
+  <a class="w3-bar-item w3-button taskBtn" href="#" onclick="closeSidebar()">Daily Tasks</a>
+  <a class="w3-bar-item w3-button weatherBtn" href="./weather.html" onclick="closeSidebar()">Weather</a>
+</nav>
+<header class="w3-bar w3-card w3-theme">
+  <button class="w3-bar-item w3-button w3-xxxlarge w3-hover-theme barColor" onclick="openSidebar()">&#9776;</button>
+  <img class="logo" src="./assets/images/logo.png" alt="logo">
+  <h1 class="w3-bar-item headerName">Plan Surfing</h1>
+</header>
+<hr class=topLine>
+<div class="w3-container">
+  <div class="quote-wrapper">
+    <h2>Quote Of The Day</h2>
+    <small id="quote-tags"></small>
+    <blockquote id="quote-text"></blockquote>
+    <cite id="quote-author"></cite>
+    <button type="button" id="gen-quote-btn">Get New
+      Quote</button>
+  </div>
+</div>
+<body>
+  <div id="container">
     <div id="header">
       <div id="monthDisplay"></div>
       <div>
-        <button class="dailyBtn" id="backButton">Back</button>
-        <button class="dailyBtn" id="nextButton">Next</button>
+        <button id="backButton">Back</button>
+        <button id="nextButton">Next</button>
       </div>
     </div>
 
@@ -73,59 +67,48 @@
       <div>Friday</div>
       <div>Saturday</div>
     </div>
-
+    
     <div id="calendar"></div>
+
   </div>
 
-  <div id="newEventModal">
+  <div id="DailyEvents">
     <h2>Events for the Day</h2>
 
-    <input id="eventTitleInput" placeholder="Event Title" />
-    <input type="time" id="eventStartTimeInput" name="appt" min="09:00" max="18:00" required>
-
+    <input id="taskInput" placeholder="Input Task Here" />
+    <input type="time" id="startTimeInput" name="appt" min="09:00" max="18:00" required>
     <br> <br>
 
-    <input id="eventTitleInput2" placeholder="Event Title" />
-    <input type="time" id="eventStartTimeInput2" name="appt" min="09:00" max="18:00" required>
-
+    <input id="taskInputTwo" placeholder="Input Task Here" />
+    <input type="time" id="startTimeInputTwo" name="appt" min="09:00" max="18:00" required>
     <br> <br>
 
-    <input id="eventTitleInput3" placeholder="Event Title" />
-    <input type="time" id="eventStartTimeInput3" name="appt" min="09:00" max="18:00" required>
-
-    <br> <br>
-
-    <input id="eventTitleInput4" placeholder="Event Title" />
-    <input type="time" id="eventStartTimeInput4" name="appt" min="09:00" max="18:00" required>
-
+    <input id="taskInputThree" placeholder="Input Task Here" />
+    <input type="time" id="startTimeInputThree" name="appt" min="09:00" max="18:00" required>
     <br> <br>
 
     <button id="saveButton">Save</button>
     <button id="cancelButton">Cancel</button>
-
-
   </div>
 
   <div id="deleteEventModal">
-    <h2>Event</h2>
+    <h2>Daily Events</h2>
 
-    <p id="eventText"></p>
-    <p id="eventText2"></p>
+    <p id="display"></p>
+    <p id="displayTwo"></p>
     <br>
-
-    <p id="eventText3"></p>
-    <p id="eventText4"></p>
+    <p id="displayThree"></p>
+    <p id="displayFour"></p>
     <br>
-
-    <p id="eventText5"></p>
-    <p id="eventText6"></p>
+    <p id="displayFive"></p>
+    <p id="displaySix"></p>
     <br>
-
     <button id="deleteButton">Delete</button>
     <button id="closeButton">Close</button>
   </div>
   <div id="modalBackDrop"></div>
   <hr class="bottomLine">
+
   <footer class="w3-container w3-card ">
     <h4>© 2021 The Power Quad Squad Production</h4>
   </footer>

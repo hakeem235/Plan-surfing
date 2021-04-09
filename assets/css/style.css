@@ -16,22 +16,21 @@ h1 {
 /* login section */
 .loginBody{
   background: url(../images/pic1.jpg);
-    background-position: center;
-    background-size: cover ;
-    background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover ;
+  background-repeat: no-repeat;
 
 }
 
 .container-logIn {
   width: 360px;
-  height: 400px;
-  margin: 0% auto;
-  height: 500px;
+  height: 360px;
   margin: 8% auto;
   border-radius: 10px;
-  background: #fff;
+  background: rgba(255, 255,255, .8);
   position: relative;
   overflow: hidden;
+  text-align: center;
 }
 
 .logheader{
@@ -51,7 +50,8 @@ h1 {
 form input {
   width: 100%;
   padding: 10px 5px;
-  margin: 5px 0 ;
+  text-align: center;
+  margin: 5px 0 10px;
   border: 0;
   border: 1px solid #999;
   border-radius: 25px;
@@ -73,7 +73,7 @@ form input {
 form button {
   width: 110px;
   height: 35px;
-  margin: 0 10px;
+  margin-right: 50px;
   background: linear-gradient(to right, #043c84, #87cefa);
   border-radius: 30px;
   border: 0;
@@ -131,6 +131,10 @@ a {
   margin-left: 2%;
   font-size: 30px;
 }
+.barColor, h3, nav, footer  {
+  color: #043C84;
+}
+
 
 /*Quotes Section*/
 
@@ -197,12 +201,6 @@ a {
 
 /*News part*/
 
-.btnSearchSection{
-  margin-left: 2%;
-}
-.weatherName{
-  cursor: pointer;
-}
 
 .news-section {
     display: none;
@@ -224,6 +222,7 @@ a {
 .button {
   margin-left: 5%;
   margin-top: 5%;
+  margin-bottom: 2%;
   
 } 
 
@@ -263,26 +262,17 @@ a {
     flex-direction: row-reverse;
     background: rgb(165, 165, 165);
 }
-.barColor, h3, nav, footer  {
-    color: #043C84;
+#results {
+  text-align: center;
 }
+
 
 
 /* Daily Tasks Section*/
-.dailyBtn {
-  width: 75px;
-  cursor: pointer;
-  box-shadow: 0px 0px 2px gray;
-  border: none;
-  outline: none;
-  padding: 5px;
-  border-radius: 5px;
-  color: white;
-}
 
 #header {
   padding: 10px;
-  color: #6c76d3;
+  color: #1e298b;
   font-size: 26px;
   font-family: sans-serif;
   display: flex;
@@ -293,30 +283,41 @@ a {
 }
 #container {
   width: 770px;
+
+    margin-left: auto;
+    margin-right: auto;
+ 
+
+
+
 }
 #weekdays {
   width: 100%;
   display: flex;
   color: #247BA0;
+
 }
 #weekdays div {
+  display: flex;
   width: 100px;
   padding: 10px;
+
 }
 #calendar {
-  width: 100%;
+  width: 80%;
   margin: auto;
   display: flex;
   flex-wrap: wrap;
+
 }
 .day {
-  width: 100px;
+  width: 110px;
   padding: 10px;
   height: 100px;
   cursor: pointer;
   box-sizing: border-box;
   background-color: white;
-  margin: 5px;
+  margin: 3px;
   box-shadow: 0px 0px 3px #CBD4C2;
   display: flex;
   flex-direction: column;
@@ -343,7 +344,7 @@ a {
   background-color: #FFFCFF !important;
   box-shadow: none !important;
 }
-#newEventModal, #deleteEventModal {
+#DailyEvents, #deleteEventModal {
   display: none;
   z-index: 20;
   padding: 25px;
@@ -410,10 +411,18 @@ a {
   height: 100vh;
   position: absolute;
   background-color: rgba(0,0,0,0.8);
+
 }
 
 
 /*Weather Section*/
+
+.btnSearchSection{
+  margin-left: 2%;
+}
+.weatherName{
+  cursor: pointer;
+}
 
 .weahterLogo{
   display: flex;

@@ -1,5 +1,3 @@
-
-
 var placesEl = $('#places');
 var searchButton = $("#search-button");
 var myCities = [];
@@ -8,50 +6,9 @@ var map;
 
 //side bar weather
 
-$('#cityName').on(function(){
+$('#cityName').on(function () {
   $('.weather').show();
 })
-
-
-
-
-
-
-
-
-// $('.weatherMainBtn').on('click', function () {
-  
-//   $('.weather').show();
- 
-//   $('.desktop').show()
-//   // styling section
-//   $('#cityName').css('text-align', 'center')
-//   $('#description').css('text-align', 'center')
-//   $('.temperature').css('text-align', 'center')
-//   $('.wind-speed').css('text-align', 'center')
-//   $('.humidity').css('text-align', 'center')
-//   $('.btnSearchSection').addClass('w3-center')
-//   $('.mainScreenW').css('display', 'table');
-  
-// })
-
-// $('.weatherName').on('click', function () {
-  
-//   $('.weather').show();
-  
-//   // Show Section
-//   $('.desktop').show()
-//   // styling section
-//   $('#cityName').css('text-align', 'center')
-//   $('#description').css('text-align', 'center')
-//   $('.temperature').css('text-align', 'center')
-//   $('.wind-speed').css('text-align', 'center')
-//   $('.humidity').css('text-align', 'center')
-//   $('.btnSearchSection').addClass('w3-center')
-//   $('.mainScreenW').css('display', 'table');
- 
-
-// })
 
 function getCities() {
   var storage = localStorage.getItem('places')
@@ -92,11 +49,12 @@ searchButton.click(function () {
 
   //if empty
   if (!cities) {
-    // alert("No cities chosen")
+    
     return;
   }
   printCities(cities)
   currentWeather(weatherUrl)
+  
   //clear input
   $('input[id="search-city"]').val('');
 
