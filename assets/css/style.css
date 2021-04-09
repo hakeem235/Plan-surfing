@@ -24,14 +24,13 @@ h1 {
 
 .container-logIn {
   width: 360px;
-  height: 400px;
-  margin: 0% auto;
-  height: 500px;
+  height: 360px;
   margin: 8% auto;
   border-radius: 10px;
-  background: #fff;
+  background: rgba(255, 255,255, .8);
   position: relative;
   overflow: hidden;
+  text-align: center;
 }
 
 .logheader{
@@ -51,7 +50,8 @@ h1 {
 form input {
   width: 100%;
   padding: 10px 5px;
-  margin: 5px 0 ;
+  text-align: center;
+  margin: 5px 0 10px;
   border: 0;
   border: 1px solid #999;
   border-radius: 25px;
@@ -73,7 +73,7 @@ form input {
 form button {
   width: 110px;
   height: 35px;
-  margin: 0 10px;
+  margin-right: 50px;
   background: linear-gradient(to right, #043c84, #87cefa);
   border-radius: 30px;
   border: 0;
