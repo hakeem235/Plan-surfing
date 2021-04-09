@@ -566,7 +566,11 @@ footer {
 
   /*Daily Tasks Section*/
   .daily-tasks {
-    margin-left: -7%;
+    margin-left: 15%;
+  }
+
+  .dateTime, p {
+    margin: 5%;
   }
 
   /*Weather Section*/
