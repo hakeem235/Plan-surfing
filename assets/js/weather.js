@@ -8,7 +8,7 @@ var map;
 
 //side bar weather
 
-$('#cityName').on(function(){
+$('#cityName').on(function () {
   $('.weather').show();
 })
 
@@ -20,9 +20,9 @@ $('#cityName').on(function(){
 
 
 // $('.weatherMainBtn').on('click', function () {
-  
+
 //   $('.weather').show();
- 
+
 //   $('.desktop').show()
 //   // styling section
 //   $('#cityName').css('text-align', 'center')
@@ -32,13 +32,13 @@ $('#cityName').on(function(){
 //   $('.humidity').css('text-align', 'center')
 //   $('.btnSearchSection').addClass('w3-center')
 //   $('.mainScreenW').css('display', 'table');
-  
+
 // })
 
 // $('.weatherName').on('click', function () {
-  
+
 //   $('.weather').show();
-  
+
 //   // Show Section
 //   $('.desktop').show()
 //   // styling section
@@ -49,7 +49,7 @@ $('#cityName').on(function(){
 //   $('.humidity').css('text-align', 'center')
 //   $('.btnSearchSection').addClass('w3-center')
 //   $('.mainScreenW').css('display', 'table');
- 
+
 
 // })
 
@@ -97,6 +97,8 @@ searchButton.click(function () {
   }
   printCities(cities)
   currentWeather(weatherUrl)
+  // cWeather(cWeatherUrl)
+  // console.log(cWeather)
   //clear input
   $('input[id="search-city"]').val('');
 
@@ -201,3 +203,26 @@ function fiveDayForecast(city) {
 
     });
 }
+
+// var cWeatherUrl = "https://api.openweathermap.org/data/2.5/weather?q=ttawa&appid=" + apiKey;
+// function cWeather(cWeatherUrl) {
+//   fetch(cWeatherUrl)
+//     .then(function (response) {
+//       return response.json();
+//     })
+//     .then(function (data) {
+//       var currentDate = moment().format('L');
+//       var weatherIcon = data.weather[0].icon;
+//       var iconUrl = 'https://openweathermap.org/img/wn/' + weatherIcon + '.png';
+//       //parse the response for name of city and concanatig the date and icon.
+//       $('.cityW').text((data.name.toUpperCase()) + " " + currentDate);
+//       $("<img>").attr("src", iconUrl).appendTo(".cityW")
+//       var temp = (data.main.temp);
+//       $('.cityW').text(data.name + " - " + data.sys.country);
+//       $('#Cdescription').text((data.weather[0].description).toUpperCase())
+//       $('.Ctemperature').text(" Temperature: " + temp.toFixed(0) + ' °C');
+//       $('.Chumidity').text(" Humidity: " + data.main.humidity + "%");
+//       $('.Cwind-speed').text("Wind Speed: " + data.wind.speed.toFixed(1) + ' MPH');
+
+//     })
+// }
