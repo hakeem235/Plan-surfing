@@ -1,3 +1,6 @@
+var today = new Date();
+document.getElementById('dateTime').innerHTML=today;
+
 let nav = 0;
 let clicked = null;
 let events = localStorage.getItem('events') ? JSON.parse(localStorage.getItem('events')) : [];
