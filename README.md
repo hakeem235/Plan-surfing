@@ -63,7 +63,7 @@
 
   ![Quotes](/assets/images/quotes.png)
 
-  ![News](/assets/images/news1.png)
+  ![News](/assets/images/news.png)
 
   ![Daily Tasks](/assets/images/calendar.png)
 
