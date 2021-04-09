@@ -270,14 +270,10 @@ a {
 
 
 /* Daily Tasks Section*/
-body {
-  justify-content: center;
-  background-color: #FFFCFF;
 
-}
 #header {
   padding: 10px;
-  color: #0e1a88;
+  color: #1e298b;
   font-size: 26px;
   font-family: sans-serif;
   display: flex;
@@ -288,14 +284,19 @@ body {
 }
 #container {
   width: 770px;
-  display: flex;
-  justify-content: center;
+
+    margin-left: auto;
+    margin-right: auto;
+ 
+
+
+
 }
 #weekdays {
   width: 100%;
   display: flex;
   color: #247BA0;
-  justify-content: center;
+
 }
 #weekdays div {
   display: flex;
@@ -311,7 +312,6 @@ body {
 
 }
 .day {
-  position: ;
   width: 110px;
   padding: 10px;
   height: 100px;
