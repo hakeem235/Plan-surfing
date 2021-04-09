@@ -1,4 +1,4 @@
-var urlLogin = 'https://gnews.io/api/v4/search?q=ottawa&token=3e5608a2974ad85ff60123f63bdb05c4';
+var urlLogin = 'https://gnews.io/api/v4/search?q=ottawa&token=0453f858d186497aada1593f7f369718';
 fetch(urlLogin, {
 })
   .then(function (response) {
@@ -37,7 +37,7 @@ $('#searchBtn').on('click', function () {
 
   //fetch based on input info
   var currentSearch = $('#currentSearch').val();
-  var urlNews = 'https://gnews.io/api/v4/search?q=' + currentSearch + '&token=3e5608a2974ad85ff60123f63bdb05c4';
+  var urlNews = 'https://gnews.io/api/v4/search?q=' + currentSearch + '&token=0453f858d186497aada1593f7f369718';
 
   if (currentSearch !== "") {
     fetch(urlNews, {

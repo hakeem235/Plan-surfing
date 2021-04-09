@@ -131,6 +131,10 @@ a {
   margin-left: 2%;
   font-size: 30px;
 }
+.barColor, h3, nav, footer  {
+  color: #043C84;
+}
+
 
 /*Quotes Section*/
 
@@ -197,12 +201,6 @@ a {
 
 /*News part*/
 
-.btnSearchSection{
-  margin-left: 2%;
-}
-.weatherName{
-  cursor: pointer;
-}
 
 .news-section {
     display: none;
@@ -264,9 +262,10 @@ a {
     flex-direction: row-reverse;
     background: rgb(165, 165, 165);
 }
-.barColor, h3, nav, footer  {
-    color: #043C84;
+#results {
+  text-align: center;
 }
+
 
 
 /* Daily Tasks Section*/
@@ -417,6 +416,13 @@ a {
 
 
 /*Weather Section*/
+
+.btnSearchSection{
+  margin-left: 2%;
+}
+.weatherName{
+  cursor: pointer;
+}
 
 .weahterLogo{
   display: flex;
