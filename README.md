@@ -38,7 +38,7 @@
 
  ## News Section
 
-   On the home page user is able to view 1 article and some description of the news. After clicking on the news title or description, user will be transferred to the “News Section”. Current news title, image, description and link to entire article will be presented to the viewer. By clicking the link, user will be transferred to a new tab in order to read the entire news article. Also, an input section is provided, where any topic of interest can be searched. In order to start search, user has to click “search” button. There is an option to clear page by clicking “clear” button.  If user will click search button with empty input, or type in non-existent news or expressions, “No results found…” message will pe shown. Similarly, “News” section can be clicked on the side navigation bar that will bring user to the 1 current news article, and search option. User can choose another sections while staying in the “News” section by clicking on desired topic. 
+   On the home page user is able to view 1 article and some description of the news based on default location, Ottawa. After clicking on the news title or description, user will be transferred to the “News Section”. Current news title, image, description and link to entire article will be presented to the viewer. By clicking the link, user will be transferred to a new tab in order to read the entire news article. Also, an input section is provided, where any topic of interest can be searched. In order to start search, user has to click “search” button. There is an option to clear page by clicking “clear” button.  If user will click search button with empty input, or type in non-existent news or expressions, “No results found…” message will pe shown. Similarly, “News” section can be clicked on the side navigation bar. User can choose another sections while staying in the “News” section by clicking on desired topic. 
 
 
  ## Daily Tasks Section
@@ -49,7 +49,7 @@
 
  ## Weather Section
 
-   The "Weather" section will show current city and the description of the weather based on input. When you click on the weather, you will see more detailed description including temperature, humidity, wind Speed, 5-day forecast, and the map. Map will show the location based on the registered information or the location of the city that user searched for. User can choose another sections while staying in the “Weather” section by clicking on desired topic. 
+   The "Weather" section will show wethaer for default city, which is Ottawa on the main page. When you click on the weather, you will be presenting with input option to search for any city, you will see detailed description including temperature, humidity, wind Speed, 5-day forecast, and the map. Map will show the location based on the city that user searched for. User can choose another sections while staying in the “Weather” section by clicking on desired topic. 
 
 
 
@@ -65,7 +65,7 @@
 
   ![News](/assets/images/news1.png)
 
-  ![Daily Tasks]()
+  ![Daily Tasks](/assets/images/calendar.png)
 
   ![Weather](/assets/images/weather1.png)
 
@@ -74,15 +74,11 @@
 
 # Deployment of application
 
- To run a project, please follow the link
+ To run a project, please follow the link [Plan Surfing](https://hakeem235.github.io/Plan-surfing/)
 
- [Plan Surfing](https://hakeem235.github.io/Plan-surfing/)
-
- * GitHub Repo link
-
-[GitHub Repo](https://github.com/hakeem235/Weather-Dashboard)
+ * GitHub Repo link [GitHub Repo](https://github.com/hakeem235/Weather-Dashboard)
 
 
 # Comments
 
- The Power Quad Squad is planning to implement more advanced features in the future. Login and Sign up page will be added. We couldn’t proceed with login and registration form since we need to have service cloud to store user’s information.  Quotes Section will show specific quotes based on the progress, and the weather forecast. News Section has a limit per day to view articles since it’s is a free plan. For user to be able to view news unlimited times, paid version has to be implemented. Daily calendar will be improved with more advanced features like progress, upcoming or missing tasks alerts, monthly report, what user is accomplished. The application has tremendous potential to grow, helping people to be more productive throughout the day.
+ The Power Quad Squad is planning to implement more advanced features in the future. Create account page will be added, and Login page will be modified. We couldn’t proceed with login and registration form since we need to have service cloud to store user’s information.  Quotes Section will show specific quotes based on the progress, and the weather forecast. News Section has a limit per day to view articles since it is a free plan. For user to be able to view news unlimited times, paid version has to be implemented. Daily calendar will be improved with more advanced features like progress, upcoming or missing tasks alerts, monthly reports. The application has tremendous potential to grow, helping people to be more productive throughout the day.
