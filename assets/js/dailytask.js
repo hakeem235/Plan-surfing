@@ -5,12 +5,16 @@ let events = localStorage.getItem("events")
   : [];
 const calendar = document.getElementById("calendar");
 const newEventModal = document.getElementById("DailyEvents");
+
 const deleteEventModal = document.getElementById("deleteEventModal");
 const backDrop = document.getElementById("modalBackDrop");
+
 const eventTaskInput = document.getElementById("taskInput");
 const startTimeInput = document.getElementById("startTimeInput");
+
 const eventTaskInputTwo = document.getElementById("taskInputTwo");
 const startTimeInputTwo = document.getElementById("startTimeInputTwo");
+
 const eventTaskInputThree = document.getElementById("taskInputThree");
 const startTimeInputThree = document.getElementById("startTimeInputThree");
 
