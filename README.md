@@ -65,7 +65,7 @@
 
   ![News](/assets/images/news.png)
 
-  ![Daily Tasks](/assets/images/calendar.png)
+  ![Daily Tasks](assets/images/calendar.png)
 
   ![Weather](/assets/images/weather1.png)
 
