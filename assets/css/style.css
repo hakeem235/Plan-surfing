@@ -430,6 +430,9 @@ p {
   cursor: pointer;
 }
 
+.pStylingWeather{
+  margin: 0;
+}
 .weatherLogo {
   display: flex;
   width: 5%;
