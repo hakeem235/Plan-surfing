@@ -277,7 +277,7 @@ a {
 
 #header {
   padding: 20px;
-  color: #014ca1;
+  color: #000822;
   font-size: 26px;
   font-family: sans-serif;
   display: flex;
@@ -292,12 +292,10 @@ a {
  margin-left: auto;
  margin-right: auto;
 }
-
 #weekdays {
   width: 100%;
   display: flex;
-  
-  color: #247BA0;
+  color: #001d29;
 
 }
 #weekdays div {
@@ -310,7 +308,6 @@ a {
   margin: auto;
   display: flex;
   flex-wrap: wrap;
-
 }
 .day {
   width: 100px;
@@ -361,7 +358,8 @@ a {
 }
 #taskInput {
   padding: 10px;
-  width: 100%;
+  width: 60%;
+  height: 20%;
   box-sizing: border-box;
   margin-bottom: 25px;
   border-radius: 3px;
@@ -372,7 +370,7 @@ a {
 
 #taskInputTwo{
   padding: 10px;
-  width: 100%;
+  width: 60%;
   box-sizing: border-box;
   margin-bottom: 25px;
   border-radius: 3px;
@@ -382,7 +380,7 @@ a {
 }
 #taskInputThree {
   padding: 10px;
-  width: 100%;
+  width: 60%;
   box-sizing: border-box;
   margin-bottom: 25px;
   border-radius: 3px;
@@ -394,13 +392,35 @@ a {
 #taskInput.error {
   border: 2px solid rgb(197, 0, 0);
 }
-#cancelButton, #deleteButton {
-  background-color: #4CAF50;
+#cancelButton, #closeButton {
+  background-color: #70fd2e;
   font-size: 12px;
+  color: white;
 
+}      
+#saveButton, #deleteButton {
+  background-color: #c03636;
+  font-size: 12px;
 }
-#saveButton, #closeButton {
-  background-color: #92a1d1;
+
+
+#backButton{
+
+  float: right;
+  margin: 0px;
+  margin-bottom: -40px;
+  
+  
+}
+
+#nextButton { 
+
+float: left;
+margin: auto 23px;
+
+
+
+
 }
 #eventText {
   font-size: 14px;
@@ -416,7 +436,6 @@ a {
   background-color: rgba(0, 0, 0, 0.8);
 
 }
-
 
 /*Weather Section*/
 

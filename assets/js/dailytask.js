@@ -5,6 +5,7 @@ let events = localStorage.getItem("events")
   : [];
 const calendar = document.getElementById("calendar");
 const newEventModal = document.getElementById("DailyEvents");
+
 const deleteEventModal = document.getElementById("deleteEventModal");
 const backDrop = document.getElementById("modalBackDrop");
 
@@ -159,3 +160,4 @@ function initButtons() {
 
 initButtons();
 load();
+

@@ -82,19 +82,20 @@
   </div>
   <body>
     <br /><br />
-    <div id="container ">
+    <div id="container">
       <div id="header">
         <div id="monthDisplay"></div>
         <div>
           <button class="button is-primary is-rounded" id="backButton">
             Back
-          </button>
+          </button> 
+            
           <button class="button is-primary is-rounded" id="nextButton">
             Next
           </button>
         </div>
       </div>
-      <div id="weekdays ">
+      <div id="weekdays">
         <div>Sunday</div>
         <div>Monday</div>
         <div>Tuesday</div>
@@ -117,9 +118,7 @@
         max="18:00"
         required
       />
-      <br />
-      <br />
-
+      
       <input id="taskInputTwo" placeholder="Input Task Here" />
       <input
         type="time"
@@ -129,8 +128,7 @@
         max="18:00"
         required
       />
-      <br />
-      <br />
+    
 
       <input id="taskInputThree" placeholder="Input Task Here" />
       <input
@@ -141,11 +139,10 @@
         max="18:00"
         required
       />
-      <br />
-      <br />
+      
 
-      <button class="button is-danger is-rounded" id="saveButton">Save</button>
-      <button id="cancelButton">Cancel</button>
+      <button class="button is-success" id="saveButton">Save</button>
+      <button class="button is-warning" id="cancelButton">Cancel</button>
     </div>
 
     <div id="deleteEventModal">
@@ -160,8 +157,8 @@
       <p id="displayFive"></p>
       <p id="displaySix"></p>
       <br />
-      <button id="deleteButton">Delete</button>
-      <button id="closeButton">Close</button>
+      <button class="button is-success" id="deleteButton">Delete</button>
+      <button class="button is-warning" id="closeButton">Close</button>
     </div>
     <div id="modalBackDrop"></div>
     <hr class="bottomLine" />
@@ -175,7 +172,5 @@
     <script src="./assets/js/script.js"></script>
     <script src="./assets/js/quotes.js"></script>
     <script src="./assets/js/dailytask.js"></script>
-    <script src="./assets/js/news.js"></script>
-    <script src="./assets/js/weather.js"></script>
   </body>
 </html>
