@@ -1,125 +1,181 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="preconnect" href="https://fonts.gstatic.com">
-  <!-- Rest Css -->
-  <link rel="stylesheet" href="./assets/css/rest.css">
-  <!--Bulma-->
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.2/css/bulma.min.css">
-  <!-- W3.CSS framwork -->
-  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3pro.css">
-  <!-- Google Font  -->
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400&display=swap" rel="stylesheet">
-  <!-- CSS flie -->
-  <link rel="stylesheet" href="./assets/css/style.css">
-  <title>Plan Surfing | Daily Task</title>
-</head>
-<nav class="w3-sidebar w3-bar-block w3-card" id="mySidebar">
-  <div class="w3-container w3-theme-d2">
-    <span onclick="closeSidebar()" class="w3-button w3-display-topright w3-large">X</span>
-    <br>
-    <div class="w3-padding w3-center">
-      <img class="w3-circle" src="./assets/images/pngwing.com.png" alt="avatar" style="width:75%">
-    </div>
-  </div>
-  <a class="w3-bar-item w3-button" href="./home.html" onclick="closeSidebar()">Home</a>
-  <a class="w3-bar-item w3-button newsBtn" href="./news.html" onclick="closeSidebar()">News</a>
-  <a class="w3-bar-item w3-button taskBtn" href="#" onclick="closeSidebar()">Daily Tasks</a>
-  <a class="w3-bar-item w3-button weatherBtn" href="./weather.html" onclick="closeSidebar()">Weather</a>
-</nav>
-<header class="w3-bar w3-card w3-theme">
-  <button class="w3-bar-item w3-button w3-xxxlarge w3-hover-theme barColor" onclick="openSidebar()">&#9776;</button>
-  <img class="logo" src="./assets/images/logo.png" alt="logo">
-  <h1 class="w3-bar-item headerName">Plan Surfing</h1>
-</header>
-<hr class=topLine>
-<div class="w3-container">
-  <div class="quote-wrapper">
-    <h2>Quote Of The Day</h2>
-    <small id="quote-tags"></small>
-    <blockquote id="quote-text"></blockquote>
-    <cite id="quote-author"></cite>
-    <button type="button" id="gen-quote-btn">Get New
-      Quote</button>
-  </div>
-</div>
-<body>
-  <div id="container">
-    <div id="header">
-      <div id="monthDisplay"></div>
-      <div>
-        <button id="backButton">Back</button>
-        <button id="nextButton">Next</button>
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <!-- Rest Css -->
+    <link rel="stylesheet" href="./assets/css/rest.css" />
+    <!--Bulma-->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bulma@0.9.2/css/bulma.min.css"
+    />
+    <!-- W3.CSS framwork -->
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3pro.css" />
+    <!-- Google Font  -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400&display=swap"
+      rel="stylesheet"
+    />
+    <!-- CSS flie -->
+    <link rel="stylesheet" href="./assets/css/style.css" />
+    <title>Plan Surfing | Daily Task</title>
+  </head>
+  <nav class="w3-sidebar w3-bar-block w3-card" id="mySidebar">
+    <div class="w3-container w3-theme-d2">
+      <span
+        onclick="closeSidebar()"
+        class="w3-button w3-display-topright w3-large"
+        >X</span
+      >
+      <br />
+      <div class="w3-padding w3-center">
+        <img
+          class="w3-circle"
+          src="./assets/images/pngwing.com.png"
+          alt="avatar"
+          style="width: 75%"
+        />
       </div>
     </div>
-
-    <div id="weekdays">
-      <div>Sunday</div>
-      <div>Monday</div>
-      <div>Tuesday</div>
-      <div>Wednesday</div>
-      <div>Thursday</div>
-      <div>Friday</div>
-      <div>Saturday</div>
+    <a class="w3-bar-item w3-button" href="./home.html" onclick="closeSidebar()"
+      >Home</a
+    >
+    <a
+      class="w3-bar-item w3-button newsBtn"
+      href="./news.html"
+      onclick="closeSidebar()"
+      >News</a
+    >
+    <a class="w3-bar-item w3-button taskBtn" href="#" onclick="closeSidebar()"
+      >Daily Tasks</a
+    >
+    <a
+      class="w3-bar-item w3-button weatherBtn"
+      href="./weather.html"
+      onclick="closeSidebar()"
+      >Weather</a
+    >
+  </nav>
+  <header class="w3-bar w3-card w3-theme">
+    <button
+      class="w3-bar-item w3-button w3-xxxlarge w3-hover-theme barColor"
+      onclick="openSidebar()"
+    >
+      &#9776;
+    </button>
+    <img class="logo" src="./assets/images/logo.png" alt="logo" />
+    <h1 class="w3-bar-item headerName">Plan Surfing</h1>
+  </header>
+  <hr class="topLine" />
+  <div class="container">
+    <div class="quote-wrapper">
+      <h2>Quote Of The Day</h2>
+      <small id="quote-tags"></small>
+      <blockquote id="quote-text"></blockquote>
+      <cite id="quote-author"></cite>
+      <button type="button" id="gen-quote-btn">Get New Quote</button>
     </div>
-    
-    <div id="calendar"></div>
-
   </div>
+  <body>
+    <br /><br />
+    <div id="container ">
+      <div id="header">
+        <div id="monthDisplay"></div>
+        <div>
+          <button class="button is-primary is-rounded" id="backButton">
+            Back
+          </button>
+          <button class="button is-primary is-rounded" id="nextButton">
+            Next
+          </button>
+        </div>
+      </div>
+      <div id="weekdays ">
+        <div>Sunday</div>
+        <div>Monday</div>
+        <div>Tuesday</div>
+        <div>Wednesday</div>
+        <div>Thursday</div>
+        <div>Friday</div>
+        <div>Saturday</div>
+      </div>
+      <div id="calendar"></div>
+    </div>
+    <div id="DailyEvents">
+      <h2>Events for the Day</h2>
 
-  <div id="DailyEvents">
-    <h2>Events for the Day</h2>
+      <input id="taskInput" placeholder="Input Task Here" />
+      <input
+        type="time"
+        id="startTimeInput"
+        name="appt"
+        min="09:00"
+        max="18:00"
+        required
+      />
+      <br />
+      <br />
 
-    <input id="taskInput" placeholder="Input Task Here" />
-    <input type="time" id="startTimeInput" name="appt" min="09:00" max="18:00" required>
-    <br> <br>
+      <input id="taskInputTwo" placeholder="Input Task Here" />
+      <input
+        type="time"
+        id="startTimeInputTwo"
+        name="appt"
+        min="09:00"
+        max="18:00"
+        required
+      />
+      <br />
+      <br />
 
-    <input id="taskInputTwo" placeholder="Input Task Here" />
-    <input type="time" id="startTimeInputTwo" name="appt" min="09:00" max="18:00" required>
-    <br> <br>
+      <input id="taskInputThree" placeholder="Input Task Here" />
+      <input
+        type="time"
+        id="startTimeInputThree"
+        name="appt"
+        min="09:00"
+        max="18:00"
+        required
+      />
+      <br />
+      <br />
 
-    <input id="taskInputThree" placeholder="Input Task Here" />
-    <input type="time" id="startTimeInputThree" name="appt" min="09:00" max="18:00" required>
-    <br> <br>
+      <button class="button is-danger is-rounded" id="saveButton">Save</button>
+      <button id="cancelButton">Cancel</button>
+    </div>
 
-    <button id="saveButton">Save</button>
-    <button id="cancelButton">Cancel</button>
-  </div>
+    <div id="deleteEventModal">
+      <h2>Daily Events</h2>
 
-  <div id="deleteEventModal">
-    <h2>Daily Events</h2>
+      <p id="display"></p>
+      <p id="displayTwo"></p>
+      <br />
+      <p id="displayThree"></p>
+      <p id="displayFour"></p>
+      <br />
+      <p id="displayFive"></p>
+      <p id="displaySix"></p>
+      <br />
+      <button id="deleteButton">Delete</button>
+      <button id="closeButton">Close</button>
+    </div>
+    <div id="modalBackDrop"></div>
+    <hr class="bottomLine" />
 
-    <p id="display"></p>
-    <p id="displayTwo"></p>
-    <br>
-    <p id="displayThree"></p>
-    <p id="displayFour"></p>
-    <br>
-    <p id="displayFive"></p>
-    <p id="displaySix"></p>
-    <br>
-    <button id="deleteButton">Delete</button>
-    <button id="closeButton">Close</button>
-  </div>
-  <div id="modalBackDrop"></div>
-  <hr class="bottomLine">
-
-  <footer class="w3-container w3-card ">
-    <h4>© 2021 The Power Quad Squad Production</h4>
-  </footer>
-  <script src="https://code.jquery.com/jquery.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.29.1/moment.min.js"></script>
-  <script src="./assets/js/script.js"></script>
-  <script src="./assets/js/quotes.js"></script>
-  <script src="./assets/js/dailytask.js"></script>
-  <script src="./assets/js/news.js"></script>
-  <script src="./assets/js/weather.js"></script>
-</body>
-
+    <footer class="w3-container w3-card">
+      <h4>© 2021 The Power Quad Squad Production</h4>
+    </footer>
+    <script src="https://code.jquery.com/jquery.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.29.1/moment.min.js"></script>
+    <script src="./assets/js/script.js"></script>
+    <script src="./assets/js/quotes.js"></script>
+    <script src="./assets/js/dailytask.js"></script>
+    <script src="./assets/js/news.js"></script>
+    <script src="./assets/js/weather.js"></script>
+  </body>
 </html>

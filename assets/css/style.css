@@ -276,15 +276,16 @@ a {
 }
 
 #header {
-  padding: 10px;
-  color: #1e298b;
+  padding: 20px;
+  color: #014ca1;
   font-size: 26px;
   font-family: sans-serif;
   display: flex;
   justify-content: space-between;
 }
 #header button {
-  background-color:#043C84;
+  background-color:#000822;
+  color: rgb(255, 255, 255);
 }
 #container {
   width: 770px;
@@ -295,46 +296,46 @@ a {
 #weekdays {
   width: 100%;
   display: flex;
+  
   color: #247BA0;
 
 }
 #weekdays div {
-  display: flex;
-  width: 100px;
-  padding: 10px;
+  width: 140px;
+  padding:10px;
 
 }
 #calendar {
-  width: 80%;
+  width: 100%;
   margin: auto;
   display: flex;
   flex-wrap: wrap;
 
 }
 .day {
-  width: 110px;
+  width: 100px;
   padding: 10px;
   height: 100px;
   cursor: pointer;
   box-sizing: border-box;
-  background-color: white;
-  margin: 3px;
-  box-shadow: 0px 0px 3px #CBD4C2;
+  background-color: rgb(255, 255, 255);
+  margin: 5px;
+  box-shadow: 0px 0px 3px #afafafe7;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
 }
 .day:hover {
-  background-color: #e8faed;
+  background-color: #e2f6fa;
 }
 
 .day + #currentDay {
-  background-color:#e8f4fa;
+  background-color:#cedfff;
 }
 .event {
   font-size: 10px;
   padding: 3px;
-  background-color: #043C84;
+  background-color: #02008d;
   color: white;
   border-radius: 5px;
   max-height: 55px;
@@ -342,15 +343,15 @@ a {
 }
 .padding {
   cursor: default !important;
-  background-color: #FFFCFF !important;
+  background-color: #f3f3f3 !important;
   box-shadow: none !important;
 }
 #DailyEvents, #deleteEventModal {
   display: none;
   z-index: 20;
   padding: 25px;
-  background-color: #e8f4fa;
-  box-shadow: 0px 0px 3px black;
+  background-color: #c5e5f5ef;
+  box-shadow: 0px 0px 3px rgb(255, 255, 255);
   border-radius: 5px;
   width: 350px;
   top: 100px;
@@ -358,7 +359,7 @@ a {
   position: absolute;
   font-family: sans-serif;
 }
-#eventTitleInput {
+#taskInput {
   padding: 10px;
   width: 100%;
   box-sizing: border-box;
@@ -366,10 +367,10 @@ a {
   border-radius: 3px;
   outline: none;
   border: none;
-  box-shadow: 0px 0px 3px gray;
+  box-shadow: 0px 0px 3px rgb(0, 0, 0);
 }
 
-#eventTitleInput2 {
+#taskInputTwo{
   padding: 10px;
   width: 100%;
   box-sizing: border-box;
@@ -377,9 +378,9 @@ a {
   border-radius: 3px;
   outline: none;
   border: none;
-  box-shadow: 0px 0px 3px gray;
+  box-shadow: 0px 0px 3px rgb(0, 0, 0);
 }
-#eventTitleInput3 {
+#taskInputThree {
   padding: 10px;
   width: 100%;
   box-sizing: border-box;
@@ -387,14 +388,16 @@ a {
   border-radius: 3px;
   outline: none;
   border: none;
-  box-shadow: 0px 0px 3px gray;
+  box-shadow: 0px 0px 3px rgb(0, 0, 0);
 }
 
-#eventTitleInput.error {
-  border: 2px solid red;
+#taskInput.error {
+  border: 2px solid rgb(197, 0, 0);
 }
 #cancelButton, #deleteButton {
-  background-color: #d36c6c;
+  background-color: #4CAF50;
+  font-size: 12px;
+
 }
 #saveButton, #closeButton {
   background-color: #92a1d1;
@@ -410,7 +413,7 @@ a {
   width: 100vw;
   height: 100vh;
   position: absolute;
-  background-color: rgba(0,0,0,0.8);
+  background-color: rgba(0, 0, 0, 0.8);
 
 }
 
@@ -426,7 +429,7 @@ a {
 
 
 
-.weahterLogo{
+.weatherLogo{
   display: flex;
   width: 5%;
  float: right;
