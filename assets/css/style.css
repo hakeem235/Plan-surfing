@@ -300,6 +300,7 @@ p {
   display: flex;
   flex-wrap: wrap;
 }
+
 .day {
   width: 100px;
   padding: 10px;
