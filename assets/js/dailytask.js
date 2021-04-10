@@ -152,7 +152,5 @@ function initButtons() {
   document.getElementById("closeButton").addEventListener("click", closeModal);
 }
 
-
 initButtons();
 load();
-
