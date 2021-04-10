@@ -1,8 +1,8 @@
-*{
-    font-family: 'Poppins', sans-serif;
+* {
+  font-family: "Poppins", sans-serif;
 }
 
-html{
+html {
   min-width: fit-content;
   min-height: fit-content;
 }
@@ -11,15 +11,12 @@ h1 {
   font-size: 53px;
 }
 
-
-
 /* login section */
-.loginBody{
+.loginBody {
   background: url(../images/pic1.jpg);
   background-position: center;
-  background-size: cover ;
+  background-size: cover;
   background-repeat: no-repeat;
-
 }
 
 .container-logIn {
@@ -27,19 +24,19 @@ h1 {
   height: 360px;
   margin: 8% auto;
   border-radius: 10px;
-  background: rgba(255, 255,255, .8);
+  background: rgba(255, 255, 255, 0.8);
   position: relative;
   overflow: hidden;
   text-align: center;
 }
 
-.logheader{
+.logheader {
   text-align: center;
   margin-bottom: 40px;
   color: #777;
 }
 
-.container-logIn form{
+.container-logIn form {
   width: 280px;
   position: absolute;
   top: 100px;
@@ -58,16 +55,15 @@ form input {
   outline: none;
   background: transparent;
 }
-::placeholder{
+::placeholder {
   text-align: center;
   color: #777;
 }
 
-.btn-box{
+.btn-box {
   width: 100%;
   margin: 30px;
   text-align: center;
-
 }
 
 form button {
@@ -82,7 +78,7 @@ form button {
   cursor: pointer;
 }
 
-.step-row{
+.step-row {
   width: 100%;
   height: 60px;
   margin: 0 auto;
@@ -95,7 +91,7 @@ form button {
 
 .step-col {
   width: 100%;
-  text-align: center;   
+  text-align: center;
   position: relative;
 }
 
@@ -105,110 +101,111 @@ form button {
 
 /*Main Page Section*/
 
-.sectionImg{
-    border: 1px solid #043C84 ;
-    border-radius: 5px ;
-    margin: 8% 0 8% 3%;
+.sectionImg {
+  border: 1px solid #043c84;
+  border-radius: 5px;
+  margin: 8% 0 8% 3%;
 }
 
 #mySidebar {
-    display: none;
+  display: none;
 }
 a {
-    text-decoration: none;
+  text-decoration: none;
 }
-
 
 .logo {
-    display: flex;
-    width: 13%;
-   float: right;
-   margin-top: 8px;
+  display: flex;
+  width: 13%;
+  float: right;
+  margin-top: 8px;
 }
 
-#newsName, .weatherName, #cityName, .daily-tasks {
+#newsName,
+.weatherName,
+#cityName,
+.daily-tasks {
   margin-top: 2%;
   margin-left: 2%;
   font-size: 30px;
 }
-.barColor, h3, nav, footer  {
-  color: #043C84;
+.barColor,
+h3,
+nav,
+footer {
+  color: #043c84;
 }
-
 
 /*Quotes Section*/
 
-.quote-wrapper{
-  font-family: 'Poppins', sans-serif;
- justify-content: center;
- align-items: center;
- text-align: center;
- font-size: 0.9rem;
- background-color:rgb(255, 255, 255);
- border-radius: 5px;
- box-shadow: cornsilk;
- margin: 0;
+.quote-wrapper {
+  font-family: "Poppins", sans-serif;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  font-size: 0.9rem;
+  background-color: rgb(255, 255, 255);
+  border-radius: 5px;
+  box-shadow: cornsilk;
+  margin: 0;
 }
 
-.quote-wrapper h2{
-  color: #043C84;
+.quote-wrapper h2 {
+  color: #043c84;
   font-size: 1.5rem;
   margin-bottom: 0.5rem;
   text-decoration: underline;
 }
 
-.quote-wrapper small{
+.quote-wrapper small {
   font-size: 700;
   padding: 1.9rem 1rem;
-  margin-bottom: 2.0rem;
+  margin-bottom: 2rem;
   margin-top: 1.5rem;
   font-variant: small-caps;
   visibility: hidden;
 }
 
-.quote-wrapper blockquote{
+.quote-wrapper blockquote {
   padding: 1.5rem 0;
   font-weight: 300;
   margin-top: 0.5rem;
   margin-bottom: 0.5rem;
-} 
+}
 
-.quote-wrapper cite{
+.quote-wrapper cite {
   display: block;
   font-style: italic;
   margin-bottom: 1rem;
 }
 
 .w3-border {
-  border: 1px solid #043C84!important;
+  border: 1px solid #043c84 !important;
   outline: none;
 }
 
-#gen-quote-btn{
+#gen-quote-btn {
   font-size: 0.8rem;
-  padding: 0.3rem 1.0rem;
+  padding: 0.3rem 1rem;
   cursor: pointer;
   border-radius: 1.2rem;
   background-color: #ffffff;
-  border-color: #043C84;
-  
+  border-color: #043c84;
 }
 
-#gen-quote-btn:hover{
+#gen-quote-btn:hover {
   box-shadow: 1px 1px 1px 1px lightblue;
 }
 
-
 /*News part*/
 
-
 .news-section {
-    display: none;
+  display: none;
 }
 
 .newsText {
   margin-top: 3%;
-  color: #043C84;
+  color: #043c84;
   font-size: 30px;
   text-align: center;
 }
@@ -216,35 +213,33 @@ a {
 #currentSearch {
   margin: 5% 5% 2% 5%;
   max-width: 70%;
-  
 }
 
 .button {
   margin-left: 5%;
   margin-top: 5%;
   margin-bottom: 2%;
-  
-} 
+}
 
-.is-loading{
-    display: none;
+.is-loading {
+  display: none;
 }
 
 .loginText {
   margin-top: 3%;
-  color: #043C84;
+  color: #043c84;
   font-weight: bold;
   cursor: pointer;
 }
 
-.loginText, .description {
+.loginText,
+.description {
   margin: 3% 2% 3% 2%;
-  
 }
 
 .firstArticleText {
   text-align: center;
-  color: #043C84;
+  color: #043c84;
   font-size: 40px;
 }
 
@@ -252,66 +247,60 @@ a {
   margin-left: 2%;
 }
 
-
-.headerName{
-    color:#043C84;
-    display: flex;
-    float: left;
+.headerName {
+  color: #043c84;
+  display: flex;
+  float: left;
 }
 .header {
-    flex-direction: row-reverse;
-    background: rgb(165, 165, 165);
+  flex-direction: row-reverse;
+  background: rgb(165, 165, 165);
 }
 #results {
   text-align: center;
 }
 
-
-
 /* Daily Tasks Section*/
 
-.dateTime, p {
+.dateTime,
+p {
   margin-left: 2%;
   margin-top: 5%;
 }
 
 #header {
   padding: 20px;
-  color: #014ca1;
+  color: #000822;
   font-size: 26px;
   font-family: sans-serif;
   display: flex;
   justify-content: space-between;
 }
 #header button {
-  background-color:#000822;
+  background-color: #000822;
   color: rgb(255, 255, 255);
 }
 #container {
   width: 770px;
- margin-left: auto;
- margin-right: auto;
+  margin-left: auto;
+  margin-right: auto;
 }
-
 #weekdays {
   width: 100%;
   display: flex;
-  
-  color: #247BA0;
-
+  color: #001d29;
 }
 #weekdays div {
   width: 140px;
-  padding:10px;
-
+  padding: 10px;
 }
 #calendar {
   width: 100%;
   margin: auto;
   display: flex;
   flex-wrap: wrap;
-
 }
+
 .day {
   width: 100px;
   padding: 10px;
@@ -330,7 +319,7 @@ a {
 }
 
 .day + #currentDay {
-  background-color:#cedfff;
+  background-color: #cedfff;
 }
 .event {
   font-size: 10px;
@@ -346,7 +335,8 @@ a {
   background-color: #f3f3f3 !important;
   box-shadow: none !important;
 }
-#DailyEvents, #deleteEventModal {
+#DailyEvents,
+#deleteEventModal {
   display: none;
   z-index: 20;
   padding: 25px;
@@ -361,7 +351,8 @@ a {
 }
 #taskInput {
   padding: 10px;
-  width: 100%;
+  width: 60%;
+  height: 20%;
   box-sizing: border-box;
   margin-bottom: 25px;
   border-radius: 3px;
@@ -370,9 +361,9 @@ a {
   box-shadow: 0px 0px 3px rgb(0, 0, 0);
 }
 
-#taskInputTwo{
+#taskInputTwo {
   padding: 10px;
-  width: 100%;
+  width: 60%;
   box-sizing: border-box;
   margin-bottom: 25px;
   border-radius: 3px;
@@ -382,7 +373,7 @@ a {
 }
 #taskInputThree {
   padding: 10px;
-  width: 100%;
+  width: 60%;
   box-sizing: border-box;
   margin-bottom: 25px;
   border-radius: 3px;
@@ -394,13 +385,27 @@ a {
 #taskInput.error {
   border: 2px solid rgb(197, 0, 0);
 }
-#cancelButton, #deleteButton {
-  background-color: #4CAF50;
+#cancelButton,
+#closeButton {
+  background-color: #70fd2e;
   font-size: 12px;
-
+  color: white;
 }
-#saveButton, #closeButton {
-  background-color: #92a1d1;
+#saveButton,
+#deleteButton {
+  background-color: #c03636;
+  font-size: 12px;
+}
+
+#backButton {
+  float: right;
+  margin: 0px;
+  margin-bottom: -40px;
+}
+
+#nextButton {
+  float: left;
+  margin: auto 23px;
 }
 #eventText {
   font-size: 14px;
@@ -414,89 +419,83 @@ a {
   height: 100vh;
   position: absolute;
   background-color: rgba(0, 0, 0, 0.8);
-
 }
-
 
 /*Weather Section*/
 
-.btnSearchSection{
+.btnSearchSection {
   margin-left: 2%;
 }
-.weatherName{
+.weatherName {
   cursor: pointer;
 }
 
-
-
-.weatherLogo{
+.weatherLogo {
   display: flex;
   width: 5%;
- float: right;
- margin-top: 8px;
-
+  float: right;
+  margin-top: 8px;
 }
 
-.mainSectionWeather{
- margin-right: 150px;
+.mainSectionWeather {
+  margin-right: 150px;
 }
-
 
 .intro {
- background: #87cefa;
- position: fixed;
- top: 0;
- left: 0;
- width: 100%;
- height: 100%;
- display: flex;
- justify-content: center;
- align-items: center;
+  background: #87cefa;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 .slider {
- background: #2e739e;
- position: fixed;
- top: 0;
- left: 0;
- width: 100%;
- height: 100%;
- transform: translateY(100%);
+  background: #2e739e;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  transform: translateY(100%);
 }
 
 .intro-text {
- color: rgb(233, 233, 233);
- font-size: 2rem;
- margin-left: 15px;
+  color: rgb(233, 233, 233);
+  font-size: 2rem;
+  margin-left: 15px;
 }
 
 .hide {
- background: #87cefa;
- overflow: hidden;
+  background: #87cefa;
+  overflow: hidden;
 }
 
 .hide span {
- transform: translateY(100%);
- display: inline-block;
+  transform: translateY(100%);
+  display: inline-block;
 }
 
 #search-city {
   margin-top: 0;
   width: 200px;
 }
-#search-button{
+#search-button {
   margin-top: 0;
 }
 
-.card{
+.card {
   margin-left: 10px;
-  background: #043C84;
+  background: #043c84;
   color: white;
 }
 
 .forecast {
-display: flex;
-flex-direction: column;
-text-align: center;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
 }
 .card {
   margin-bottom: 25px;
@@ -507,22 +506,20 @@ text-align: center;
        * element that contains the map. */
 #map {
   height: 100%;
- }
-
-footer {
-    position: fixed;
-    left: 0;
-    bottom: 0;
-    width: 100%;
-    /* make this the same (in negative value) on the container above the footer */
-    height: 25px;
 }
 
+footer {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  /* make this the same (in negative value) on the container above the footer */
+  height: 25px;
+}
 
 /* Media Section */
 
- @media (min-width: 1200px) {
-
+@media (min-width: 1200px) {
   .mobileFriendly {
     display: flex;
     justify-content: space-between;
@@ -531,7 +528,6 @@ footer {
   .squares {
     margin-left: 25px;
     margin-right: 25px;
-   
   }
   .w3-cell-row {
     display: flex;
@@ -541,11 +537,12 @@ footer {
     display: none;
   }
 
-  #cityName, #description {
+  #cityName,
+  #description {
     margin-left: 0;
   }
 
-   /*News Section*/
+  /*News Section*/
   #newsName {
     margin-left: 0;
     text-align: center;
@@ -560,20 +557,19 @@ footer {
   #currentSearch {
     margin: 5% 5% 2% 5%;
     max-width: 70%;
-    
   }
-  
+
   .button {
-    margin-left:0%;
-    
-  } 
+    margin-left: 0%;
+  }
 
   /*Daily Tasks Section*/
   .daily-tasks {
     margin-left: 15%;
   }
 
-  .dateTime, p {
+  .dateTime,
+  p {
     margin-left: 0%;
     margin-bottom: 5%;
   }
@@ -583,12 +579,11 @@ footer {
     margin-left: 7%;
   }
 
-
   .forecast {
-   display: flex;
-   flex-direction: row;
-   justify-content: center;
-   text-align: center;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    text-align: center;
   }
 
   .card {
@@ -602,28 +597,20 @@ footer {
 
   #search-city {
     margin-left: -66%;
-      
   }
 
-  #current-weather{
+  #current-weather {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    ;
   }
 
-  .mainSectionWeather{
-   text-align: center;
-   font-size: 15px;
+  .mainSectionWeather {
+    text-align: center;
+    font-size: 15px;
   }
- .subWeather{
-   font-size: 13px;
- }
-
- }
-
-
-
-
-  
+  .subWeather {
+    font-size: 13px;
+  }
+}

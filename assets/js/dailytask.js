@@ -5,6 +5,7 @@ let events = localStorage.getItem("events")
   : [];
 const calendar = document.getElementById("calendar");
 const newEventModal = document.getElementById("DailyEvents");
+
 const deleteEventModal = document.getElementById("deleteEventModal");
 const backDrop = document.getElementById("modalBackDrop");
 
@@ -34,10 +35,8 @@ function openModal(date) {
   if (eventForDay) {
     document.getElementById("display").innerText = eventForDay.tasks;
     document.getElementById("displayTwo").innerText = eventForDay.startTime;
-
     document.getElementById("displayThree").innerText = eventForDay.tasksTwo;
     document.getElementById("displayFour").innerText = eventForDay.startTimeTwo;
-
     document.getElementById("displayFive").innerText = eventForDay.tasksThree;
     document.getElementById("displaySix").innerText =
       eventForDay.startTimeThree;
