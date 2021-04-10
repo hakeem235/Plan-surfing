@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Plan Surfing | Home page</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <!-- Rest Css -->
+    <link rel="stylesheet" href="./assets/css/rest.css">
+    <!-- W3.CSS framwork -->
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3pro.css">
+    <!--Bulma-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.2/css/bulma.min.css">
+    <!-- Google Font  -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400&display=swap" rel="stylesheet">
+    <!-- CSS flie -->
+    <link rel="stylesheet" href="./assets/css/style.css">
+</head>
+
+<body>
+    <!--Side Navigation Bar-->
+    <nav class="w3-sidebar w3-bar-block w3-card" id="mySidebar">
+        <div class="w3-container w3-theme-d2">
+            <span onclick="closeSidebar()" class="w3-button w3-display-topright w3-large">X</span>
+            <br>
+            <div class="w3-padding w3-center">
+                <img class="w3-circle" src="./assets/images/pngwing.com.png" alt="avatar" style="width:75%">
+            </div>
+        </div>
+        <a class="w3-bar-item w3-button" href="./home.html" onclick="closeSidebar()">Home</a>
+        <a class="w3-bar-item w3-button newsBtn" href="./news.html" onclick="closeSidebar()">News</a>
+        <a class="w3-bar-item w3-button taskBtn" href="./dailytask.html" onclick="closeSidebar()">Daily Tasks</a>
+        <a class="w3-bar-item w3-button weatherBtn" href="./weather.html" onclick="closeSidebar()">Weather</a>
+    </nav>
+    <header class="w3-bar w3-card w3-theme">
+        <button class="w3-bar-item w3-button w3-xxxlarge w3-hover-theme barColor"
+            onclick="openSidebar()">&#9776;</button>
+        <img class="logo" src="./assets/images/logo.png" alt="logo">
+        <h1 class="w3-bar-item headerName">Plan Surfing</h1>
+    </header>
+    <!--Quotes Section-->
+    <hr class=topLine>
+    <div class="w3-container">
+        <div class="quote-wrapper">
+            <h2>Quote Of The Day</h2>
+            <small id="quote-tags"></small>
+            <blockquote id="quote-text"></blockquote>
+            <cite id="quote-author"></cite>
+            <button type="button" id="gen-quote-btn" class="w3-panel w3-border w3-hover-border-blue">Get New
+                Quote</button>
+        </div>
+    </div>
+    <!--News,Daily Tasks, Weather Section-->
+    <hr class="between">
+    <div class="mobileFriendly">
+        <!--News Section-->
+        <div class="w3-cell-row w3-card w3-round squares mainScreen" id="newsSquares">
+            <div class="w3-cell" id="w3Cell" style="width:30%">
+                <img class="sectionImg" src="./assets/images/news1.jpg" style="width:100%">
+            </div>
+            <div class="w3-cell w3-container" id="news">
+                <a href=" #"></a>
+                <a href="news.html">
+                    <h3 id="newsName">News</h3>
+                </a>
+                </a>
+                <p class="loginText"></p>
+                <p class="description"></p>
+            </div>
+        </div>
+        <!--Daily Tasks Section-->
+        <hr class="between">
+        <div class="w3-cell-row w3-card w3-round squares" id="tasksSquares">
+            <div class="w3-cell" style="width:30%">
+                <img class="sectionImg" src="./assets/images/dailyTask.png" style="width:100%">
+            </div>
+            <div class="w3-cell w3-container" id="dailyTasks">
+                <a href=" #">
+                    <a href="dailytask.html">
+                        <h3 class="daily-tasks">Daily Tasks</h3>
+                    </a>
+                </a>
+                <p><span id="dateTime"></span></p>
+            </div>
+        </div>
+        <!--Weather Section-->
+        <hr class="between">
+        <div class="w3-cell-row w3-card w3-round squares mainScreenW" id="weatherSection">
+            <div class="w3-cell" id="cell3W" style="width:30%">
+                <img class="sectionImg" src="./assets/images/weather.jpg" style="width:100%">
+            </div>
+            <div class="w3-cell w3-container">
+                <a href="./weather.html">
+                    <h3 class="weatherName">Weather</h3>
+                </a>
+                <div id="current-weather">
+                    <div class="btnSearchSection ">
+                        <input type="text" placeholder="Search for a City" class="input mt-5" id="search-city">
+                        <button class="button mt-5" id="search-button">Search</button>
+                    </div>
+                    <div class="mainSectionWeather">
+                        <a class="weatherMainBtn w3-center" href="#">
+                            <h3 class="current-city" id="cityName"></h3>
+                        </a>
+                        <div class="subWeather">
+                            <p class="weather Wdescription" id="description"></p>
+                            <p class="weather temperature" id="temperature"></p>
+                            <p class="weather humidity" id="humidity"></p>
+                            <p class="weather wind-speed" id="wind-speed"></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <hr class="bottomLine">
+    </div>
+    <footer class="w3-container w3-card ">
+        <h4>© 2021 The Power Quad Squad Production</h4>
+    </footer>
+    <script src="https://code.jquery.com/jquery.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.29.1/moment.min.js"></script>
+    <script src="./assets/js/script.js"></script>
+    <script src="./assets/js/news.js"></script>
+    <script src="./assets/js/quotes.js"></script>
+    <!-- <script src="./assets/js/dailytask.js"></script> -->
+    <script src="./assets/js/weather.js"></script>
+    <script
+        src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDdVIsIgShCXOJlbZjwy4pbr9e5sFgzTz4&callback=initMap&libraries=&v=weekly"
+        async></script>
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=default"></script>
+</body>
+
+</html>

@@ -1,144 +1,48 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Plan Surfing | Home page</title>
-    <link rel="preconnect" href="https://fonts.gstatic.com">
-    <!-- Rest Css -->
-    <link rel="stylesheet" href="./assets/css/rest.css">
-    <!-- W3.CSS framwork -->
-    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3pro.css">
-    <!-- Google Font  -->
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400&display=swap" rel="stylesheet">
-    <!--Anastasia's part start-->
-    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-    <!--Anastasia's part start-->
-    <!-- CSS flie -->
-    <link rel="stylesheet" href="./assets/css/style.css">
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Plan Surfing | News page</title>
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <!-- Rest Css -->
+  <link rel="stylesheet" href="./assets/css/rest.css">
+  <!-- Google Font  -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400&display=swap" rel="stylesheet">
+  <!-- CSS flie -->
+  <link rel="stylesheet" href="./assets/css/style.css">
 </head>
-
-<body>
-    <nav class="w3-sidebar w3-bar-block w3-card" id="mySidebar">
-        <div class="w3-container w3-theme-d2">
-            <span onclick="closeSidebar()" class="w3-button w3-display-topright w3-large">X</span>
-            <br>
-            <div class="w3-padding w3-center">
-                <img class="w3-circle" src="./assets/images/pngwing.com.png" alt="avatar" style="width:75%">
-            </div>
-        </div>
-        <a class="w3-bar-item w3-button" href="#">Home</a>
-        <a class="w3-bar-item w3-button" href="#">News</a>
-        <a class="w3-bar-item w3-button" href="#">Daily Tasks</a>
-        <a class="w3-bar-item w3-button" href="#">Weather</a>
-    </nav>
-
-    <header class="w3-bar w3-card w3-theme">
-        <button class="w3-bar-item w3-button w3-xxxlarge w3-hover-theme barColor"
-            onclick="openSidebar()">&#9776;</button>
-        <img class="logo" src="./assets/images/logo.png" alt="logo">
-        <h1 class="w3-bar-item headerName">Plan Surfing</h1>
-    </header>
-    <div class="w3-container">
-        <hr class=topLine>
-        <div class="quote-wrapper">
-            <h2>Quote Of The Day</h2>
-            <small id="quote-tags"></small>
-            <blockquote id="quote-text"></blockquote>
-            <cite id="quote-author"></cite>
-            <button type="button" id="gen-quote-btn">Get New Quote</button>
-        </div>
+<body class="loginBody">
+  <div class="container-logIn">
+    <form id="form0">
+      <input type="text" id="email" placeholder="Enter Your Email" required>
+      <input type="password" id="password" placeholder="Password" required>
+      <a href="#">Forget Password</a>
+      <div class="btn-box">
+        <button type="button" id="logIn">Log In</button>
+      </div>
+      <div id="signinForm">To create an account <a href="">Click here</a></div>
+    </form>
+    <div class="step-row">
+      <div class="step-col"><h3>LOGIN</h3></div>
     </div>
-        <div class="w3-container">
-            <hr class="between">
-            <div class="w3-cell-row w3-card w3-round">
-                <div class="w3-cell" style="width:30%">
-                    <img class="sectionImg" src="./assets/images/news1.jpg" style="width:100%">
-                </div>
-                <!--Anastasia's part start-->
-                <div class="w3-cell w3-container" id="news">
-                    <a href="#">
-                        <h3>News</h3>
-                    </a>
-                    <p>Get Local and Nationwide Daily News</p>
-                    <div class="news-section" id="newsSections">
-                        <form>
-                            <div class="row">
-                                <form class="col s12">
-                                    <div class="row">
-                                        <div class="input-field">
-                                            <i class="material-icons prefix ">public</i>
-                                            <input type="text" id="currentSearch">
-                                            <label class="inside-text" for="icon_prefix2">Find what is happening around
-                                                you...</label>
-                                        </div>
-                                    </div>
-                                </form>
-                            </div>
-                            <div class="row">
-                                <input type="submit" id="searchBtn" class="btn col m2 s12 blue darken-4" value="Search">
-                                <input type="submit" id="clearBtn" class="btn col m2 s12 grey" value="Clear">
-                            </div>
-                        </form>
-                        <div id="loader" class="loader">
-                            <div class="progress grey">
-                                <div class="indeterminate blue darken-4"> </div>
-                            </div>
-                        </div>
-                        <div id="results">
-                            <h2></h2>
-                            <p></p>
-                            <p></p>
-                            <h4></h4>
-                            <a href=""></a>
-
-                        </div>
-                    </div>
-                    <!--Anastasia's part end-->
-                </div>
-            </div>
-            <hr class="between">
-            <div class="w3-cell-row w3-card w3-round">
-                <div class="w3-cell" style="width:30%">
-                    <img class="sectionImg" src="./assets/images/dailyTask.png" style="width:100%">
-                </div>
-                <div class="w3-cell w3-container" id="dailyTasks">
-                    <a href=" #">
-                    <h3>Daily Tasks</h3>
-                    </a>
-                    Stay on Top of Daily Tasks</p>
-                </div>
-            </div>
-            <hr class="between">
-            <div class="w3-cell-row w3-card  w3-round">
-                <div class="w3-cell" id="w3Cell" style="width:30%">
-                    <img class="sectionImg" src="./assets/images/weather.jpg" style="width:100%">
-                </div>
-                <div class="w3-cell w3-container" id="#current-weather">
-                    <a class="weather" id="weatherBtn" href="#">
-                        <h3 id="cityName"></h3>
-                    </a>
-                    <p class="weather" id="description"></p>
-                    <p class="weather" id="temperature"></p>
-                    <p class="weather" id="humidity"></p>
-                    <p class="weather" id="wind-speed"></p>
-                </div>
-            </div>
-        </div>
+  </div>
+  <div class="intro">
+    <div class="intro-text">
+      <h1 class="hide">
+        <span class="text">Wellcome</span>
+      </h1>
+      <h1 class="hide">
+        <span class="text">to the futuer </span>
+      </h1>
+      <h1 class="hide">
+        <span class="text">of time management</span>
+      </h1>
     </div>
-    <hr class="bottomLine">
-    <footer class="w3-container w3-card footer">
-        <h4>© 2021 The Power Quad Squad Production</h4>
-    </footer>
-    <script src="https://code.jquery.com/jquery.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.29.1/moment.min.js"></script>
-    <script src="./assets/js/script.js"></script>
-    <script src="./assets/js/news.js"></script>
-    <script src="./assets/js/quotes.js"></script>
-    <script src="./assets/js/weather.js"></script>
+  </div>
+  <div class="slider"></div>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.6.1/gsap.min.js"></script>
+  <script src="./assets/js/slider.js"></script>
+  <script src="./assets/js/login.js"></script>
 </body>
-
 </html>
