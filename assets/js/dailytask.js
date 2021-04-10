@@ -5,16 +5,12 @@ let events = localStorage.getItem("events")
   : [];
 const calendar = document.getElementById("calendar");
 const newEventModal = document.getElementById("DailyEvents");
-
 const deleteEventModal = document.getElementById("deleteEventModal");
 const backDrop = document.getElementById("modalBackDrop");
-
 const eventTaskInput = document.getElementById("taskInput");
 const startTimeInput = document.getElementById("startTimeInput");
-
 const eventTaskInputTwo = document.getElementById("taskInputTwo");
 const startTimeInputTwo = document.getElementById("startTimeInputTwo");
-
 const eventTaskInputThree = document.getElementById("taskInputThree");
 const startTimeInputThree = document.getElementById("startTimeInputThree");
 
@@ -35,10 +31,8 @@ function openModal(date) {
   if (eventForDay) {
     document.getElementById("display").innerText = eventForDay.tasks;
     document.getElementById("displayTwo").innerText = eventForDay.startTime;
-
     document.getElementById("displayThree").innerText = eventForDay.tasksTwo;
     document.getElementById("displayFour").innerText = eventForDay.startTimeTwo;
-
     document.getElementById("displayFive").innerText = eventForDay.tasksThree;
     document.getElementById("displaySix").innerText =
       eventForDay.startTimeThree;
@@ -157,6 +151,7 @@ function initButtons() {
     .addEventListener("click", deleteEvent);
   document.getElementById("closeButton").addEventListener("click", closeModal);
 }
+
 
 initButtons();
 load();
